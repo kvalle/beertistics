@@ -1,8 +1,8 @@
 import flask
 from flask import g
+from json import dumps
 
-import beertistics.auth as auth
-from beertistics import app
+from beertistics import app, auth, stats
 
 @app.route('/')
 def index():
@@ -11,14 +11,9 @@ def index():
     else:
         return flask.render_template('login.html')
 
-@app.route('/settings')
+@app.route('/stats/basic')
 @auth.requires_auth
-def settings():
-    return flask.render_template('settings.html')
-
-@app.route('/json/profile')
-@auth.requires_auth
-def json_profile():
-    json = "nothing yet"
+def stats_basic():
+    json = dumps(stats.basic(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 

@@ -1,11 +1,5 @@
 {% extends "layout.html" %}
 
-{% block content %}
-  <h1>TODO: make app</h1>
-  <p>Your token is: {{session.untappd_token}}</p>
-  <div id="test-content"></div>
-{% endblock %}
-
 {% block navbar %}
     <li id="user-info">
       <img src="{{session.user['avatar']}}"/>
@@ -16,15 +10,30 @@
     </li>
 {% endblock %}
 
+{% block content %}
+  <div id="basic-stats-misc"></div>
+  <div id="basic-stats-beers"></div>
+{% endblock %}
+
 {% block script %}
   <script>
+    function make_table(data) {
+        var rows = [];
+        $.each(data, function(key, val) {
+            rows.push('<dt>'+val+'</dt><dd>'+key+'</dd>');
+        });
+        var table = $('<dl/>', {
+            'class': 'dl-horizontal',
+            html: rows.join('')
+        });
+        return table;
+    }
+
     $(document).ready(function() {
 
-        $.ajax({
-            url: "/json/profile",
-            cache: false
-        }).done(function( data ) {
-            $("#test-content").append('<pre>'+data+'</pre>');
+        $.getJSON("/stats/basic", function(data) {
+            $("#basic-stats-misc").append(make_table(data.misc));
+            $("#basic-stats-beers").append(make_table(data.beers));
         });
 
     });
