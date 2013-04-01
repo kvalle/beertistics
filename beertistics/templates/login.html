@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% set active_page = "notes" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+  <div class="row">
+      <div class="span12">
+        <div class="page-header">
+          <h1>Log in</h1>
+        </div>
+        <form class="well form-horizontal" method="POST">
+          <fieldset>
+            <div class="control-group">
+              <label class="control-label" for="input_uname">Username</label>
+              <div class="controls">
+                <input type="text" name="username" class="input-xlarge" id="input_uname" value="{{username}}" autofocus="autofocus" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input_password">Password</label>
+              <div class="controls">
+                <input type="password" name="password" class="input-xlarge" id="input_password" />
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <input type="submit" value="Log in" />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+  </div>
+{% endblock %}
+
