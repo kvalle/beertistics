@@ -3,21 +3,12 @@ body {
     padding-bottom: 40px;
 }
 
-.note-form textarea {
-    width: 100%;
-    height: 300px;
+#user-info img {
+    margin-top: 7px;
+    height: 25px;
+    display: inline;
 }
 
-pre.note {
-    border-width: 0px;
-    background: none;
-    font-family: inherit;
-}
-
-.new-file-form input, .new-file-button {
-    margin-bottom: 10px;
-}
-
-#fake-file-field {
-    width: 100%;
+#user-info a {
+    float: right;
 }

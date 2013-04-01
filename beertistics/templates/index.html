@@ -3,6 +3,21 @@
 {% block content %}
   <h1>TODO: make app</h1>
   <p>Your token is: {{token}}</p>
-  <a href="/json/test">Some json</a>
+  <div id="test-content"></div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $.ajax({
+            url: "/json/profile",
+            cache: false
+        }).done(function( data ) {
+            $("#test-content").append('<pre>'+data+'</pre>');
+        });
+    
+    });
+  </script>
 {% endblock %}
 
