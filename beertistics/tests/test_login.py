@@ -15,6 +15,14 @@ class LoginTests(unittest.TestCase, BeertisticsTestCase):
         response = self.app.get('/')
         assert 'Log out' in response.data
         
+    def test_login_bad_username(self):
+        response = self.login(user="invalid user")
+        assert "Invalid username or password." in response.data
+
+    def test_login_bad_password(self):
+        response = self.login(password="invalid pwd")
+        assert "Invalid username or password." in response.data
+
     def test_login_redirects_properly(self):
         response = self.app.get('/settings', follow_redirects=True)
         assert "You must log in" in response.data

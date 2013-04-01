@@ -14,9 +14,7 @@ def logout():
     flask.session.pop('logged_in', None)
 
 def _check(username, password):
-    if not username == app.config['USERNAME']:
-        return False
-    return app.config['PASSWORD'] == hashlib.sha1(password).hexdigest()
+    return username == app.config['USERNAME'] and app.config['PASSWORD'] == hashlib.sha1(password).hexdigest()
 
 def requires_auth(f):
     @wraps(f)
