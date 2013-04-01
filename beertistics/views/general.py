@@ -3,11 +3,13 @@ from flask import g
 
 import beertistics.auth as auth
 from beertistics import app
-from beertistics import untappd_wrapper as untappd
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html', token=auth.get_token())
+    if auth.is_logged_in():
+        return flask.render_template('index.html')
+    else:
+        return flask.render_template('login.html')
 
 @app.route('/settings')
 @auth.requires_auth
@@ -17,6 +19,6 @@ def settings():
 @app.route('/json/profile')
 @auth.requires_auth
 def json_profile():
-    json = untappd.user_info()
+    json = "nothing yet"
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 

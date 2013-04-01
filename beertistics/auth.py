@@ -13,7 +13,26 @@ def authorize(code):
     token = json['response']['access_token']
     flask.session['untappd_token'] = token
     flask.session['logged_in'] = True
+    flask.session['user'] = user_info()
     return True
+
+def user_info():
+    url = "http://api.untappd.com/v4/user/info" + get_url_params()
+    resp, content = httplib2.Http().request(url)
+    json = loads(content)
+
+    user = json['response']['user']
+    return {
+        'name': "%s %s" % (user['first_name'], user['last_name']),
+        'username': user['user_name'],
+        'avatar': user['user_avatar'],
+        'url': user['untappd_url']
+    }
+
+def get_url_params():
+    return "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
+            "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
+            "&access_token=" + get_token()
 
 def _build_url(base):
     return "http://untappd.com/oauth/" + base +"/" + \

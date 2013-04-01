@@ -2,8 +2,18 @@
 
 {% block content %}
   <h1>TODO: make app</h1>
-  <p>Your token is: {{token}}</p>
+  <p>Your token is: {{session.untappd_token}}</p>
   <div id="test-content"></div>
+{% endblock %}
+
+{% block navbar %}
+    <li id="user-info">
+      <img src="{{session.user['avatar']}}"/>
+      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+    </li>
+    <li>
+      <a href="{{url_for('logout')}}">Log out</a>
+    </li>
 {% endblock %}
 
 {% block script %}
@@ -16,8 +26,13 @@
         }).done(function( data ) {
             $("#test-content").append('<pre>'+data+'</pre>');
         });
-    
+
     });
   </script>
 {% endblock %}
 
+{% block footer %}
+    <div class="footer">
+        Build on data provided by <a href="http://untappd.com">Untappd</a>.
+    </div>
+{% endblock %}

@@ -28,17 +28,7 @@
         <a class="brand" href="{{url_for('index')}}">Beertistics</a>
         <div style="height: 0px;" class="nav-collapse collapse">
           <ul class="nav pull-right">
-            <li id="user-info">
-              <img/>
-              <a></a>
-            </li>
-            <li>
-              {% if not session.logged_in %}
-                <a href="{{url_for('login')}}">Log in</a>
-              {% else %}
-                <a href="{{url_for('logout')}}">Log out</a>
-              {% endif %}
-            </li>
+            {% block navbar %}{% endblock %}
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container-->
@@ -63,9 +53,8 @@
 
       {% block content %}{% endblock %}
 
-      <div class="footer">
-        Build on data provided by <a href="http://untappd.com">Untappd</a>.
-      </div>
+      {% block footer %}{% endblock %}      
+
   </div><!--/.container-->
 
   <script src="/static/js/jquery.js"></script>
