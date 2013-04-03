@@ -12,11 +12,14 @@ def days_since(date_str):
     delta = now - then
     return delta.days
 
+def get_stats(url):
+    _, content = httplib2.Http().request(url)
+    return loads(content)
+
 def basic():
     # TODO: consider just sending html instead
     url = "http://api.untappd.com/v4/user/info" + auth.get_url_params()
-    resp, content = httplib2.Http().request(url)
-    json = loads(content)
+    json = get_stats(url)
     user = json['response']['user']
     stats = user['stats']
     days = days_since(user['date_joined'])
