@@ -17,3 +17,8 @@ def stats_basic():
     json = dumps(stats.basic(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 
+@app.route('/stats/per-month')
+@auth.requires_auth
+def stats_per_month():
+    json = dumps(stats.per_month(), indent=4)
+    return flask.Response(json, 200, {'content-type': 'text/plain'})

@@ -14,30 +14,45 @@
   <h1>Some basic beer stats</h1>
   <div id="basic-stats-misc"></div>
   <div id="basic-stats-beers"></div>
+
+  <h1>Consumption per month</h1>
+  <div style="height: 500px; margin: 10px; min-width: 100px; min-height: 100px;" id="chart1">
+    <svg></svg>
+  </div>
 {% endblock %}
 
 {% block script %}
   <script>
-    function make_table(data) {
-        var rows = [];
-        $.each(data, function(key, val) {
-            rows.push('<dt>'+val+'</dt><dd>'+key+'</dd>');
-        });
-        var table = $('<dl/>', {
-            'class': 'dl-horizontal',
-            html: rows.join('')
-        });
-        return table;
-    }
-
     $(document).ready(function() {
 
         $.getJSON("/stats/basic", function(data) {
-            $("#basic-stats-misc").append(make_table(data.misc));
-            $("#basic-stats-beers").append(make_table(data.beers));
+            $("#basic-stats-misc").append(make_basic_stats(data.misc));
+            $("#basic-stats-beers").append(make_basic_stats(data.beers));
+        });
+
+        $.getJSON("/stats/per-month", function(test_data) {
+            var chart;
+            nv.addGraph(function() {
+                chart = nv.models.multiBarChart()
+                            .barColor(d3.scale.category20().range());
+
+                chart.xAxis.showMaxMin(true)
+                chart.yAxis.tickFormat(d3.format(',.1f'));
+
+                d3.select('#chart1 svg')
+                          .datum(test_data)
+                    .transition().duration(500).call(chart);
+
+                nv.utils.windowResize(chart.update);
+                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+              return chart;
+          });
         });
 
     });
+
+
   </script>
 {% endblock %}
 

@@ -2,6 +2,7 @@ import httplib2
 from json import loads
 import datetime
 from beertistics import auth
+import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
@@ -36,3 +37,36 @@ def basic():
             "friends on Untappd": stats['total_friends']
         }
     }
+
+def per_month():
+    return [
+      {
+        "key":"New beers",
+        "values": [{"x":"mar 2012","y":31},
+                   {"x":"apr 2012","y":42},
+                   {"x":"may 2012","y":53},
+                   {"x":"jun 2012","y":25},
+                   {"x":"jul 2012","y":15},
+                   {"x":"aug 2012","y":12},
+                   {"x":"sep 2012","y":35},
+                   {"x":"oct 2012","y":25},
+                   {"x":"nov 2012","y":15},
+                   {"x":"dec 2012","y":16},
+                   {"x":"jan 2012","y":12},
+                   {"x":"feb 2013","y":6}]
+      }, {
+        "key":"Beers tasted before",
+        "values": [{"x":"mar 2012","y":12},
+                   {"x":"apr 2012","y":31},
+                   {"x":"may 2012","y":51},
+                   {"x":"jun 2012","y":12},
+                   {"x":"jul 2012","y":6},
+                   {"x":"aug 2012","y":31},
+                   {"x":"sep 2012","y":12},
+                   {"x":"oct 2012","y":15},
+                   {"x":"nov 2012","y":15},
+                   {"x":"dec 2012","y":12},
+                   {"x":"jan 2012","y":19},
+                   {"x":"feb 2013","y":27}]
+      }
+    ]
