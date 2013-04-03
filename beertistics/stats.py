@@ -1,7 +1,7 @@
 import httplib2
 from json import loads
 import datetime
-from beertistics import auth
+from beertistics import auth, cache
 import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
@@ -12,6 +12,7 @@ def days_since(date_str):
     delta = now - then
     return delta.days
 
+@cache.memoize(timeout=10)
 def get_stats(url):
     _, content = httplib2.Http().request(url)
     return loads(content)

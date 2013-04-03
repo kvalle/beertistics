@@ -13,14 +13,12 @@ def index():
 
 @app.route('/stats/basic')
 @auth.requires_auth
-@cache.cached(timeout=app.config['CACHE_TIMEOUT'])
 def stats_basic():
     json = dumps(stats.basic(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 
 @app.route('/stats/per-month')
 @auth.requires_auth
-@cache.cached(timeout=app.config['CACHE_TIMEOUT'])
 def stats_per_month():
     json = dumps(stats.per_month(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
