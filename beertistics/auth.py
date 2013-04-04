@@ -30,7 +30,7 @@ def user_info():
     }
 
 def get_url_params():
-    return "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
+    return "client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
             "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
             "&access_token=" + get_token()
 
