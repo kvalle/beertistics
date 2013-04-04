@@ -7,6 +7,7 @@ from beertistics import app
 def authorize(code):
     resp, content = httplib2.Http().request(authorize_url(code))
     json = loads(content)
+
     if json['meta']['http_code'] != 200:
         return False
 
@@ -17,7 +18,7 @@ def authorize(code):
     return True
 
 def user_info():
-    url = "http://api.untappd.com/v4/user/info" + get_url_params()
+    url = "http://api.untappd.com/v4/user/info?" + get_url_params()
     resp, content = httplib2.Http().request(url)
     json = loads(content)
 
