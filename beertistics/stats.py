@@ -47,16 +47,17 @@ def get_month(checkin):
     return "Apr 2013"
 
 def per_month():
-    checkins = get_sample_checkins()
+    checkins = get_all_checkins()
     beers = set()
     new = dict()
     old = dict()
+    keys = set()
     for checkin in checkins:
         date = datetime.datetime.strptime(checkin["created_at"], DATE_FORMAT)
-        month_name = date.strftime("%b")
-        month_nr = date.strftime("%m")
-        year = date.strftime("%Y")
-        key = (year, month_nr, month_name)
+        key = date.strftime("%b %Y")
+        key_sortable = date.strftime("%Y-%m")
+        keys.add((key_sortable, key))
+
         beer = checkin['beer']['bid']
         if beer in beers:
             old[key] = old.get(key, 0) + 1
@@ -64,11 +65,10 @@ def per_month():
             new[key] = new.get(key, 0) + 1
         beers.add(beer)
 
+    sorted_keys = [k[1] for k in sorted(keys)]
+
     def mk_value_list(d):
-        return [
-            {"x": key[2] + " " + key[0], "y": d[key]} 
-            for key in sorted(d.keys())
-        ]
+        return [{"x": key, "y": d.get(key, 0)} for key in sorted_keys]
 
     return [
         { 
@@ -99,44 +99,3 @@ def get_all_checkins():
         next = json["response"]["pagination"]["next_url"]
 
     return checkins
-
-def dummy_data():
-    return [
-    {
-        "values": [
-            { "y": 28, "x": "Jul 2012"}, 
-            { "y": 11, "x": "Apr 2012"}, 
-            { "y": 32, "x": "Nov 2012"}, 
-            { "y": 29, "x": "Feb 2013"}, 
-            { "y": 39, "x": "Dec 2012"}, 
-            { "y": 31, "x": "Oct 2012"}, 
-            { "y": 21, "x": "Jun 2012"}, 
-            { "y": 38, "x": "Sep 2012"}, 
-            { "y": 52, "x": "Mar 2013"}, 
-            { "y": 2, "x": "Apr 2013"}, 
-            { "y": 6, "x": "May 2012"}, 
-            { "y": 36, "x": "Aug 2012"}, 
-            { "y": 29, "x": "Jan 2013"}, 
-            { "y": 28, "x": "Mar 2012"}
-        ],
-        "key": "New tastings"
-    }, 
-    {
-        "values": [
-            { "y": 9, "x": "Jul 2012" }, 
-            { "y": 12, "x": "Apr 2012" }, 
-            { "y": 20, "x": "Nov 2012" }, 
-            { "y": 8, "x": "Feb 2013" }, 
-            { "y": 11, "x": "Dec 2012" }, 
-            { "y": 16, "x": "Oct 2012" }, 
-            { "y": 18, "x": "Jun 2012" }, 
-            { "y": 16, "x": "Sep 2012" }, 
-            { "y": 5, "x": "Mar 2013" }, 
-            { "y": 9, "x": "Mar 2012" }, 
-            { "y": 6, "x": "May 2012" }, 
-            { "y": 11, "x": "Aug 2012" }, 
-            { "y": 6, "x": "Jan 2013" }
-        ], 
-        "key": "Beers tasted before"
-    }
-]
