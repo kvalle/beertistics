@@ -11,6 +11,10 @@ def index():
     else:
         return flask.render_template('login.html')
 
+@app.route('/hello/world')
+def hello():
+    return flask.Response("hello world", 200, {'content-type': 'text/plain'})
+
 @app.route('/stats/basic')
 @auth.requires_auth
 def stats_basic():

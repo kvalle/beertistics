@@ -15,6 +15,7 @@ def days_since(date_str):
 
 @cache.memoize(timeout=app.config['CACHE_TIMEOUT'])
 def get_stats(url):
+    print "FETCHING " + url
     _, content = httplib2.Http().request(url)
     return loads(content)
 
@@ -42,9 +43,6 @@ def basic():
             "friends on Untappd": stats['total_friends']
         }
     }
-
-def get_month(checkin):
-    return "Apr 2013"
 
 def per_month():
     checkins = get_all_checkins()
