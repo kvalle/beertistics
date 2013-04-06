@@ -15,7 +15,7 @@ def days_since(date_str):
 
 @cache.memoize(timeout=app.config['CACHE_TIMEOUT'])
 def get_stats(url):
-    print "FETCHING " + url
+    print "FETCHING data. Caching for %s seconds" % app.config['CACHE_TIMEOUT']
     _, content = httplib2.Http().request(url)
     return loads(content)
 
@@ -77,6 +77,20 @@ def per_month():
             "values": mk_value_list(old)
         }
     ]
+
+def photos():
+    def has_photo(checkin):
+        return checkin["media"]["count"] > 0
+    def pick_data(checkin):
+        return {
+            "photo": checkin["media"]["items"][0]["photo"]["photo_img_md"],
+            "photo_original": checkin["media"]["items"][0]["photo"]["photo_img_og"],
+            "comment": checkin["checkin_comment"],
+            "beer": checkin["beer"]["beer_name"],
+            "brewery": checkin["brewery"]["brewery_name"],
+            "rating": checkin["rating_score"]
+        }
+    return map(pick_data, filter(has_photo, get_sample_checkins()))
 
 def get_sample_checkins():
     with open("beertistics/test.json") as f:

@@ -11,9 +11,15 @@ def index():
     else:
         return flask.render_template('login.html')
 
-@app.route('/hello/world')
-def hello():
-    return flask.Response("hello world", 200, {'content-type': 'text/plain'})
+@app.route('/photos')
+def photos():
+    return flask.render_template('photos.html')
+
+@app.route('/stats/photos')
+@auth.requires_auth
+def stats_photos():
+    json = dumps(stats.photos(), indent=4)
+    return flask.Response(json, 200, {'content-type': 'text/plain'})
 
 @app.route('/stats/basic')
 @auth.requires_auth

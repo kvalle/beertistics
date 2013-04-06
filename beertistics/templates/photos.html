@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+    <li id="user-info">
+      <img src="{{session.user['avatar']}}"/>
+      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+    </li>
+    <li>
+      <a href="{{url_for('logout')}}">Log out</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+  <h1>Photos</h1>
+  <section id="beer-photos"></section>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $.getJSON("/stats/photos", function(data) {
+            $("#beer-photos").append(make_photo_list(data));
+        });
+
+    });
+  </script>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        Build on data provided by <a href="http://untappd.com">Untappd</a>.
+    </div>
+{% endblock %}

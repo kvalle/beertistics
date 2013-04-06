@@ -12,3 +12,12 @@ body {
 #user-info a {
     float: right;
 }
+
+#beer-photos ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#beer-photos ul li {
+    display: inline-block;
+}
