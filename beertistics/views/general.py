@@ -19,19 +19,25 @@ def clear_cache():
 def photos():
     return flask.render_template('photos.html')
 
-@app.route('/stats/photos')
+@app.route('/json/photos')
 @auth.requires_auth
 def stats_photos():
     json = dumps(stats.photos(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 
-@app.route('/stats/basic')
+@app.route('/json/places')
+@auth.requires_auth
+def places():
+    json = dumps(stats.places(), indent=4)
+    return flask.Response(json, 200, {'content-type': 'text/plain'})
+
+@app.route('/json/basic')
 @auth.requires_auth
 def stats_basic():
     json = dumps(stats.basic(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 
-@app.route('/stats/per-month')
+@app.route('/json/per-month')
 @auth.requires_auth
 def stats_per_month():
     json = dumps(stats.per_month(), indent=4)

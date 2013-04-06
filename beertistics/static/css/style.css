@@ -1,3 +1,10 @@
+svg {
+    height: 500px; 
+    margin: 10px; 
+    min-width: 100px; 
+    min-height: 100px;
+}
+
 body {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -13,6 +20,10 @@ body {
     float: right;
 }
 
+#beer-photos {
+    margin: 0 auto;
+}
+
 #beer-photos ul {
     list-style-type: none;
     margin-left: 0;
@@ -20,4 +31,5 @@ body {
 
 #beer-photos ul li {
     display: inline-block;
+    width: 220px;
 }

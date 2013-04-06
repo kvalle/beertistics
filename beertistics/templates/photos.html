@@ -11,7 +11,6 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Photos</h1>
   <section id="beer-photos"></section>
 {% endblock %}
 
@@ -19,7 +18,7 @@
   <script>
     $(document).ready(function() {
 
-        $.getJSON("/stats/photos", function(data) {
+        $.getJSON("/json/photos", function(data) {
             $("#beer-photos").append(make_photo_list(data));
         });
 
