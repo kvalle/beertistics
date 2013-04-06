@@ -1,3 +1,4 @@
+import unicodedata
 import httplib2
 from json import loads
 from functools import wraps
@@ -16,6 +17,9 @@ def authorize(code):
     flask.session['logged_in'] = True
     flask.session['user'] = user_info()
     return True
+
+def username():
+    return unicodedata.normalize('NFKD', flask.session["user"]["username"]).encode('ascii','ignore')
 
 def user_info():
     url = "http://api.untappd.com/v4/user/info?" + get_url_params()

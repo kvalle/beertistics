@@ -1,7 +1,7 @@
 import flask
 from flask import g
 
-from beertistics import app, auth
+from beertistics import app, auth, cache
 
 @app.route('/auth')
 def authentication():
@@ -29,6 +29,7 @@ def login():
 
 @app.route('/log-out')
 def logout():
+    cache.clear()
     auth.logout()
     flask.flash('You were logged out.', 'success')
     return flask.redirect(flask.url_for('index'))

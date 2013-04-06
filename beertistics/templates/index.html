@@ -11,9 +11,7 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Some basic beer stats</h1>
-  <div id="basic-stats-misc"></div>
-  <div id="basic-stats-beers"></div>
+  <p><em id="basic-stats-message"></em></p>
 
   <h1>Consumption per month</h1>
   <div style="height: 500px; margin: 10px; min-width: 100px; min-height: 100px;" id="chart1">
@@ -26,8 +24,7 @@
     $(document).ready(function() {
 
         $.getJSON("/stats/basic", function(data) {
-            $("#basic-stats-misc").append(make_basic_stats(data.misc));
-            $("#basic-stats-beers").append(make_basic_stats(data.beers));
+            $("#basic-stats-message").text(basic_stats_message(data));
         });
 
         $.getJSON("/stats/per-month", function(test_data) {

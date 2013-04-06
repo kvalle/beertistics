@@ -1,13 +1,10 @@
-function make_basic_stats(data) {
-    var rows = [];
-    $.each(data, function(key, val) {
-        rows.push('<dt>'+val+'</dt><dd>'+key+'</dd>');
-    });
-    var table = $('<dl/>', {
-        'class': 'dl-horizontal',
-        html: rows.join('')
-    });
-    return table;
+function basic_stats_message(data) {
+    return "Hello there, " + data.name + ". " + 
+        "In your "+ data.days +" days using Untappd, you have checked in " +
+        "a total of " + data.total + " beers, " + data.distinct + " of which " + 
+        "are distinct. That averages to "+data.total_avg+" beers per day " + 
+        "(" + data.distinct_avg + " distinct). You have also posted " + data.photos +
+        " photos, earned "+data.badges+" badges, and made "+data.friends+" friends."
 }
 
 function make_photo_list(data) {
