@@ -2,7 +2,7 @@ import flask
 from flask import g
 from json import dumps
 
-from beertistics import app, auth, stats, cache
+from beertistics import app, auth, stats
 
 @app.route('/')
 def index():

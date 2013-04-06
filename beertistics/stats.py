@@ -1,28 +1,58 @@
 import httplib2
 from json import loads, load
 import datetime
-from beertistics import auth, cache
+from beertistics import auth
 import flask
+import shelve
 from beertistics import app
+import unicodedata
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
-def days_since(date_str):
-    then = datetime.datetime.strptime(date_str, DATE_FORMAT)
-    now = datetime.datetime.now()
-    delta = now - then
-    return delta.days
+def cached(key):
+    def cache_fn(fn):
+        stored = shelve.open("cache.db")
+        def wrapper():
+            username = unicodedata.normalize('NFKD', flask.session["user"]["username"]).encode('ascii','ignore')
+            cache_key = username+"_"+key
+            if stored.has_key(cache_key):
+                return stored[cache_key]
+            else:
+                stored[cache_key] = fn()
+                return stored[cache_key]
+        return wrapper
+    return cache_fn
 
-@cache.memoize(timeout=app.config['CACHE_TIMEOUT'])
-def get_stats(url):
-    print "FETCHING data. Caching for %s seconds" % app.config['CACHE_TIMEOUT']
+def get(url):
+    print "FETCHING: " + url
     _, content = httplib2.Http().request(url)
     return loads(content)
 
+@cached("user_info")
+def get_user_info():
+    return get("http://api.untappd.com/v4/user/info?" + auth.get_url_params())
+
+@cached("checkins")
+def get_checkins():
+    json = get("http://api.untappd.com/v4/user/checkins?" + auth.get_url_params())
+
+    checkins = json["response"]["checkins"]["items"]
+    next = json["response"]["pagination"]["next_url"]
+    while next:
+        next += auth.get_url_params()
+        print next
+        json = get(next)
+        checkins += json["response"]["checkins"]["items"]
+        next = json["response"]["pagination"]["next_url"]
+
+    return checkins
+
+def get_checkins_stub():
+    with open("beertistics/test.json") as f:
+        return load(f)
+
 def basic():
-    # TODO: consider just sending html instead
-    url = "http://api.untappd.com/v4/user/info?" + auth.get_url_params()
-    json = get_stats(url)
+    json = get_user_info()
     user = json['response']['user']
     stats = user['stats']
     days = days_since(user['date_joined'])
@@ -45,7 +75,7 @@ def basic():
     }
 
 def per_month():
-    checkins = get_all_checkins()
+    checkins = get_checkins_stub()
     beers = set()
     new = dict()
     old = dict()
@@ -92,22 +122,8 @@ def photos():
         }
     return map(pick_data, filter(has_photo, get_sample_checkins()))
 
-def get_sample_checkins():
-    with open("beertistics/test.json") as f:
-        return load(f)
-
-def get_all_checkins():
-    checkins = []
-    url = "http://api.untappd.com/v4/user/checkins?" + auth.get_url_params()
-    json = get_stats(url)
-    
-    checkins += json["response"]["checkins"]["items"]
-    next = json["response"]["pagination"]["next_url"]
-    while next:
-        next += auth.get_url_params()
-        print next
-        json = get_stats(next)
-        checkins += json["response"]["checkins"]["items"]
-        next = json["response"]["pagination"]["next_url"]
-
-    return checkins
+def days_since(date_str):
+    then = datetime.datetime.strptime(date_str, DATE_FORMAT)
+    now = datetime.datetime.now()
+    delta = now - then
+    return delta.days
