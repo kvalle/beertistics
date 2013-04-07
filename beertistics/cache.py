@@ -1,11 +1,12 @@
 from beertistics import auth, app
 import shelve
 
+CACHE_FILE = app.config['BASE_DIR']+"/cache.db"
+
 def cached(key):
     def cache_fn(fn):
-        def wrapper():
-            filename = app.config['BASE_DIR']+"/cache.db"
-            stored = shelve.open(filename)
+        def wrapper():  
+            stored = shelve.open(CACHE_FILE)
 
             username = auth.username()
 
@@ -23,7 +24,7 @@ def cached(key):
     return cache_fn
 
 def clear(username=None):
-    stored = shelve.open("cache.db")
+    stored = shelve.open(CACHE_FILE)
     if username:
         if stored.has_key(username):
             del stored[username]
