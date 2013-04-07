@@ -44,8 +44,11 @@
                           .showLegend(false)
                           .color(d3.scale.category10().range());
 
-            chart.xAxis.tickFormat(d3.format('.02f'))
-            chart.yAxis.tickFormat(d3.format('.02f'))
+            chart.xAxis.axisLabel('Alcohol by volume (ABV)')
+            chart.yAxis.axisLabel('Rating')
+
+            chart.xAxis.tickFormat(d3.format('.01f'))
+            chart.yAxis.tickFormat(d3.format('.01f'))
 
             d3.select('#abv-vs-rating svg')
                 .datum(data)
@@ -71,11 +74,8 @@
                   .showControls(false)
                   .showLegend(false);
 
-              chart.yAxis
-                  .tickFormat(d3.format(',.0f'));
-
-              chart.yAxis.scale(d3.scale.log());
-              chart.xAxis.scale(d3.scale.log());
+              chart.yAxis.axisLabel('Number of checkins')
+              chart.yAxis.tickFormat(d3.format(',.0f'));
 
               d3.select('#places svg')
                   .datum(data)
@@ -97,7 +97,7 @@
                             .barColor(d3.scale.category20().range());
                 chart.y(function(d) { return d.beers });
                 chart.x(function(d) { return d.month });
-                chart.xAxis.showMaxMin(true)
+                chart.xAxis.showMaxMin(false);
                 chart.yAxis.tickFormat(d3.format(',.0f'));
 
                 d3.select('#consumption-per-month svg')
