@@ -10,3 +10,4 @@ def page_not_found(e):
 
 from beertistics.views import general
 from beertistics.views import login
+from beertistics.views import api

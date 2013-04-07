@@ -13,6 +13,9 @@
 {% block content %}
   <p><em id="basic-stats-message"></em></p>
 
+  <h1>Beer ratings</h1>
+  <div id="ratings"><svg></svg></div>
+
   <h1>ABV vs Rating</h1>
   <div id="abv-vs-rating"><svg></svg></div>
 
@@ -27,11 +30,38 @@
   <script>
     $(document).ready(function() {
 
-        $.getJSON("/json/basic", function(data) {
+        $.getJSON("/api/basic", function(data) {
             $("#basic-stats-message").text(basic_stats_message(data));
         });
 
-        $.getJSON("/json/abv-vs-rating", function(data) {
+        $.getJSON("/api/ratings", function(data) {
+            var chart;
+            nv.addGraph(function() {
+                chart = nv.models.multiBarChart()
+                            .showControls(false)
+                            .barColor(d3.scale.category20().range());
+                chart.y(function(d) { return d.n });
+                chart.x(function(d) { return d.rating });
+                chart.xAxis.showMaxMin(false);
+                chart.yAxis.tickFormat(d3.format(',.0f'));
+                
+                chart.xAxis.axisLabel('Rating');
+                chart.yAxis.axisLabel('Beers');
+
+                chart.margin({bottom: 40, left: 80});
+
+                d3.select('#ratings svg')
+                          .datum(data)
+                    .transition().duration(500).call(chart);
+
+                nv.utils.windowResize(chart.update);
+                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+              return chart;
+          });
+        });
+
+        $.getJSON("/api/abv-vs-rating", function(data) {
           var chart;
           nv.addGraph(function() {
             chart = nv.models.scatterChart()
@@ -63,7 +93,7 @@
           });
         });
 
-        $.getJSON("/json/places", function(data) {
+        $.getJSON("/api/places", function(data) {
             var chart;
             nv.addGraph(function() {
               chart = nv.models.multiBarHorizontalChart()
@@ -90,7 +120,7 @@
             });
         });
 
-        $.getJSON("/json/per-month", function(data) {
+        $.getJSON("/api/per-month", function(data) {
             var chart;
             nv.addGraph(function() {
                 chart = nv.models.multiBarChart()

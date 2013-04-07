@@ -29,6 +29,32 @@ def basic():
         "distinct_avg": "%.3f" % (float(distinct) / days)
     }
 
+def ratings():
+    checkins = untappd.get_checkins()
+
+    all_ratings = [checkin["rating_score"] for checkin in checkins if checkin["rating_score"]]
+    total_counter = Counter(all_ratings)
+
+    beers = set()
+    distinct_ratings = []
+    for checkin in checkins:
+        if not checkin["beer"]["bid"] in beers:
+            distinct_ratings.append(checkin["rating_score"])
+            beers.add(checkin["beer"]["bid"])
+    distinct_counter = Counter(distinct_ratings)
+    
+    keys = sorted(total_counter.keys())
+    return [
+        {
+            "key": "Total",
+            "values": [{"rating": rating, "n": total_counter[rating]} for rating in keys]
+        },
+        {
+            "key": "Distinct",
+            "values": [{"rating": rating, "n": distinct_counter[rating]} for rating in keys]
+        }
+    ]
+
 def abv_vs_rating():
     tuples = [(checkin["rating_score"], checkin["beer"]["beer_abv"]) 
                 for checkin in untappd.get_checkins() 
