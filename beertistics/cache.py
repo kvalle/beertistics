@@ -1,4 +1,5 @@
-from beertistics import auth, app
+from beertistics import app, util
+import flask
 import shelve
 
 CACHE_FILE = app.config['BASE_DIR']+"/cache.db"
@@ -8,7 +9,7 @@ def cached(key):
         def wrapper():  
             stored = shelve.open(CACHE_FILE)
 
-            username = auth.username()
+            username = util.normalize(flask.session["user"]["username"])
 
             if not stored.has_key(username):
                 stored[username] = {}

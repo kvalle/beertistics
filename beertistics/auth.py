@@ -3,7 +3,7 @@ import httplib2
 from json import loads
 from functools import wraps
 import flask
-from beertistics import app
+from beertistics import app, untappd
 
 def authorize(code):
     resp, content = httplib2.Http().request(authorize_url(code))
@@ -18,11 +18,9 @@ def authorize(code):
     flask.session['user'] = user_info()
     return True
 
-def username():
-    return unicodedata.normalize('NFKD', flask.session["user"]["username"]).encode('ascii','ignore')
-
 def user_info():
     url = "http://api.untappd.com/v4/user/info?" + get_url_params()
+    print "FETCHING " + url
     resp, content = httplib2.Http().request(url)
     json = loads(content)
 
@@ -37,7 +35,7 @@ def user_info():
 def get_url_params():
     return "client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
             "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
-            "&access_token=" + get_token()
+            "&access_token=" + flask.session.get('untappd_token', None)
 
 def _build_url(base):
     return "http://untappd.com/oauth/" + base +"/" + \

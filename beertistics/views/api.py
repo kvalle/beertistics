@@ -4,8 +4,12 @@ from json import dumps
 from beertistics import app, auth, stats
 
 def as_json_response(data):
-    json = dumps(data, indent=4)
-    return flask.Response(json, 200, {'content-type': 'text/plain'})
+    try:
+        json = dumps(data, indent=4)
+        return flask.Response(json, 200, {'content-type': 'text/plain'})
+    except:
+        err = "TODO: put an appropriate error message here. also, make sure 500s are handled correctly in client."
+        return flask.Response(err, 500, {'content-type': 'text/plain'})
 
 @app.route('/api/ratings')
 @auth.requires_auth
