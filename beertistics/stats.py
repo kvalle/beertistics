@@ -29,6 +29,16 @@ def basic():
         "distinct_avg": "%.3f" % (float(distinct) / days)
     }
 
+def abv_vs_rating():
+    tuples = [(checkin["rating_score"], checkin["beer"]["beer_abv"]) 
+                for checkin in untappd.get_checkins() 
+                if checkin["rating_score"] and checkin["beer"]["beer_abv"]]
+    return [{
+        "key": "ABV vs rating",
+        "values": [{"abv": abv, "rating": rating, "size": size} 
+                    for (rating, abv), size in Counter(tuples).most_common()]
+    }]
+
 def places():
     venues = [checkin["venue"]["venue_name"] 
                 for checkin in untappd.get_checkins() 

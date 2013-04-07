@@ -13,15 +13,14 @@
 {% block content %}
   <p><em id="basic-stats-message"></em></p>
 
-  <h1>Places</h1>
-  <div style="" id="places">
-    <svg></svg>
-  </div>
+  <h1>ABV vs Rating</h1>
+  <div id="abv-vs-rating"><svg></svg></div>
+
+  <h1>Checkins by location</h1>
+  <div id="places"><svg></svg></div>
 
   <h1>Consumption per month</h1>
-  <div style="" id="consumption-per-month">
-    <svg></svg>
-  </div>
+  <div id="consumption-per-month"><svg></svg></div>
 {% endblock %}
 
 {% block script %}
@@ -30,6 +29,35 @@
 
         $.getJSON("/json/basic", function(data) {
             $("#basic-stats-message").text(basic_stats_message(data));
+        });
+
+        $.getJSON("/json/abv-vs-rating", function(data) {
+          var chart;
+          nv.addGraph(function() {
+            chart = nv.models.scatterChart()
+                          .showDistX(true)
+                          .showDistY(true)
+                          //.height(500)
+                          .x(function(d) { return d.abv })
+                          .y(function(d) { return d.rating })
+                          .useVoronoi(true)
+                          .showLegend(false)
+                          .color(d3.scale.category10().range());
+
+            chart.xAxis.tickFormat(d3.format('.02f'))
+            chart.yAxis.tickFormat(d3.format('.02f'))
+
+            d3.select('#abv-vs-rating svg')
+                .datum(data)
+              .transition().duration(500)
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+            return chart;
+          });
         });
 
         $.getJSON("/json/places", function(data) {

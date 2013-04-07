@@ -25,6 +25,12 @@ def stats_photos():
     json = dumps(stats.photos(), indent=4)
     return flask.Response(json, 200, {'content-type': 'text/plain'})
 
+@app.route('/json/abv-vs-rating')
+@auth.requires_auth
+def abv_vs_rating():
+    json = dumps(stats.abv_vs_rating(), indent=4)
+    return flask.Response(json, 200, {'content-type': 'text/plain'})
+
 @app.route('/json/places')
 @auth.requires_auth
 def places():
