@@ -18,7 +18,7 @@
   <script>
     $(document).ready(function() {
 
-        $.getJSON("/json/photos", function(data) {
+        $.getJSON("/api/photos", function(data) {
             $("#beer-photos").append(make_photo_list(data));
         });
 

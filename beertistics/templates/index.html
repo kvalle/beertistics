@@ -34,7 +34,10 @@
             $("#basic-stats-message").text(basic_stats_message(data));
         });
 
+
+        $("#ratings").addClass("loading");
         $.getJSON("/api/ratings", function(data) {
+            $("#ratings").removeClass("loading");
             var chart;
             nv.addGraph(function() {
                 chart = nv.models.multiBarChart()
@@ -61,7 +64,9 @@
           });
         });
 
+        $("#abv-vs-rating").addClass("loading");
         $.getJSON("/api/abv-vs-rating", function(data) {
+          $("#abv-vs-rating").removeClass("loading");
           var chart;
           nv.addGraph(function() {
             chart = nv.models.scatterChart()
@@ -93,7 +98,9 @@
           });
         });
 
+        $("#places").addClass("loading");
         $.getJSON("/api/places", function(data) {
+            $("#places").removeClass("loading");
             var chart;
             nv.addGraph(function() {
               chart = nv.models.multiBarHorizontalChart()
@@ -120,7 +127,9 @@
             });
         });
 
+        $("#consumption-per-month").addClass("loading");
         $.getJSON("/api/per-month", function(data) {
+            $("#consumption-per-month").removeClass("loading");
             var chart;
             nv.addGraph(function() {
                 chart = nv.models.multiBarChart()

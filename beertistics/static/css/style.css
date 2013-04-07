@@ -33,3 +33,7 @@ body {
     display: inline-block;
     width: 220px;
 }
+
+.loading {
+    background: url('/static/img/loading.gif') center center no-repeat;
+}
