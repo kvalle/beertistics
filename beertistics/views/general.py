@@ -15,3 +15,11 @@ def clear_cache():
 @app.route('/photos')
 def photos():
     return flask.render_template('photos.html')
+
+@app.route('/map')
+def map():
+    return flask.render_template('map.html')
+
+@app.route('/test')
+def test():
+    return flask.render_template('test.html')

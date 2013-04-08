@@ -29,6 +29,14 @@ def basic():
         "distinct_avg": "%.3f" % (float(distinct) / days)
     }
 
+def test():
+    return [checkin["venue"] for checkin in untappd.get_checkins() if checkin["venue"]]
+
+def map_checkins():
+    touples = [(c["venue"]["venue_name"], c["venue"]["location"]["lat"], c["venue"]["location"]["lng"])
+                for c in untappd.get_checkins() if c["venue"]]
+    return [{"name": name, "lat": lat, "lng": lng} for name, lat, lng in set(touples)]
+
 def ratings():
     checkins = untappd.get_checkins()
 
@@ -54,6 +62,16 @@ def ratings():
             "values": [{"rating": rating, "n": distinct_counter[rating]} for rating in keys]
         }
     ]
+
+def time_of_day():
+    dates = [datetime.datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT) 
+                for checkin in untappd.get_checkins()]
+    tuples = [(d.weekday(), d.hour) for d in dates]
+    return [{
+        "key": "Time and day",
+        "values": [{"weekday": weekday, "hour": hour, "size": size} 
+                    for (weekday, hour), size in Counter(tuples).most_common()]
+    }]
 
 def abv_vs_rating():
     tuples = [(checkin["rating_score"], checkin["beer"]["beer_abv"]) 

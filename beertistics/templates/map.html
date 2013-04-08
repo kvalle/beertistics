@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+    <li id="user-info">
+      <img src="{{session.user['avatar']}}"/>
+      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+    </li>
+    <li>
+      <a href="{{url_for('logout')}}">Log out</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+  <div id="map_container"></div>
+{% endblock %}
+
+{% block script %}
+  <script type="text/javascript" 
+     src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      var myOptions = {
+        zoom: 2,
+        center: new google.maps.LatLng(0, 0),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
+   
+      $.getJSON("/api/map-checkins", function(data) {
+        $.each(data, function(i, pos) {
+          new google.maps.Marker({
+            position: new google.maps.LatLng(pos.lat, pos.lng), 
+            map: map, 
+            title: pos.name,
+
+          }); 
+        })
+      });
+
+    });
+  </script>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        Build on data provided by <a href="http://untappd.com">Untappd</a>.
+    </div>
+{% endblock %}

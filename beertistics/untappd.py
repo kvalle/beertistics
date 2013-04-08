@@ -1,7 +1,8 @@
 import httplib2
 from json import loads, load
 import datetime
-from beertistics import cache
+from beertistics import app, cache
+import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
