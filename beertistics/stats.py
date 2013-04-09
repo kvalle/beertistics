@@ -37,6 +37,11 @@ def map_checkins():
                 for c in untappd.get_checkins() if c["venue"]]
     return [{"name": name, "lat": lat, "lng": lng} for name, lat, lng in set(touples)]
 
+def map_breweries():
+    touples = [(c["brewery"]["brewery_name"], c["brewery"]["location"]["lat"], c["brewery"]["location"]["lng"])
+                for c in untappd.get_checkins() if c["brewery"]]
+    return [{"name": name, "lat": lat, "lng": lng} for name, lat, lng in set(touples) if lat != 0 or lng != 0]
+
 def ratings():
     checkins = untappd.get_checkins()
 

@@ -28,7 +28,18 @@
       };
       var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
    
-      $.getJSON("/api/map-checkins", function(data) {
+      //$.getJSON("/api/map/checkins", function(data) {
+//      //  $.each(data, function(i, pos) {
+//      //    new google.maps.Marker({
+//      //      position: new google.maps.LatLng(pos.lat, pos.lng), 
+//      //      map: map, 
+//      //      title: pos.name,
+//
+      //    }); 
+      //  })
+      //});
+
+      $.getJSON("/api/map/breweries", function(data) {
         $.each(data, function(i, pos) {
           new google.maps.Marker({
             position: new google.maps.LatLng(pos.lat, pos.lng), 

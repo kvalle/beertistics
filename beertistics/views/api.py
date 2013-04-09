@@ -17,10 +17,15 @@ def as_json_response(data):
 def api_test():
     return as_json_response(stats.test())
 
-@app.route('/api/map-checkins')
+@app.route('/api/map/checkins')
 @auth.requires_auth
 def map_checkins():
     return as_json_response(stats.map_checkins())
+
+@app.route('/api/map/breweries')
+@auth.requires_auth
+def map_breweries():
+    return as_json_response(stats.map_breweries())
 
 @app.route('/api/ratings')
 @auth.requires_auth
