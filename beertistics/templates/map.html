@@ -20,36 +20,55 @@
 
   <script type="text/javascript">
 
-    $(document).ready(function() {
-      var myOptions = {
-        zoom: 2,
-        center: new google.maps.LatLng(0, 0),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
-   
-      //$.getJSON("/api/map/checkins", function(data) {
-//      //  $.each(data, function(i, pos) {
-//      //    new google.maps.Marker({
-//      //      position: new google.maps.LatLng(pos.lat, pos.lng), 
-//      //      map: map, 
-//      //      title: pos.name,
-//
-      //    }); 
-      //  })
-      //});
+    var map;
+    var infowindow = null;
 
-      $.getJSON("/api/map/breweries", function(data) {
+    function addMarkers(data, color) {   
         $.each(data, function(i, pos) {
-          new google.maps.Marker({
-            position: new google.maps.LatLng(pos.lat, pos.lng), 
-            map: map, 
-            title: pos.name,
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(pos.lat, pos.lng), 
+                map: map, 
+                title: pos.name,
+                icon: "/static/img/dots/" + color + ".png"
+            });
 
-          }); 
+            google.maps.event.addListener(marker, 'click', function () {
+                if (infowindow) {
+                    infowindow.close();
+                }
+                infowindow = new google.maps.InfoWindow();
+                infowindow.setContent('<strong>'+pos.name+'</strong><br/>' + pos.description);
+                infowindow.open(map, marker);
+            });
+
         })
-      });
+    }
 
+    function initializeMap() {
+        var mapOptions = {
+            zoom: 2,
+            center: new google.maps.LatLng(0, 0),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById("map_container"),mapOptions);
+    }
+
+    $(document).ready(function() {
+        initializeMap();
+     
+        $.getJSON("/api/map/checkins", function(data) {
+            addMarkers(data, "red");
+        });
+
+        $.getJSON("/api/map/breweries", function(data) {
+            addMarkers(data, "yellow")
+        });
+
+        google.maps.event.addListener(map, 'click', function () {
+            if (infowindow) {
+                infowindow.close();
+            }
+        });
     });
   </script>
 {% endblock %}

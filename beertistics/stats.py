@@ -30,17 +30,20 @@ def basic():
     }
 
 def test():
-    return [checkin["venue"] for checkin in untappd.get_checkins() if checkin["venue"]]
+    beers = [(c["beer"]["beer_name"], c["brewery"]["brewery_name"], c["beer"]["beer_style"])
+                for c in untappd.get_checkins() 
+                if c["rating_score"] == 5]
+    return ["%s, %s (%s)" % beer for beer in beers]
 
 def map_checkins():
     touples = [(c["venue"]["venue_name"], c["venue"]["location"]["lat"], c["venue"]["location"]["lng"])
                 for c in untappd.get_checkins() if c["venue"]]
-    return [{"name": name, "lat": lat, "lng": lng} for name, lat, lng in set(touples)]
+    return [{"name": name, "lat": lat, "lng": lng, "description": "TODO: description of bar, pub, whatever"} for name, lat, lng in set(touples)]
 
 def map_breweries():
     touples = [(c["brewery"]["brewery_name"], c["brewery"]["location"]["lat"], c["brewery"]["location"]["lng"])
                 for c in untappd.get_checkins() if c["brewery"]]
-    return [{"name": name, "lat": lat, "lng": lng} for name, lat, lng in set(touples) if lat != 0 or lng != 0]
+    return [{"name": name, "lat": lat, "lng": lng, "description": "TODO: description of brewery."} for name, lat, lng in set(touples) if lat != 0 or lng != 0]
 
 def ratings():
     checkins = untappd.get_checkins()
