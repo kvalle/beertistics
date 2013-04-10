@@ -15,3 +15,7 @@ def photos():
 @app.route('/map')
 def map():
     return flask.render_template('map.html')
+
+@app.route('/about')
+def about():
+    return flask.render_template('about.html')

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block navbar %}
+    <li id="user-info">
+      <img src="{{session.user['avatar']}}"/>
+      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+    </li>
+    <li>
+      <a href="{{url_for('logout')}}">Log out</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+  <h1>About Beertistics</h1>
+  <p>TODO: write something profound here.</p>
+  <ul>
+    <li>Based on data from the amazing <a href="https://untappd.com/api/docs">Untappd API</a></li>
+    <li>Graphs using <a href="http://nvd3.org/">NVD3</a></li>
+    <li>Maps using <a href="https://developers.google.com/maps/">Google Maps API v3</a></li>
+    <li>Fonts from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+    <li>Built with <a href="http://flask.pocoo.org/">Flask</a> and love</li>
+  </ul>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        <a href="/about">About Beertistics</a>. |
+        Built on data provided by <a href="http://untappd.com">Untappd</a>.
+    </div>
+{% endblock %}
