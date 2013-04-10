@@ -5,6 +5,7 @@ from beertistics import auth, cache, untappd
 import flask
 from collections import Counter, defaultdict
 from beertistics import app
+from util import ensure_http_prefix
 
 def basic():
     def days_since(date_str):
@@ -37,16 +38,23 @@ def countries():
     return Counter(countries).most_common()
 
 def map_checkins():
-    touples = [(c["venue"]["venue_name"], c["venue"]["location"]["lat"], c["venue"]["location"]["lng"])
-                for c in untappd.get_checkins() if c["venue"]]
-    return [{"name": name, "lat": lat, "lng": lng, "description": "TODO: description of bar, pub, whatever"} for name, lat, lng in set(touples)]
+    checkins = filter(lambda c: c["venue"], untappd.get_checkins())
+    venues = dict((c["venue"]["venue_id"], { "name": c["venue"]["venue_name"],
+                                                    "lat": c["venue"]["location"]["lat"], 
+                                                    "lng": c["venue"]["location"]["lng"],
+                                                    "url": ensure_http_prefix(c["venue"]["contact"]["venue_url"]),
+                                                    "label": c["venue"]["venue_icon"]["sm"],
+                                                    "beers_desc": "Beers drunk here:",
+                                                    "beers": []})
+                    for c in checkins)
+    for c in checkins:
+        beer = "%s by %s" % (c["beer"]["beer_name"], c["brewery"]["brewery_name"])
+        venues[c["venue"]["venue_id"]]["beers"].append(beer)
+    for bid in venues:
+        venues[bid]["beers"] = list(set(venues[bid]["beers"]))
+    return venues.values()
 
 def map_breweries():
-    def ensure_http(url):
-        if url and url[:7] != ("http://"):
-            return "http://%s" % url
-        else:
-            return url
     checkins = filter(lambda c: c["brewery"] 
                             and c["brewery"]["location"]["lat"] 
                             and c["brewery"]["location"]["lng"],
@@ -54,8 +62,9 @@ def map_breweries():
     breweries = dict((c["brewery"]["brewery_id"], { "name": c["brewery"]["brewery_name"],
                                                     "lat": c["brewery"]["location"]["lat"], 
                                                     "lng": c["brewery"]["location"]["lng"],
-                                                    "url": ensure_http(c["brewery"]["contact"]["url"]),
+                                                    "url": ensure_http_prefix(c["brewery"]["contact"]["url"]),
                                                     "label": c["brewery"]["brewery_label"],
+                                                    "beers_desc": "You\'ve tasted:",
                                                     "beers": []})
                     for c in checkins)
     for c in checkins:
