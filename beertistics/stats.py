@@ -55,6 +55,7 @@ def map_breweries():
                                                     "lat": c["brewery"]["location"]["lat"], 
                                                     "lng": c["brewery"]["location"]["lng"],
                                                     "url": ensure_http(c["brewery"]["contact"]["url"]),
+                                                    "label": c["brewery"]["brewery_label"],
                                                     "beers": []})
                     for c in checkins)
     for c in checkins:

@@ -53,3 +53,8 @@ body {
        http://stackoverflow.com/questions/9663375/google-map-infowindow-not-showing-properly */
     max-width: none; 
 }
+
+.info-marker .text, .info-marker img {
+    float: left;
+    padding: 3px;
+}
