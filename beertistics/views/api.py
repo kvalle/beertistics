@@ -17,6 +17,11 @@ def as_json_response(data):
 def api_test():
     return as_json_response(stats.test())
 
+@app.route('/api/countries')
+@auth.requires_auth
+def countries():
+    return as_json_response(stats.countries())
+
 @app.route('/api/map/checkins')
 @auth.requires_auth
 def map_checkins():

@@ -37,7 +37,18 @@
                     infowindow.close();
                 }
                 infowindow = new google.maps.InfoWindow();
-                infowindow.setContent('<strong>'+pos.name+'</strong><br/>' + pos.description);
+                var info = '<strong>'+pos.name+'</strong><br/>';
+                if (pos.url) {
+                    info += '<a href="'+pos.url+'">'+pos.url+'</a><br/>'
+                }
+                if (pos.beers) {
+                    info += '<br/><em>You\'ve tasted:</em><ul/>'
+                    for (i=0; i<pos.beers.length; i++) {
+                        info += '<li>' + pos.beers[i] + '</li>'
+                    }
+                    info += '</ul>'
+                }
+                infowindow.setContent(info);
                 infowindow.open(map, marker);
             });
 

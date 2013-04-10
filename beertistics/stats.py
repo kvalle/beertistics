@@ -3,7 +3,7 @@ from json import loads, load
 import datetime
 from beertistics import auth, cache, untappd
 import flask
-from collections import Counter
+from collections import Counter, defaultdict
 from beertistics import app
 
 def basic():
@@ -30,10 +30,11 @@ def basic():
     }
 
 def test():
-    beers = [(c["beer"]["beer_name"], c["brewery"]["brewery_name"], c["beer"]["beer_style"])
-                for c in untappd.get_checkins() 
-                if c["rating_score"] == 5]
-    return ["%s, %s (%s)" % beer for beer in beers]
+    return untappd.get_checkins()
+
+def countries():
+    countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
+    return Counter(countries).most_common()
 
 def map_checkins():
     touples = [(c["venue"]["venue_name"], c["venue"]["location"]["lat"], c["venue"]["location"]["lng"])
@@ -41,9 +42,26 @@ def map_checkins():
     return [{"name": name, "lat": lat, "lng": lng, "description": "TODO: description of bar, pub, whatever"} for name, lat, lng in set(touples)]
 
 def map_breweries():
-    touples = [(c["brewery"]["brewery_name"], c["brewery"]["location"]["lat"], c["brewery"]["location"]["lng"])
-                for c in untappd.get_checkins() if c["brewery"]]
-    return [{"name": name, "lat": lat, "lng": lng, "description": "TODO: description of brewery."} for name, lat, lng in set(touples) if lat != 0 or lng != 0]
+    def ensure_http(url):
+        if url and url[:7] != ("http://"):
+            return "http://%s" % url
+        else:
+            return url
+    checkins = filter(lambda c: c["brewery"] 
+                            and c["brewery"]["location"]["lat"] 
+                            and c["brewery"]["location"]["lng"],
+                        untappd.get_checkins())
+    breweries = dict((c["brewery"]["brewery_id"], { "name": c["brewery"]["brewery_name"],
+                                                    "lat": c["brewery"]["location"]["lat"], 
+                                                    "lng": c["brewery"]["location"]["lng"],
+                                                    "url": ensure_http(c["brewery"]["contact"]["url"]),
+                                                    "beers": []})
+                    for c in checkins)
+    for c in checkins:
+        breweries[c["brewery"]["brewery_id"]]["beers"].append(c["beer"]["beer_name"])
+    for bid in breweries:
+        breweries[bid]["beers"] = list(set(breweries[bid]["beers"]))
+    return breweries.values()
 
 def ratings():
     checkins = untappd.get_checkins()
