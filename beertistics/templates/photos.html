@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% block title %}Photos{% endblock %}
+
 {% block navbar %}
     <li id="user-info">
       <img src="{{session.user['avatar']}}"/>
@@ -28,6 +30,6 @@
 
 {% block footer %}
     <div class="footer">
-        Build on data provided by <a href="http://untappd.com">Untappd</a>.
+        Built on data provided by <a href="http://untappd.com">Untappd</a>.
     </div>
 {% endblock %}

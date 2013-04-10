@@ -8,10 +8,6 @@ def index():
     else:
         return flask.render_template('login.html')
 
-@app.route('/clear')
-def clear_cache():
-    return flask.redirect("/")
-
 @app.route('/photos')
 def photos():
     return flask.render_template('photos.html')
@@ -19,7 +15,3 @@ def photos():
 @app.route('/map')
 def map():
     return flask.render_template('map.html')
-
-@app.route('/test')
-def test():
-    return flask.render_template('test.html')
