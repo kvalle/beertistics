@@ -126,7 +126,7 @@ def places():
     return [ 
       {
         "key": 'Number of checkins',
-        "values": [{"label": venue, "value": n} for venue, n in Counter(venues).most_common(20)]
+        "values": [{"label": venue, "value": n} for venue, n in Counter(venues).most_common()]
       }
     ]
 

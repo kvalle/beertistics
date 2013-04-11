@@ -141,11 +141,14 @@
         $("#places").addClass("loading");
         $.getJSON("/api/places", function(data) {
             $("#places").removeClass("loading");
+            var chartHeight = data[0].values.length * 25;
+            $("#places svg").css("height", chartHeight);
             var chart;
             nv.addGraph(function() {
               chart = nv.models.multiBarHorizontalChart()
                   .x(function(d) { return d.label })
                   .y(function(d) { return d.value })
+                  .height(chartHeight)
                   .margin({top: 30, right: 20, bottom: 50, left: 175})
                   .barColor(d3.scale.category20().range())
                   .showControls(false)
