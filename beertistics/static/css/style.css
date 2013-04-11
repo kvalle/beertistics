@@ -23,27 +23,39 @@ svg {
 /*------------------ special pages */
 
 .center-box {
+    background-color: #666;
     padding: 15px;
-    border-width: 2px 0;
+    border-width: 3px 0;
     border-style: solid;
-    border-color: gray;
+    border-color: #444;
     margin: 0 auto;
     text-align: center;
 }
 
 .center-box h1 { 
+    color: #222;
     padding-bottom: 15px;
     font-size: 5em; 
 }
 .center-box h2 { 
+    color: #999;
     padding: 5px;
     font-size: 1.8em; 
+    padding-bottom: 10px;
 }
 .center-box p {
+    color: #111;
     line-height: 1.2em;
     max-width: 500px;
     margin: 0 auto;
     font-size: 1.5em; 
+}
+.center-box a {
+    color: #ccc;
+    font-weight: bold;
+}
+.center-box p.gray {
+    color: #999;
 }
 .center-box p + p {
     padding-top: 1.4em; 
