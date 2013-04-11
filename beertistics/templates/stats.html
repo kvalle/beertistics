@@ -1,18 +1,8 @@
-{% extends "layout.html" %}
+{% extends "page.html" %}
 
 {% block title %}Stats{% endblock %}
 
-{% block navbar %}
-    <li id="user-info">
-      <img src="{{session.user['avatar']}}"/>
-      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
-    </li>
-    <li>
-      <a href="{{url_for('logout')}}">Log out</a>
-    </li>
-{% endblock %}
-
-{% block content %}
+{% block page_content %}
   <p><em id="basic-stats-message"></em></p>
 
   <h1>Punchcard</h1>
@@ -195,13 +185,5 @@
 
     });
 
-
   </script>
-{% endblock %}
-
-{% block footer %}
-    <div class="footer">
-        <a href="/about">About Beertistics</a>. |
-        Built on data provided by <a href="http://untappd.com">Untappd</a>.
-    </div>
 {% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Page{% endblock %}
+
+{% block content %}
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="{{url_for('index')}}">Beertistics</a>
+        <div style="height: 0px;" class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="/">stats</a></li>
+            <li><a href="/photos">photos</a></li>
+            <li><a href="/map">map</a></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li id="user-info">
+              <img src="{{session.user['avatar']}}"/>
+              <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+            </li>
+            <li>
+              <a href="{{url_for('logout')}}">Log out</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-->
+    </div><!--/.navbar-inner-->
+  </div><!--/.navbar-->
+  <div class="container">
+
+    <div class="row">
+      <div class="span12">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{category}}">
+                <a class="close" data-dismiss="alert" href="#">×</a>
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+
+    {% block page_content %}{% endblock %}
+
+    <div class="footer">
+      <a href="/about">About Beertistics</a>. |
+      Built on data provided by <a href="http://untappd.com">Untappd</a>.
+    </div>
+    
+  </div>
+{% endblock %}
+

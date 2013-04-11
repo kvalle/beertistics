@@ -1,36 +1,17 @@
-{% extends "layout.html" %}
+{% extends "page.html" %}
 
 {% block title %}Photos{% endblock %}
 
-{% block navbar %}
-    <li id="user-info">
-      <img src="{{session.user['avatar']}}"/>
-      <a href="{{session.user['url']}}">{{session.user['name']}}</a>
-    </li>
-    <li>
-      <a href="{{url_for('logout')}}">Log out</a>
-    </li>
-{% endblock %}
-
-{% block content %}
+{% block page_content %}
   <section id="beer-photos"></section>
 {% endblock %}
 
 {% block script %}
   <script>
     $(document).ready(function() {
-
         $.getJSON("/api/photos", function(data) {
             $("#beer-photos").append(make_photo_list(data));
         });
-
     });
   </script>
-{% endblock %}
-
-{% block footer %}
-    <div class="footer">
-        <a href="/about">About Beertistics</a>. |
-        Built on data provided by <a href="http://untappd.com">Untappd</a>.
-    </div>
 {% endblock %}
