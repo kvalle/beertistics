@@ -11,17 +11,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="{{url_for('index')}}">Beertistics</a>
+        <a class="brand" href="{{url_for('index')}}"><i class="icon-beer"></i> Beertistics</a>
         <div style="height: 0px;" class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="/">stats</a></li>
-            <li><a href="/photos">photos</a></li>
-            <li><a href="/map">map</a></li>
+            <li><a href="/"><i class="icon-bar-chart"></i> stats</a></li>
+            <li><a href="/photos"><i class="icon-camera"></i> photos</a></li>
+            <li><a href="/map"><i class="icon-globe"></i> map</a></li>
           </ul>
           <ul class="nav pull-right">
             <li id="user-info">
               <img src="{{session.user['avatar']}}"/>
-              <a href="{{session.user['url']}}">{{session.user['name']}}</a>
+              <a href="{{session.user['url']}}"><i class="icon-user"></i> {{session.user['name']}}</a>
             </li>
             <li>
               <a href="{{url_for('logout')}}">Log out</a>
@@ -54,7 +54,7 @@
       <a href="/about">About Beertistics</a>. |
       Built on data provided by <a href="http://untappd.com">Untappd</a>.
     </div>
-    
+
   </div>
 {% endblock %}
 
