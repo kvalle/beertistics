@@ -27,7 +27,7 @@ def get_checkins():
     checkins = json["response"]["checkins"]["items"]
     next = json["response"]["pagination"]["next_url"]
     while next:
-        next += url_params()
+        next += "&" + url_params()
         print next
         json = get(next)
         checkins += json["response"]["checkins"]["items"]
