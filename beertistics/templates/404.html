@@ -1,10 +1,19 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
 {% block title %}404{% endblock %}
-{% block content %}
-  <div class="page-header">
-    <h1>Page not found</h1>
-  </div>
-  <p>Oh shit, I just 404'd! Sorry about that. :(</p>
-{% endblock %}
 
+{% block content %}
+  <div class="center-box">
+    <h2 class="gray">Oh shit, 404</h2>
+    <h1>Page not found</h1>
+    <p></p>
+    <p class="gray">
+        Sorry, the page you are looking for kinda isn't here. 
+        It's probably somewhere else, or maybe it dosn't exist. 
+        Sometimes it's hard to tell. 
+    </p>
+    <p>
+        A good place to start looking might be <a href="/">the frontpage</a>.
+    </p>
+  </div>
+{% endblock %}
