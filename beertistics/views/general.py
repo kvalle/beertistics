@@ -9,13 +9,16 @@ def index():
         return flask.render_template('login.html')
 
 @app.route('/photos')
+@auth.requires_auth
 def photos():
     return flask.render_template('photos.html')
 
 @app.route('/map')
+@auth.requires_auth
 def map():
     return flask.render_template('map.html')
 
 @app.route('/about')
+@auth.requires_auth
 def about():
     return flask.render_template('about.html')
