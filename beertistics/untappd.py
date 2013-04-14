@@ -6,30 +6,32 @@ import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
-def url_params():
-    return "client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
-            "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
-            "&access_token=" + flask.session.get('untappd_token', None)
-
-def get(url):
-    print "FETCHING DATA FROM UNTAPPD:\n" + url
-    _, content = httplib2.Http().request(url)
-    return loads(content)
+##
+## Public functions
+##
 
 @cache.cached("user_info")
-def get_user_info():
-    return get("http://api.untappd.com/v4/user/info?" + url_params())
+def get_user_info(user=None):
+    url = "http://api.untappd.com/v4/user/info"
+    if user:
+        url += "/%s" % user
+    url += "?%s" % _url_params()
+    return _get(url)
 
 @cache.cached("checkins")
-def get_checkins():
-    json = get("http://api.untappd.com/v4/user/checkins?" + url_params())
+def get_checkins(user=None):
+    url = "http://api.untappd.com/v4/user/checkins"
+    if user:
+        url += "/%s" % user
+    url += "?%s" % _url_params()
+    json = _get(url)
 
     checkins = json["response"]["checkins"]["items"]
     next = json["response"]["pagination"]["next_url"]
     while next:
-        next += "&" + url_params()
+        next += "&" + _url_params()
         print next
-        json = get(next)
+        json = _get(next)
         checkins += json["response"]["checkins"]["items"]
         next = json["response"]["pagination"]["next_url"]
 
@@ -38,14 +40,6 @@ def get_checkins():
 def get_checkins_stub():
     with open("beertistics/test.json") as f:
         return load(f)
-
-
-def _build_url(base):
-    return "http://untappd.com/oauth/" + base +"/" + \
-        "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
-        "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
-        "&redirect_url=" + flask.url_for('authentication', _external=True) + \
-        "&response_type=code"
 
 def authenticate_url():
     return _build_url('authenticate')
@@ -60,16 +54,23 @@ def authorize(code):
 
     return json['response']['access_token']
 
-def logged_in_user_info():
-    url = "http://api.untappd.com/v4/user/info?" + url_params()
-    print "FETCHING " + url
-    resp, content = httplib2.Http().request(url)
-    json = loads(content)
+##
+## Helper functions for making calls to Untappd
+##
 
-    user = json['response']['user']
-    return {
-        'name': "%s %s" % (user['first_name'], user['last_name']),
-        'username': user['user_name'],
-        'avatar': user['user_avatar'],
-        'url': user['untappd_url']
-    }
+def _url_params():
+    return "client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
+            "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
+            "&access_token=" + flask.session.get('untappd_token', None)
+
+def _get(url):
+    print "FETCHING DATA FROM UNTAPPD:\n" + url
+    _, content = httplib2.Http().request(url)
+    return loads(content)
+
+def _build_url(base):
+    return "http://untappd.com/oauth/" + base +"/" + \
+        "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
+        "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
+        "&redirect_url=" + flask.url_for('authentication', _external=True) + \
+        "&response_type=code"

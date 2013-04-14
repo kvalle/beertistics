@@ -1,7 +1,7 @@
 import flask
 from json import dumps
 
-from beertistics import app, auth, stats
+from beertistics import app, auth, stats, untappd
 
 def as_json_response(data):
     try:
@@ -12,10 +12,10 @@ def as_json_response(data):
         err = "TODO: put an appropriate error message here. also, make sure 500s are handled correctly in client."
         return flask.Response(err, 500, {'content-type': 'text/plain'})
 
-@app.route('/api/test')
+@app.route('/api/test/<string:user>')
 @auth.requires_auth
-def api_test():
-    return as_json_response(stats.test())
+def api_test(user):
+    return as_json_response(untappd.get_user_info(user))
 
 @app.route('/api/countries')
 @auth.requires_auth

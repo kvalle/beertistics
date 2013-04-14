@@ -7,7 +7,15 @@ def authorize(code):
     
     flask.session['untappd_token'] = token
     flask.session['logged_in'] = True
-    flask.session['user'] = untappd.logged_in_user_info()
+
+    info = untappd.get_user_info()
+    user = info['response']['user']
+    flask.session['user'] = {
+        'name': "%s %s" % (user['first_name'], user['last_name']),
+        'username': user['user_name'],
+        'avatar': user['user_avatar'],
+        'url': user['untappd_url']
+    }
     return True
 
 def get_token():
