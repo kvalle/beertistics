@@ -3,11 +3,30 @@
 {% block title %}Log in{% endblock %}
 
 {% block content %}
-  <div class="center-box">
-    <h2 class="gray">Welcome to</h2>
-    <h1>Beertistics</h1>
-    <p class="gray">Beer. Statistics. Graphs.</p>
-    <p>You need to <a href="{{url_for('login')}}">log in</a> using your Untappd account.</p>
-    <p class="gray"><em>Although based on data provided by them, Beertistics is in no way affiliated with Untappd.</em></p>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{category}}">
+                                <a class="close" data-dismiss="alert" href="#">×</a>
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span12 center-box">
+                <h2 class="gray">Welcome to</h2>
+                <h1>Beertistics</h1>
+                <p class="gray">Beer. Statistics. Graphs.</p>
+                <p>You need to <a href="{{url_for('login')}}">log in</a> using your Untappd account.</p>
+                <p class="gray"><em>Although based on data provided by them, Beertistics is in no way affiliated with Untappd.</em></p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

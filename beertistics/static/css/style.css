@@ -18,18 +18,23 @@ svg {
     color: gray;
 }
 
-.container { height: 100%; }
+.page { 
+    height: 100%; 
+}
 
-/*------------------ special pages */
+/*------------------ login / 404 layouts */
 
 .center-box {
     background-color: #666;
     padding: 15px;
-    border-width: 3px 0;
+    border-width: 3px;
     border-style: solid;
-    border-color: #444;
+    border-color: #555;
     margin: 0 auto;
     text-align: center;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
 }
 
 .center-box h1 { 
