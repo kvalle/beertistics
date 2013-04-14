@@ -21,3 +21,5 @@ info "RESTARTING"
 scp -r beertistics.wsgi ${server}":"${target}/
 ssh ${server} "cd ${target} && unlink beertistics && ln -s ${version_name} beertistics"
 ssh -t ${server} "sudo service apache2 reload"
+
+info "FINISHED"
