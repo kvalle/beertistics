@@ -18,5 +18,8 @@ def authenticate_url():
     return flask.url_for("authentication") + "?code=stub"
 
 def authorize(code):
-    return "stub-token"
+    if code == "stub":
+        return "stub-token"
+    else:
+        return False
 

@@ -4,6 +4,9 @@ from beertistics import untappd
 
 def authorize(code):
     token = untappd.authorize(code)
+
+    if not token:
+        return False
     
     flask.session['untappd_token'] = token
     flask.session['logged_in'] = True
