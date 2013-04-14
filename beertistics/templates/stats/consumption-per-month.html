@@ -23,6 +23,8 @@
                 chart.xAxis.showMaxMin(false);
                 chart.yAxis.tickFormat(d3.format(',.0f'));
 
+                chart.stacked(true);
+
                 d3.select('#consumption-per-month svg')
                           .datum(data)
                     .transition().duration(500).call(chart);
