@@ -24,12 +24,14 @@ def get_checkins(user=None):
     if user:
         url += "/%s" % user
     url += "?%s" % _url_params()
+    url += "&limit=100"
     json = _get(url)
 
     checkins = json["response"]["checkins"]["items"]
     next = json["response"]["pagination"]["next_url"]
     while next:
         next += "&" + _url_params()
+        next += "&limit=100"
         print next
         json = _get(next)
         checkins += json["response"]["checkins"]["items"]
