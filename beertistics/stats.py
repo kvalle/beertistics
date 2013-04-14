@@ -73,7 +73,7 @@ def map_breweries():
         breweries[bid]["beers"] = list(set(breweries[bid]["beers"]))
     return breweries.values()
 
-def ratings():
+def rating_distribution():
     checkins = untappd.get_checkins()
 
     all_ratings = [checkin["rating_score"] for checkin in checkins if checkin["rating_score"]]
@@ -109,17 +109,17 @@ def time_of_day():
                     for (weekday, hour), size in Counter(tuples).most_common()]
     }]
 
-def abv_vs_rating():
+def rating_vs_abv():
     tuples = [(checkin["rating_score"], checkin["beer"]["beer_abv"]) 
                 for checkin in untappd.get_checkins() 
                 if checkin["rating_score"] and checkin["beer"]["beer_abv"]]
     return [{
-        "key": "ABV vs rating",
+        "key": "Rating vs ABV",
         "values": [{"abv": abv, "rating": rating, "size": size} 
                     for (rating, abv), size in Counter(tuples).most_common()]
     }]
 
-def places():
+def checkin_locations():
     venues = [checkin["venue"]["venue_name"] 
                 for checkin in untappd.get_checkins() 
                 if checkin["venue"]]

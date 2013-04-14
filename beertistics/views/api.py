@@ -32,10 +32,10 @@ def map_checkins():
 def map_breweries():
     return as_json_response(stats.map_breweries())
 
-@app.route('/api/ratings')
+@app.route('/api/rating-distribution')
 @auth.requires_auth
-def ratings():
-    return as_json_response(stats.ratings())
+def rating_distribution():
+    return as_json_response(stats.rating_distribution())
 
 @app.route('/api/photos')
 @auth.requires_auth
@@ -47,15 +47,15 @@ def stats_photos():
 def time_of_day():
     return as_json_response(stats.time_of_day())
 
-@app.route('/api/abv-vs-rating')
+@app.route('/api/rating-vs-abv')
 @auth.requires_auth
-def abv_vs_rating():
-    return as_json_response(stats.abv_vs_rating())
+def rating_vs_abv():
+    return as_json_response(stats.rating_vs_abv())
 
-@app.route('/api/places')
+@app.route('/api/checkin-locations')
 @auth.requires_auth
-def places():
-    return as_json_response(stats.places())
+def checkin_locations():
+    return as_json_response(stats.checkin_locations())
 
 @app.route('/api/basic')
 @auth.requires_auth

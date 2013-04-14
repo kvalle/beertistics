@@ -4,7 +4,7 @@ from beertistics import app, auth
 @app.route('/')
 def index():
     if auth.is_logged_in():
-        return flask.render_template('stats.html')
+        return flask.redirect(flask.url_for("stats_overview"))
     else:
         return flask.render_template('login.html')
 

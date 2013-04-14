@@ -8,6 +8,4 @@ app.config.from_object(config)
 def page_not_found(e):
     return render_template('404.html'), 404
 
-from beertistics.views import general
-from beertistics.views import login
-from beertistics.views import api
+import beertistics.views

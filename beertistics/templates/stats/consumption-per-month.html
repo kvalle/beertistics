@@ -1,0 +1,40 @@
+{% extends "page.html" %}
+
+{% block title %}Consumption per month{% endblock %}
+
+{% block page_content %}
+  <h1>Consumption per month</h1>
+  <div id="consumption-per-month"><svg></svg></div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $("#consumption-per-month").addClass("loading");
+        $.getJSON("/api/per-month", function(data) {
+            $("#consumption-per-month").removeClass("loading");
+            var chart;
+            nv.addGraph(function() {
+                chart = nv.models.multiBarChart()
+                            .barColor(d3.scale.category20().range());
+                chart.y(function(d) { return d.beers });
+                chart.x(function(d) { return d.month });
+                chart.xAxis.showMaxMin(false);
+                chart.yAxis.tickFormat(d3.format(',.0f'));
+
+                d3.select('#consumption-per-month svg')
+                          .datum(data)
+                    .transition().duration(500).call(chart);
+
+                nv.utils.windowResize(chart.update);
+                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+              return chart;
+          });
+        });
+
+    });
+
+  </script>
+{% endblock %}

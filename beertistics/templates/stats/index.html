@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+
+{% block title %}Stats{% endblock %}
+
+{% block page_content %}
+  <p><em id="basic-stats-message"></em></p>
+
+  <p>List of graphs here</p>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $.getJSON("/api/basic", function(data) {
+            $("#basic-stats-message").text(basic_stats_message(data));
+        });
+
+    });
+
+  </script>
+{% endblock %}

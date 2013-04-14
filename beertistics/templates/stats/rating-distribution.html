@@ -1,0 +1,46 @@
+{% extends "page.html" %}
+
+{% block title %}Rating distribution{% endblock %}
+
+{% block page_content %}
+  <h1>Rating distribution</h1>
+  <div id="ratings"><svg></svg></div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $("#ratings").addClass("loading");
+        $.getJSON("/api/rating-distribution", function(data) {
+            $("#ratings").removeClass("loading");
+            var chart;
+            nv.addGraph(function() {
+                chart = nv.models.multiBarChart()
+                            .showControls(false)
+                            .barColor(d3.scale.category20().range());
+                chart.y(function(d) { return d.n });
+                chart.x(function(d) { return d.rating });
+                chart.xAxis.showMaxMin(false);
+                chart.yAxis.tickFormat(d3.format(',.0f'));
+                
+                chart.xAxis.axisLabel('Rating');
+                chart.yAxis.axisLabel('Beers');
+
+                chart.margin({bottom: 40, left: 80});
+
+                d3.select('#ratings svg')
+                          .datum(data)
+                    .transition().duration(500).call(chart);
+
+                nv.utils.windowResize(chart.update);
+                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+              return chart;
+          });
+        });
+
+    });
+
+  </script>
+{% endblock %}

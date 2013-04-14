@@ -1,0 +1,52 @@
+{% extends "page.html" %}
+
+{% block title %}Rating vs ABV{% endblock %}
+
+{% block page_content %}
+  <h1>Rating vs ABV</h1>
+  <div id="rating-vs-abv"><svg></svg></div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        $("#rating-vs-abv").addClass("loading");
+        $.getJSON("/api/rating-vs-abv", function(data) {
+          $("#rating-vs-abv").removeClass("loading");
+          var chart;
+          nv.addGraph(function() {
+            chart = nv.models.scatterChart()
+                          .showDistX(true)
+                          .showDistY(true)
+                          //.height(500)
+                          .x(function(d) { return d.abv })
+                          .y(function(d) { return d.rating })
+                          .useVoronoi(true)
+                          .showLegend(false)
+                          .color(d3.scale.category10().range());
+
+            chart.xAxis.axisLabel('Alcohol by volume (ABV)')
+            chart.yAxis.axisLabel('Rating')
+
+            chart.xAxis.tickFormat(d3.format('.01f'))
+            chart.yAxis.tickFormat(d3.format('.01f'))
+
+            d3.select('#rating-vs-abv svg')
+                .datum(data)
+              .transition().duration(500)
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+            return chart;
+          });
+        });
+
+
+    });
+
+  </script>
+{% endblock %}

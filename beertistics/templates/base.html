@@ -5,17 +5,19 @@
   <meta charset="utf-8">
   <title>{% block title %}{% endblock %} ~ Beertistics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link href="/static/css/nv.d3.css" type="text/css" rel="stylesheet">  
   <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
-  <link href="/static/css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
 
+  <!-- must be included between after base bootstrap css and before responsive bootstrap css-->
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet">
+
+  <link href="/static/css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/font-awesome.css">
   <!--[if IE 7]>
   <link rel="stylesheet" href="/static/css/font-awesome-ie7.min.css">
   <![endif]-->
 
-  <link href="/static/css/style.css" type="text/css" rel="stylesheet">
   
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
