@@ -7,10 +7,37 @@
 {% endblock %}
 
 {% block script %}
+    <script type="text/javascript" src="/static/js/underscore.js"></script>
+    <script type="text/template" class="template">
+        <ul class="clearfix">
+        <% _.each(rc, function( item ){ %>
+            <li><a href="<%- item.photo_original %>">
+                <div class="photo-description">
+                    <%- item.beer %><br/>
+                    <%- item.brewery %><br/>
+                    <% for (var i=item.rating; i>0; i--){ %>
+                        <% if ( i > 0.9 ){ %>
+                            <i class="icon-star"></i>
+                        <% } else { %>
+                            <i class="icon-star-half"></i>
+                        <% } %>
+                    <% } %>
+                    <br/><br/>
+                    <%- item.comment %>
+                </div>
+                <img class="photo" src="<%- item.photo %>" alt="<%- item.beer %> by <%- item.brewery %>"/>
+            </a></li>
+        <% }); %>
+        </ul>
+    </script>
+
   <script>
     $(document).ready(function() {
+        _.templateSettings.variable = "rc";
+        var template = _.template($("script.template").html());
+
         $.getJSON("/api/photos", function(data) {
-            $("#beer-photos").append(make_photo_list(data));
+            $("#beer-photos").append(template(data));
         });
     });
   </script>

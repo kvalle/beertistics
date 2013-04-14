@@ -117,9 +117,37 @@ svg {
 }
 
 #beer-photos ul li {
-    display: inline-block;
+    display: block;
+    float: left;
     width: 220px;
+    height: 220px;
+    position: relative;
 }
+
+#beer-photos ul li .photo, #beer-photos ul li .photo-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#beer-photos ul li .photo-description {
+    padding: 10px;
+    z-index: 1;
+    background-color: black;
+    font-style: bold;
+    color: white;
+}
+
+#beer-photos ul li .photo {
+    z-index: 2;
+}
+
+#beer-photos ul li .photo:hover {
+    opacity: 0.2;
+}
+
 
 /*------------------ map */
 
