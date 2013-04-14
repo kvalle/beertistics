@@ -5,18 +5,63 @@
 {% block page_content %}
   <p><em id="basic-stats-message"></em></p>
 
-  <p>List of graphs here</p>
+  <h2>Graph types</h2>
+  <div class="row stats-overview">
+    <div class="span4">
+      <a href="/stats/punchcard">
+        <span class="graph-type">scatter plot</span><br/>
+        <h3>The Punchcard</h3>
+        <p>When do you do your drinking? This scatter plot shows what <em>time of day</em> and <em>day of week</em> you have checked in your brews.</p>
+      </a>
+    </div>
+    <div class="span4">
+      <a href="/stats/rating-distribution">
+        <span class="graph-type">bar chart</span><br/>
+        <h3>Rating distribution</h3>
+        <p>How much do you use the different ratings? Check the distribution in this chart.</p>
+      </a>
+    </div>
+    <div class="span4">
+      <a href="/stats/rating-vs-abv">
+        <span class="graph-type">scatter plot</span><br/>
+        <h3>Rating vs ABV</h3>
+        <p>Is there a correlation between the alcohol content of the beer and how much you like it? Find out here.</p>
+      </a>
+    </div>
+  </div>
+  <div class="row stats-overview">
+    <div class="span4">
+      <a href="/stats/checkin-locations">
+        <span class="graph-type">bar chart</span><br/>
+        <h3>Checkin locations</h3>
+        <p>Where do you drink the most? This chart shows the distribution of checkins in different locations.</p>
+      </a>
+    </div>
+    <div class="span4">
+      <a href="/stats/consumption-per-month">
+        <span class="graph-type">bar chart</span><br/>
+        <h3>Consumption per month</h3>
+        <p>This plot shows how much you drink each month, and how many of those brews are new and exciting (and how many you've tasted before).</p>
+      </a>
+    </div>
+  </div>
 {% endblock %}
 
 {% block script %}
   <script>
-    $(document).ready(function() {
+    function basic_stats_message(data) {
+        return "Hello there, " + data.name + ". " + 
+            "In your "+ data.days +" days using Untappd, you have checked in " +
+            "a total of " + data.total + " beers, " + data.distinct + " of which " + 
+            "are distinct. That averages to "+data.total_avg+" beers per day " + 
+            "(" + data.distinct_avg + " distinct). You have also posted " + data.photos +
+            " photos, earned "+data.badges+" badges, and made "+data.friends+" friends."
+    }
 
+    $(document).ready(function() {
         $.getJSON("/api/basic", function(data) {
             $("#basic-stats-message").text(basic_stats_message(data));
         });
-
     });
-
   </script>
 {% endblock %}
