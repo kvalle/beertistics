@@ -31,6 +31,7 @@ def login():
 def logout():
     cache.clear()
     auth.logout()
+    flask.session.clear()
     flask.flash('You were logged out.', 'success')
     return flask.redirect(flask.url_for('index'))
 
