@@ -8,6 +8,11 @@ def index():
     else:
         return flask.render_template('login.html')
 
+@app.route('/test')
+@auth.requires_auth
+def test():
+    return flask.render_template('test.html')
+
 @app.route('/photos')
 @auth.requires_auth
 def photos():

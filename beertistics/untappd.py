@@ -38,3 +38,24 @@ def get_checkins():
 def get_checkins_stub():
     with open("beertistics/test.json") as f:
         return load(f)
+
+
+def _build_url(base):
+    return "http://untappd.com/oauth/" + base +"/" + \
+        "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
+        "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
+        "&redirect_url=" + flask.url_for('authentication', _external=True) + \
+        "&response_type=code"
+
+def authenticate_url():
+    return _build_url('authenticate')
+
+def authorize(code):
+    url = _build_url('authorize') + "&code=" + code
+    resp, content = httplib2.Http().request(url)
+    json = loads(content)
+
+    if json['meta']['http_code'] != 200:
+        return False
+
+    return json['response']['access_token']

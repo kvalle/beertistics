@@ -1,7 +1,7 @@
 import flask
 from flask import g
 
-from beertistics import app, auth, cache
+from beertistics import app, auth, cache, untappd
 
 @app.route('/auth')
 def authentication():
@@ -22,7 +22,7 @@ def authentication():
 @app.route('/log-in')
 def login():
     if not auth.is_logged_in():
-        return flask.redirect(auth.authenticate_url())
+        return flask.redirect(untappd.authenticate_url())
 
     next_page = flask.session.pop('next_page', flask.url_for('index'))
     return flask.redirect(next_page) 
