@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="graph-icons.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,7 +28,7 @@
      inkscape:cx="452.83001"
      inkscape:cy="640.75289"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:snap-to-guides="false"
      inkscape:snap-midpoints="true"
@@ -55,7 +55,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="background"
-     style="display:inline">
+     style="display:none">
     <rect
        style="fill:#b3b3b3;fill-opacity:1"
        id="rect3909"
@@ -76,7 +76,10 @@
        height="154.37746"
        x="-483.18417"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
     <rect
        style="fill:#000000;fill-opacity:1"
        id="rect3755-6"
@@ -84,7 +87,10 @@
        height="205.89523"
        x="-381.75562"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
     <rect
        style="fill:#000000;fill-opacity:1"
        id="rect3755-6-1"
@@ -92,7 +98,10 @@
        height="244.28104"
        x="-280.32703"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
     <rect
        style="fill:#000000;fill-opacity:1"
        id="rect3755-6-1-2"
@@ -100,14 +109,20 @@
        height="301.85971"
        x="-178.89848"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
     <rect
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect2985"
        width="559.78613"
        height="29.285713"
        x="60.593609"
-       y="500.34335" />
+       y="500.34335"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -115,10 +130,13 @@
        height="90.091743"
        width="81.428574"
        id="rect3911"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-sorted.png"
+       inkscape:export-xdpi="32.022545"
+       inkscape:export-ydpi="32.022545" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      id="g4056"
      inkscape:groupmode="layer"
      inkscape:label="bars uneven">
@@ -129,7 +147,10 @@
        height="154.37746"
        width="81.428574"
        id="rect4058"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -137,7 +158,10 @@
        height="347.32379"
        width="81.428574"
        id="rect4060"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -145,7 +169,10 @@
        height="244.28104"
        width="81.428574"
        id="rect4062"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -153,14 +180,20 @@
        height="159.00258"
        width="81.428574"
        id="rect4064"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <rect
        y="500.34335"
        x="60.593609"
        height="29.285713"
        width="559.78613"
        id="rect4066"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <rect
        style="fill:#000000;fill-opacity:1"
        id="rect4068"
@@ -168,7 +201,10 @@
        height="225.80603"
        x="-583.1842"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-uneven.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
   </g>
   <g
      style="display:none"
@@ -182,7 +218,10 @@
        height="238.44872"
        width="81.428574"
        id="rect3998"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -190,7 +229,10 @@
        height="318.02216"
        width="81.428574"
        id="rect4000"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -198,7 +240,10 @@
        height="218.1653"
        width="81.428574"
        id="rect4002"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        transform="scale(-1,-1)"
        y="-500.34335"
@@ -206,14 +251,20 @@
        height="119.6691"
        width="81.428574"
        id="rect4004"
-       style="fill:#000000;fill-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        y="500.34335"
        x="60.593609"
        height="29.285713"
        width="559.78613"
        id="rect4006"
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        style="fill:#000000;fill-opacity:1"
        id="rect4008"
@@ -221,7 +272,10 @@
        height="139.15413"
        x="-583.1842"
        y="-500.34335"
-       transform="scale(-1,-1)" />
+       transform="scale(-1,-1)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-distribution.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -235,7 +289,10 @@
        height="524.71686"
        width="57.662804"
        id="rect3919"
-       style="fill:#000000;fill-opacity:1;display:inline" />
+       style="fill:#000000;fill-opacity:1;display:inline"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
     <rect
        y="-88.392639"
        x="79.761543"
@@ -243,7 +300,10 @@
        width="449.67563"
        id="rect3921"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.8677817px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
-       transform="matrix(0,1,-1,0,0,0)" />
+       transform="matrix(0,1,-1,0,0,0)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
     <rect
        style="fill:#000000;fill-opacity:1;display:inline"
        id="rect3988"
@@ -251,7 +311,10 @@
        height="382.28534"
        x="-250.34302"
        y="88.392639"
-       transform="matrix(0,-1,1,0,0,0)" />
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
     <rect
        transform="matrix(0,-1,1,0,0,0)"
        y="88.392639"
@@ -259,7 +322,10 @@
        height="187.32591"
        width="57.662804"
        id="rect3990"
-       style="fill:#000000;fill-opacity:1;display:inline" />
+       style="fill:#000000;fill-opacity:1;display:inline"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
     <rect
        style="fill:#000000;fill-opacity:1;display:inline"
        id="rect3992"
@@ -267,7 +333,10 @@
        height="112.57462"
        x="-410.34302"
        y="88.392639"
-       transform="matrix(0,-1,1,0,0,0)" />
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
     <rect
        transform="matrix(0,-1,1,0,0,0)"
        y="88.392639"
@@ -275,20 +344,26 @@
        height="77.219284"
        width="57.662804"
        id="rect3994"
-       style="fill:#000000;fill-opacity:1;display:inline" />
+       style="fill:#000000;fill-opacity:1;display:inline"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/bars-horizontal.png"
+       inkscape:export-xdpi="32.466244"
+       inkscape:export-ydpi="32.466244" />
   </g>
   <g
      inkscape:label="scatter plot"
      inkscape:groupmode="layer"
      id="g4010"
-     style="display:none">
+     style="display:inline">
     <rect
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.96821523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect4020"
        width="559.78613"
        height="29.285713"
        x="60.593609"
-       y="500.34335" />
+       y="500.34335"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <rect
        y="60.593609"
        x="-499.37515"
@@ -296,7 +371,10 @@
        width="419.60672"
        id="rect4024"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.83826637px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="matrix(0,-1,1,0,0,0)" />
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1"
@@ -306,7 +384,10 @@
        sodipodi:rx="50.895573"
        sodipodi:ry="50.895573"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
-       transform="matrix(0.54350629,0,0,0.54350629,-220.32555,287.63359)" />
+       transform="matrix(0.54350629,0,0,0.54350629,-220.32555,287.63359)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        transform="matrix(1.1786279,0,0,1.1786279,-592.91609,30.056428)"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
@@ -316,7 +397,10 @@
        sodipodi:cx="744.09448"
        id="path4030"
        style="fill:#000000;fill-opacity:1"
-       sodipodi:type="arc" />
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1"
@@ -326,7 +410,10 @@
        sodipodi:rx="50.895573"
        sodipodi:ry="50.895573"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
-       transform="matrix(0.76182937,0,0,0.76182937,-400.77855,134.59144)" />
+       transform="matrix(0.76182937,0,0,0.76182937,-400.77855,134.59144)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        transform="matrix(0.6228965,0,0,0.6228965,80.60063,-14.56356)"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
@@ -336,7 +423,10 @@
        sodipodi:cx="744.09448"
        id="path4034"
        style="fill:#000000;fill-opacity:1"
-       sodipodi:type="arc" />
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1"
@@ -346,7 +436,10 @@
        sodipodi:rx="50.895573"
        sodipodi:ry="50.895573"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
-       transform="matrix(0.94045738,0,0,0.94045738,-295.69464,-83.352139)" />
+       transform="matrix(0.94045738,0,0,0.94045738,-295.69464,-83.352139)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        transform="matrix(0.48396363,0,0,0.48396363,-84.02019,70.281443)"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
@@ -356,7 +449,10 @@
        sodipodi:cx="744.09448"
        id="path4038"
        style="fill:#000000;fill-opacity:1"
-       sodipodi:type="arc" />
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
     <path
        sodipodi:type="arc"
        style="fill:#000000;fill-opacity:1"
@@ -366,6 +462,48 @@
        sodipodi:rx="50.895573"
        sodipodi:ry="50.895573"
        d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
-       transform="matrix(0.6228965,0,0,0.6228965,0.60063,145.43644)" />
+       transform="matrix(0.6228965,0,0,0.6228965,0.60063,145.43644)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
+    <path
+       inkscape:export-ydpi="32.099865"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1"
+       id="path4138"
+       sodipodi:cx="744.09448"
+       sodipodi:cy="279.59549"
+       sodipodi:rx="50.895573"
+       sodipodi:ry="50.895573"
+       d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
+       transform="matrix(0.28748289,0,0,0.28748289,142.18005,205.21657)" />
+    <path
+       inkscape:export-ydpi="32.099865"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       transform="matrix(0.42641576,0,0,0.42641576,98.800868,150.37157)"
+       d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
+       sodipodi:ry="50.895573"
+       sodipodi:rx="50.895573"
+       sodipodi:cy="279.59549"
+       sodipodi:cx="744.09448"
+       id="path4140"
+       style="fill:#000000;fill-opacity:1"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1"
+       id="path4142"
+       sodipodi:cx="744.09448"
+       sodipodi:cy="279.59549"
+       sodipodi:rx="50.895573"
+       sodipodi:ry="50.895573"
+       d="m 794.99006,279.59549 a 50.895573,50.895573 0 1 1 -101.79115,0 50.895573,50.895573 0 1 1 101.79115,0 z"
+       transform="matrix(0.42641576,0,0,0.42641576,78.80087,330.37157)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/scatter-plot.png"
+       inkscape:export-xdpi="32.099865"
+       inkscape:export-ydpi="32.099865" />
   </g>
 </svg>
