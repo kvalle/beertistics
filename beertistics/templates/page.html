@@ -14,8 +14,7 @@
         <a class="brand" href="{{url_for('index')}}"><i class="icon-beer"></i> Beertistics</a>
         <div style="height: 0px;" class="nav-collapse collapse">
           <ul class="nav">
-
-            <li class="dropdown">
+            <li class="dropdown {% if 'stats' == active_page %}active{% endif %}">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <i class="icon-bar-chart"></i> stats <b class="caret"></b>
               </a>
@@ -27,8 +26,12 @@
                 <li><a href="/stats/consumption-per-month">consumption per month</a></li>
               </ul>
             </li>
-            <li><a href="/photos"><i class="icon-camera"></i> photos</a></li>
-            <li><a href="/map"><i class="icon-globe"></i> map</a></li>
+            <li class="{% if 'photos' == active_page %}active{% endif %}">
+              <a href="/photos"><i class="icon-camera"></i> photos</a>
+            </li>
+            <li class="{% if 'map' == active_page %}active{% endif %}">
+              <a href="/map"><i class="icon-globe"></i> map</a>
+            </li>
           </ul>
           <ul class="nav pull-right">
             <li id="user-info">
