@@ -84,6 +84,7 @@ svg {
 /*------------------ stats */
 
 .stats-overview a {
+    position: relative;
     display: block;
     min-height: 120px;
     padding: 5px 10px;
@@ -92,6 +93,7 @@ svg {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
+    color: black;
 }
 
 .stats-overview a:hover {
@@ -99,10 +101,24 @@ svg {
     background-color: #ccc;
 } 
 
+.stats-overview p {
+    color: #333;
+    font-weight: bold;
+}
+
 .stats-overview .graph-type {
     color: #888;
     font-weight: bold;
 } 
+
+.stats-overview .graph-img {
+    opacity: .1; 
+    max-width: 33%; 
+    max-height:  100px;
+    position: absolute; 
+    bottom: 15px; 
+    right: 15px;
+}
 
 /*------------------ photos */
 
