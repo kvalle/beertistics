@@ -4,15 +4,16 @@
 {% block title %}Photos{% endblock %}
 
 {% block page_content %}
-  <section id="beer-photos"></section>
+    <section id="beer-photos"></section>
 {% endblock %}
 
 {% block script %}
+    <script src="/static/js/lightbox.js"></script>
     <script type="text/javascript" src="/static/js/underscore.js"></script>
     <script type="text/template" class="template">
         <ul class="clearfix">
         <% _.each(rc, function( item ){ %>
-            <li><a href="<%- item.photo_original %>">
+            <li><a rel="lightbox[beers]" href="<%- item.photo_original %>" title="<%- item.beer %> by <%- item.brewery %>">
                 <div class="photo-description">
                     <%- item.beer %><br/>
                     <%- item.brewery %><br/>
