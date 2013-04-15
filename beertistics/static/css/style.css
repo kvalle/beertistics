@@ -113,8 +113,8 @@ svg {
 
 .stats-overview .graph-img {
     opacity: .1; 
-    max-width: 33%; 
-    max-height:  100px;
+    width: 33%; 
+    height:  100px;
     position: absolute; 
     bottom: 15px; 
     right: 15px;

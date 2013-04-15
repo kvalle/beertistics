@@ -5,13 +5,46 @@
 {% block page_content %}
   <p><em id="basic-stats-message"></em></p>
 
+  <!--
+  <h2>Where do you drink?</h2>
+  <h2>Where is your beer from?</h2>
+  <h2>What do you drink?</h2>
+  <h2>Your rating habits</h2>
+  <h2>When do you drink?</h2>
+  -->
+
   <div class="row stats-overview">
+    <div class="span4">
+      <a href="/stats/consumption-per-month">
+        <img class="graph-img" src="/static/img/bars-uneven.png"/>
+        <span class="graph-type">bar chart</span><br/>
+        <h3>Consumption per month</h3>
+        <p>This plot shows how much you drink each month, and how many of those brews are new and exciting (and how many you've tasted before).</p>
+      </a>
+    </div>
     <div class="span4">
       <a href="/stats/punchcard">
         <img class="graph-img" src="/static/img/scatter-plot.png"/>
         <span class="graph-type">scatter plot</span><br/>
         <h3>The Punchcard</h3>
         <p>When do you do your drinking? This scatter plot shows what <em>time of day</em> and <em>day of week</em> you have checked in your brews.</p>
+      </a>
+    </div>
+    <div class="span4">
+      <a href="/stats/checkin-locations">
+        <img class="graph-img" src="/static/img/bars-horizontal.png"/>
+        <span class="graph-type">bar chart</span><br/>
+        <h3>Checkin locations</h3>
+        <p>Where do you drink the most? This chart shows the distribution of checkins in different locations.</p>
+      </a>
+    </div>
+  </div>
+  <div class="row stats-overview">
+    <div class="span4">
+      <a href="/map">
+        <span class="graph-type">map</span><br/>
+        <h3>Beer map</h3>
+        <p>A map showing the location of all your checkins and where your beers were brewed.</p>
       </a>
     </div>
     <div class="span4">
@@ -33,22 +66,14 @@
   </div>
   <div class="row stats-overview">
     <div class="span4">
-      <a href="/stats/checkin-locations">
-        <img class="graph-img" src="/static/img/bars-horizontal.png"/>
-        <span class="graph-type">bar chart</span><br/>
-        <h3>Checkin locations</h3>
-        <p>Where do you drink the most? This chart shows the distribution of checkins in different locations.</p>
-      </a>
-    </div>
-    <div class="span4">
-      <a href="/stats/consumption-per-month">
-        <img class="graph-img" src="/static/img/bars-uneven.png"/>
-        <span class="graph-type">bar chart</span><br/>
-        <h3>Consumption per month</h3>
-        <p>This plot shows how much you drink each month, and how many of those brews are new and exciting (and how many you've tasted before).</p>
+      <a href="/photos">
+        <span class="graph-type">photos</span><br/>
+        <h3>Checkin photos</h3>
+        <p>Photo gallery of all the photos you have checked into Untappd, along with some basic information about each beer.</p>
       </a>
     </div>
   </div>
+  
 {% endblock %}
 
 {% block script %}
