@@ -1,6 +1,11 @@
 import flask
 from beertistics import app, auth
 
+@app.route('/stats/beers-by-country')
+@auth.requires_auth
+def stats_beers_by_country():
+    return flask.render_template('stats/beers-by-country.html')
+
 @app.route('/stats/consumption-per-month')
 @auth.requires_auth
 def stats_consumption_per_month():

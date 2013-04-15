@@ -17,10 +17,10 @@ def as_json_response(data):
 def api_test(user):
     return as_json_response(untappd.get_user_info(user))
 
-@app.route('/api/countries')
+@app.route('/api/beers-by-country')
 @auth.requires_auth
-def countries():
-    return as_json_response(stats.countries())
+def beers_by_country():
+    return as_json_response(stats.beers_by_country())
 
 @app.route('/api/map/checkins')
 @auth.requires_auth

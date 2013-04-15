@@ -33,9 +33,12 @@ def basic():
 def test():
     return untappd.get_checkins()
 
-def countries():
+def beers_by_country():
     countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
-    return Counter(countries).most_common()
+    return [{
+        "key": "Beers drunk from country",
+        "values": [{"value": value, "label": label} for label, value in Counter(countries).most_common()]
+    }]
 
 def map_checkins():
     checkins = filter(lambda c: c["venue"], untappd.get_checkins())
