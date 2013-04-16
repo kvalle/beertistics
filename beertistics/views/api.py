@@ -8,8 +8,9 @@ def json_response(fn, *args):
         data = fn(*args)
         json = dumps(data, indent=4)
         return flask.Response(json, 200, {'content-type': 'text/plain'})
-    except TypeError as e:
-        return flask.Response("something is wrong :(", 500, {'content-type': 'text/plain'})
+    except StandardError as e:
+        msg = e.message if e.message and app.config["DEBUG"] else "An error occured."
+        return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
 @app.route('/api/beers-by-country')
 @auth.requires_auth
