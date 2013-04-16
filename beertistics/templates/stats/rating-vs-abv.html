@@ -12,9 +12,9 @@
   <script>
     $(document).ready(function() {
 
-        $("#rating-vs-abv").addClass("loading");
+        startLoading($("#rating-vs-abv"));
         $.getJSON("/api/rating-vs-abv", function(data) {
-          $("#rating-vs-abv").removeClass("loading");
+          stopLoading($("#rating-vs-abv"));
           var chart;
           nv.addGraph(function() {
             chart = nv.models.scatterChart()

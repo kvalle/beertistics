@@ -11,10 +11,11 @@
 {% block script %}
   <script>
     $(document).ready(function() {
-
-        $("#beers-by-country").addClass("loading");
-        $.getJSON("/api/beers-by-country", function(data) {
-            $("#beers-by-country").removeClass("loading");
+        
+        startLoading($("#beers-by-country"));
+        $.getJSON("/api/beers-by-country")
+        .done(function(data) {
+            stopLoading($("#beers-by-country"));
             var chartHeight = data[0].values.length * 25;
             $("#beers-by-country svg").css("height", chartHeight);
             var chart;
@@ -42,6 +43,10 @@
 
               return chart;
             });
+        })
+        .fail(function(error) {
+            stopLoading($("#beers-by-country"));
+            console.log(error.responseText);
         });
 
     });

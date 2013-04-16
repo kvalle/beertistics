@@ -12,9 +12,9 @@
   <script>
     $(document).ready(function() {
 
-        $("#ratings").addClass("loading");
+        startLoading($("#ratings"));
         $.getJSON("/api/rating-distribution", function(data) {
-            $("#ratings").removeClass("loading");
+            stopLoading($("#ratings"));
             var chart;
             nv.addGraph(function() {
                 chart = nv.models.multiBarChart()

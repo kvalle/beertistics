@@ -12,9 +12,9 @@
   <script>
     $(document).ready(function() {
 
-        $("#checkin-locations").addClass("loading");
+        startLoading($("#checkin-locations"));
         $.getJSON("/api/checkin-locations", function(data) {
-            $("#checkin-locations").removeClass("loading");
+            stopLoading($("#checkin-locations"));
             var chartHeight = data[0].values.length * 25;
             $("#checkin-locations svg").css("height", chartHeight);
             var chart;

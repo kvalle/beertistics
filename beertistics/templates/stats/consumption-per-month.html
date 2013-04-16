@@ -12,9 +12,9 @@
   <script>
     $(document).ready(function() {
 
-        $("#consumption-per-month").addClass("loading");
+        startLoading($("#consumption-per-month"));
         $.getJSON("/api/per-month", function(data) {
-            $("#consumption-per-month").removeClass("loading");
+            stopLoading($("#consumption-per-month"));
             var chart;
             nv.addGraph(function() {
                 chart = nv.models.multiBarChart()

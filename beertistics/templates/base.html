@@ -30,6 +30,13 @@
 
   {% block content %}{% endblock %}
 
+  <script type="text/template" class="loading-template">
+    <div class='loading'>
+      <img src='/static/img/loading.gif'/><br/>
+      <p>Loading data from Untappd. The first time you do this, it might take a while. Especially if you have a   lot of checkins.</p>
+    </div>
+  </script>
+
   <script src="/static/js/jquery.js"></script>
   <script src="/static/js/bootstrap.js"></script>
   <script src="/static/js/d3.v2.js"></script>

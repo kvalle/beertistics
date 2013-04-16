@@ -10,7 +10,7 @@
 {% block script %}
     <script src="/static/js/lightbox.js"></script>
     <script type="text/javascript" src="/static/js/underscore.js"></script>
-    <script type="text/template" class="template">
+    <script type="text/template" class="photo-list-template">
         <ul class="clearfix">
         <% _.each(rc, function( item ){ %>
             <li><a rel="lightbox[beers]" href="<%- item.photo_original %>" title="<%- item.beer %> by <%- item.brewery %>">
@@ -36,7 +36,7 @@
   <script>
     $(document).ready(function() {
         _.templateSettings.variable = "rc";
-        var template = _.template($("script.template").html());
+        var template = _.template($("script.photo-list-template").html());
 
         $.getJSON("/api/photos", function(data) {
             $("#beer-photos").append(template(data));

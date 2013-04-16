@@ -12,9 +12,9 @@
   <script>
     $(document).ready(function() {
 
-        $("#punchcard").addClass("loading");
+        startLoading($("#punchcard"));
         $.getJSON("/api/time-of-day", function(data) {
-            $("#punchcard").removeClass("loading");
+            stopLoading($("#punchcard"));
             var chart;
             nv.addGraph(function() {
               chart = nv.models.scatterChart()
