@@ -8,8 +8,8 @@ def json_response(fn, *args):
         data = fn(*args)
         json = dumps(data, indent=4)
         return flask.Response(json, 200, {'content-type': 'text/plain'})
-    except StandardError as e:
-        msg = e.message if e.message and app.config["DEBUG"] else "An error occured."
+    except Exception as e:
+        msg = e.message if e.message and app.config["DEBUG"] else "An internal application fuckup occured. Sorry."
         return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
 @app.route('/api/beers-by-country')
@@ -60,4 +60,4 @@ def stats_basic():
 @app.route('/api/per-month')
 @auth.requires_auth
 def stats_per_month():
-    return dumps(stats.per_month())
+    return json_response(stats.per_month)

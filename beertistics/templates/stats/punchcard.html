@@ -13,7 +13,8 @@
     $(document).ready(function() {
 
         startLoading($("#punchcard"));
-        $.getJSON("/api/time-of-day", function(data) {
+        $.getJSON("/api/time-of-day")
+        .done(function(data) {
             stopLoading($("#punchcard"));
             var chart;
             nv.addGraph(function() {
@@ -46,6 +47,9 @@
 
               return chart;
           });
+        })
+        .fail(function(error) {
+            stopLoadingWithError($("#punchcard"), error.responseText);
         });
 
     });

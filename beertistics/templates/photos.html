@@ -8,8 +8,6 @@
 {% endblock %}
 
 {% block script %}
-    <script src="/static/js/lightbox.js"></script>
-    <script type="text/javascript" src="/static/js/underscore.js"></script>
     <script type="text/template" class="photo-list-template">
         <ul class="clearfix">
         <% _.each(rc, function( item ){ %>
@@ -35,7 +33,6 @@
 
   <script>
     $(document).ready(function() {
-        _.templateSettings.variable = "rc";
         var template = _.template($("script.photo-list-template").html());
 
         $.getJSON("/api/photos", function(data) {

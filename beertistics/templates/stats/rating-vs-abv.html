@@ -13,7 +13,8 @@
     $(document).ready(function() {
 
         startLoading($("#rating-vs-abv"));
-        $.getJSON("/api/rating-vs-abv", function(data) {
+        $.getJSON("/api/rating-vs-abv")
+        .done(function(data) {
           stopLoading($("#rating-vs-abv"));
           var chart;
           nv.addGraph(function() {
@@ -44,8 +45,10 @@
 
             return chart;
           });
+        })
+        .fail(function(error) {
+            stopLoadingWithError($("#rating-vs-abv"), error.responseText);
         });
-
 
     });
 

@@ -37,6 +37,10 @@ svg {
     right: 30%;
 }
 
+.loading.error {
+    font-weight: bold;
+}
+
 .loading img {
     margin-bottom: 20px;
 }

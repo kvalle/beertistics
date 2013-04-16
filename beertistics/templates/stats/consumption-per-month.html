@@ -13,7 +13,8 @@
     $(document).ready(function() {
 
         startLoading($("#consumption-per-month"));
-        $.getJSON("/api/per-month", function(data) {
+        $.getJSON("/api/per-month")
+        .done(function(data) {
             stopLoading($("#consumption-per-month"));
             var chart;
             nv.addGraph(function() {
@@ -35,6 +36,9 @@
 
               return chart;
           });
+        })
+        .fail(function(error) {
+            stopLoadingWithError($("#consumption-per-month"), error.responseText);
         });
 
     });

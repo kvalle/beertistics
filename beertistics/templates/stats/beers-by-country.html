@@ -45,8 +45,7 @@
             });
         })
         .fail(function(error) {
-            stopLoading($("#beers-by-country"));
-            console.log(error.responseText);
+            stopLoadingWithError($("#beers-by-country"), error.responseText);
         });
 
     });
