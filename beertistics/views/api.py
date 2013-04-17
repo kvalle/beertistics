@@ -4,6 +4,7 @@ from json import dumps
 from beertistics import app, auth, stats, untappd
 
 def json_response(fn, *args):
+    print app.logger.name
     try:
         data = fn(*args)
         json = dumps(data, indent=4)
