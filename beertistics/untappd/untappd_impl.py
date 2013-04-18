@@ -44,7 +44,9 @@ def get_checkins_stub():
         return load(f)
 
 def authenticate_url():
-    return _build_url('authenticate')
+    url = _build_url('authenticate')
+    print url
+    return url
 
 def authorize(code):
     url = _build_url('authorize') + "&code=" + code

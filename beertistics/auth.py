@@ -1,6 +1,6 @@
 from functools import wraps
 import flask
-from beertistics import untappd
+from beertistics import untappd, app
 
 def authorize(code):
     token = untappd.authorize(code)
@@ -19,6 +19,7 @@ def authorize(code):
         'avatar': user['user_avatar'],
         'url': user['untappd_url']
     }
+    app.logger.info('%s logged in' % user["user_name"])
     return True
 
 def get_token():
