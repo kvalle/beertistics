@@ -7,6 +7,7 @@ class BeertisticsTestCase():
     def commonSetUp(self):
         app.logger.setLevel(logging.FATAL)
         app.config['TESTING'] = True
+        app.config['UNTAPPD_STUB'] = True
         self.app = app.test_client()
 
     def get_with_redirect(self, url, limit=10):

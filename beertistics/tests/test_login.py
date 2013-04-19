@@ -8,7 +8,6 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
     """
 
     def setUp(self):
-        app.config['UNTAPPD_STUB'] = True
         self.commonSetUp()
 
     def test_login_required_for_frontpage_if_not_yet_logged_in(self):
