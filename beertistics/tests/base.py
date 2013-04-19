@@ -1,18 +1,27 @@
 from beertistics import app
 import hashlib
+import logging
 
 class BeertisticsTestCase():
 
     def commonSetUp(self):
-        self.username = 'testuser'
-        self.password = 'password'
+        app.logger.setLevel(logging.FATAL)
         app.config['TESTING'] = True
-        app.config['USERNAME'] = self.username
-        app.config['PASSWORD'] = hashlib.sha1(self.password).hexdigest()
         self.app = app.test_client()
 
-    def login(self, user=None, password=None):
-        username = user or self.username
-        password = password or self.password
-        auth_data = dict(username=username, password=password)
-        return self.app.post('/log-in', data=auth_data)
+    def get_with_redirect(self, url, limit=10):
+        """
+        Custom get method, since app.get seems to have a rather 
+        low limit on how many redirects it will follow before a 
+        "loop detected" is raised.
+        """
+        response = self.app.get('/stats/punchcard')
+        while limit > 0 and 302 == response.status_code:
+            next = response.location.strip("http://").strip(app.config["SERVER_NAME"])
+            response = self.app.get(next)
+            limit -= 1
+        return response
+
+    def login(self):
+        self.app.get('/log-in', follow_redirects=True)
+    
