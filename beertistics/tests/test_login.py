@@ -1,4 +1,5 @@
 import unittest
+from beertistics import app
 from beertistics.tests.base import BeertisticsTestCase
 
 class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
@@ -29,6 +30,14 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
         response = self.app.get('/log-out', follow_redirects=True)
         assert "You were logged out" in response.data
         assert "log in" in response.data
+
+    def test_login_reuired_for_all_api_pages(self):
+        pages = [str(rule) for rule in app.url_map.iter_rules() 
+                            if str(rule).startswith("/api")]
+        for page in pages:
+            response = self.app.get(page)
+            assert 302 == response.status_code
+            assert "log-in" in response.location
 
 if __name__ == '__main__':
     unittest.main()
