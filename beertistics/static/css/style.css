@@ -22,6 +22,22 @@ svg {
     height: 100%; 
 }
 
+
+/*------------------ special scatter plot styling */
+
+/* removing grid lines */
+#rating-vs-abv .nvd3.nv-scatterChart .nv-axis line, 
+#punchcard .nvd3.nv-scatterChart .nv-axis line {
+  stroke: none;
+  fill: none;
+}
+
+/* showing x-axis */
+#rating-vs-abv .nvd3 .nv-axis.nv-x path.domain, 
+#punchcard .nvd3 .nv-axis.nv-x path.domain {
+  stroke-opacity: .75;
+}
+
 /*------------------ loading message */
 
 .graph-container {
