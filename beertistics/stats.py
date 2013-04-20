@@ -90,7 +90,7 @@ def rating_distribution():
             beers.add(checkin["beer"]["bid"])
     distinct_counter = Counter(distinct_ratings)
     
-    keys = sorted(total_counter.keys())
+    keys = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]
     return [
         {
             "key": "Total",
