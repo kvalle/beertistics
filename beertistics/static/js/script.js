@@ -7,10 +7,11 @@ function startLoading(el) {
 
 function stopLoading(el) {
     el.find(".loading").remove();
+    el.removeClass("graph-container");
 }
 
 function stopLoadingWithError(el, msg) {
-    el.find(".loading").remove();
+    stopLoading(el);
     var template = _.template($("script.loading-error-template").html());
     el.append(template({"message": msg}));
 }
