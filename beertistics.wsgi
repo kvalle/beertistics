@@ -1,6 +1,8 @@
 import sys 
 import site 
-import os.path
+import os, os.path
+
+os.environ["BEERTISTICS_CONFIG"] = "production"
 	
 ALLDIRS = ['/home/kjetil/pyenvs/beertistics/lib/python2.7/site-packages']
 

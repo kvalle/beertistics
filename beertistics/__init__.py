@@ -1,11 +1,18 @@
 from flask import Flask, render_template, g
-import config
+from logging.handlers import RotatingFileHandler
+import logging
+import os
 
 app = Flask(__name__)
-app.config.from_object(config)
 
-import logging
-from logging.handlers import RotatingFileHandler
+try:
+    config = os.environ["BEERTISTICS_CONFIG"]
+except:
+    config = "default"
+
+app.logger.info("Loading %s config" % config)
+app.config.from_object("beertistics.config.%s" % config)
+
 file_handler = RotatingFileHandler(app.config['BASE_DIR']+'/logs/beertistics.log', 'a+', 1 * 1024 * 1024, 10)
 file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
 app.logger.setLevel(logging.INFO)

@@ -1,6 +1,5 @@
 import unittest
 from beertistics.tests.base import BeertisticsTestCase
-from beertistics import app
 
 class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
     """
