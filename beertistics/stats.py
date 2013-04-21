@@ -1,6 +1,7 @@
 import httplib2
 from json import loads, load
 import datetime
+from calendar import month_abbr as months
 from beertistics import auth, cache, untappd
 import flask
 from collections import Counter, defaultdict
@@ -136,26 +137,34 @@ def checkin_locations():
 def per_month():
     checkins = untappd.get_checkins()
     beers = set()
-    new = dict()
-    old = dict()
-    months = set()
+    new = defaultdict(int)
+    old = defaultdict(int)
+    keys = set()
     for checkin in checkins:
         date = datetime.datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT)
-        month = date.strftime("%b %Y")
-        month_sortable = date.strftime("%Y-%m")
-        months.add((month_sortable, month))
+        key = (int(date.strftime("%Y")), int(date.strftime("%m")))
+        keys.add(key)
 
         beer = checkin['beer']['bid']
         if beer in beers:
-            old[month] = old.get(month, 0) + 1
+            old[key] = old[key] + 1
         else:
-            new[month] = new.get(month, 0) + 1
+            new[key] = new[key] + 1
         beers.add(beer)
 
-    sorted_months = [k[1] for k in sorted(months)]
+    def make_key_list(curr, end):
+        keys = [curr]
+        while curr < end:
+            (y, m) = curr
+            curr = (y+1, 1) if m == 12 else (y, m+1)
+            keys.append(curr)
+        return keys
+
+    keys = make_key_list(min(keys), max(keys))
 
     def mk_value_list(d):
-        return [{"month": month, "beers": d.get(month, 0)} for month in sorted_months]
+        return [{"month": "%s %s" % (months[month], year), "beers": d.get((year, month), 0)} 
+                    for year, month in keys]
 
     return [
         { 
