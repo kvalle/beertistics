@@ -14,7 +14,7 @@ app.logger.info("Loading %s config" % config)
 app.config.from_object("beertistics.config.%s" % config)
 
 file_handler = RotatingFileHandler(app.config['BASE_DIR']+'/logs/beertistics.log', 'a+', 1 * 1024 * 1024, 10)
-file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'))
+file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s'))
 app.logger.setLevel(logging.INFO)
 file_handler.setLevel(logging.INFO)
 app.logger.addHandler(file_handler)
