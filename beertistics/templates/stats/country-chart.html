@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+{% set active_page = "map" %}
+
+{% block title %}Country chart{% endblock %}
+
+{% block page_content %}
+  <h1>Country chart</h1>
+  <div id="country-chart" style="width: 100%; height: auto;"></div>
+{% endblock %}
+
+{% block script %}
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+      google.load('visualization', '1', {'packages': ['geochart']});
+      google.setOnLoadCallback(drawMap);
+      
+      function drawMap() {
+        startLoading($("#country-chart"));
+        $.getJSON("/api/beers-by-country-as-list")
+        .done(function(data) {
+          var map_data = google.visualization.arrayToDataTable(data);
+          var options = {};
+          var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));
+          chart.draw(map_data, options);
+        }).fail(function(error) {
+            stopLoadingWithError($("#country-chart"), error.responseText);
+        });
+      };
+  </script>
+{% endblock %}

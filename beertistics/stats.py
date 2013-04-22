@@ -41,6 +41,13 @@ def beers_by_country():
         "values": [{"value": value, "label": label} for label, value in Counter(countries).most_common()]
     }]
 
+def beers_by_country_as_list():
+    countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
+    fix_gb = lambda country: "Great Britain" if country in ["Scotland", "England", "Wales"] else country
+    countries = map(fix_gb, countries) # Google geo charts only support GB, not the sub-divisions
+    return [['Country', 'Beers tasted']] + \
+         [[country, count] for country, count in Counter(countries).most_common()]
+
 def map_checkins():
     checkins = filter(lambda c: c["venue"], untappd.get_checkins())
     venues = dict((c["venue"]["venue_id"], { "name": c["venue"]["venue_name"],

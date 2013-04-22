@@ -12,6 +12,11 @@ def json_response(fn, *args):
         msg = e.message if e.message and app.config["DEBUG"] else "An internal application fuckup occured. Sorry."
         return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
+@app.route('/api/beers-by-country-as-list')
+@auth.requires_auth
+def beers_by_country_as_list():
+    return json_response(stats.beers_by_country_as_list)
+
 @app.route('/api/beers-by-country')
 @auth.requires_auth
 def beers_by_country():

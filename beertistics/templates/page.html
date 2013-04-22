@@ -30,8 +30,14 @@
             <li class="{% if 'photos' == active_page %}active{% endif %}">
               <a href="/photos"><i class="icon-camera"></i> photos</a>
             </li>
-            <li class="{% if 'map' == active_page %}active{% endif %}">
-              <a href="/map"><i class="icon-globe"></i> map</a>
+            <li class="dropdown {% if 'map' == active_page %}active{% endif %}">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="icon-globe"></i> maps <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/map">beer map</a></li>
+                <li><a href="/stats/country-chart"></i> country chart</a></li>
+              </ul>
             </li>
           </ul>
           <ul class="nav pull-right">

@@ -7,9 +7,12 @@ body {
     padding-bottom: 40px;
 }
 
+#punchcard svg { height: 400px; }
+#ratings svg { height: 500px; }
+#rating-vs-abv svg { height: 400px; }
+#consumption-per-month svg { height: 500px; }
+
 svg {
-    height: 500px; 
-    margin: 10px; 
     min-width: 100px; 
     min-height: 100px;
 }
@@ -21,7 +24,6 @@ svg {
 .page { 
     height: 100%; 
 }
-
 
 /*------------------ special scatter plot styling */
 

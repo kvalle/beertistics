@@ -6,6 +6,11 @@ from beertistics import app, auth
 def stats_beers_by_country():
     return flask.render_template('stats/beers-by-country.html')
 
+@app.route('/stats/country-chart')
+@auth.requires_auth
+def stats_country_chart():
+    return flask.render_template('stats/country-chart.html')
+
 @app.route('/stats/consumption-per-month')
 @auth.requires_auth
 def stats_consumption_per_month():
