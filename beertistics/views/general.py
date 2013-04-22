@@ -1,5 +1,5 @@
 import flask
-from beertistics import app, auth
+from beertistics import app, auth, cache
 
 @app.route('/')
 def index():
@@ -7,6 +7,14 @@ def index():
         return flask.render_template('index.html')
     else:
         return flask.render_template('login.html')
+
+@app.route('/clear')
+@auth.requires_auth
+def clear():
+    username = flask.session['user']['username']
+    cache.clear(username)
+    flask.flash("Cleared cache for \"%s\"" % username, "success")
+    return flask.redirect(flask.url_for("index"))
 
 @app.route('/test')
 @auth.requires_auth

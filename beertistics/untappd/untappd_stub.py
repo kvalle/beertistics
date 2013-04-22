@@ -6,11 +6,15 @@ import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
+@cache.cached("user_info")
 def get_user_info(user=None):
+    app.logger.info("Fetching user info for '%s' (stub)" % user)
     with open("data/user_info.json") as f:
         return load(f)
 
+@cache.cached("checkins")
 def get_checkins(user=None):
+    app.logger.info("Fetching checkins for '%s' (stub)" % user)
     with open("data/checkins.json") as f:
         return load(f)
 
