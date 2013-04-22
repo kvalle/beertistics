@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="115.68715"
-     inkscape:cy="640.75289"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-132.74336"
+     inkscape:cy="614.61105"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,7 +55,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="background"
-     style="display:none">
+     style="display:inline">
     <rect
        style="fill:#b3b3b3;fill-opacity:1"
        id="rect3909"
@@ -209,10 +209,14 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="camera">
+     inkscape:label="camera"
+     style="display:inline">
     <g
        id="g3098"
-       transform="matrix(71.129937,0,0,-65.639783,390.22045,250.97595)">
+       transform="matrix(71.129937,0,0,-65.639783,390.22045,250.97595)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365">
       <path
          inkscape:connector-curvature="0"
          d="m 0,0 c 0.629,0 1.174,-0.342 1.475,-0.846 l 1.773,-0.002 0,0.952 c 0,0.353 -0.287,0.64 -0.641,0.64 l -6.611,0 c -0.353,0 -0.639,-0.287 -0.639,-0.64 l 0.002,-0.944 3.166,-0.002 C -1.172,-0.34 -0.629,0 0,0"
@@ -221,7 +225,10 @@
     </g>
     <g
        id="g3102"
-       transform="matrix(71.129937,0,0,-65.639783,177.94767,182.32303)">
+       transform="matrix(71.129937,0,0,-65.639783,177.94767,182.32303)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365">
       <path
          inkscape:connector-curvature="0"
          d="m 0,0 -0.588,0 -0.068,-0.212 0.705,0 L 0,0 z"
@@ -230,7 +237,10 @@
     </g>
     <g
        id="g3106"
-       transform="matrix(71.129937,0,0,-65.639783,555.12922,174.89211)">
+       transform="matrix(71.129937,0,0,-65.639783,555.12922,174.89211)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365">
       <path
          inkscape:connector-curvature="0"
          d="m 0,0 -0.783,0 -0.139,-0.327 1.049,0 L 0,0 z"
@@ -241,10 +251,16 @@
        inkscape:connector-curvature="0"
        d="m 363.93822,188.9259 -47.94156,0 0,-21.39861 47.94156,0 0,21.39861 z m 43.95831,-29.99737 -135.36027,0 -27.88292,37.67719 188.77882,0 -25.53563,-37.67719 z"
        style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="path3110" />
+       id="path3110"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365" />
     <g
        id="g3112"
-       transform="matrix(71.129937,0,0,-65.639783,501.64578,317.64603)">
+       transform="matrix(71.129937,0,0,-65.639783,501.64578,317.64603)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365">
       <path
          inkscape:connector-curvature="0"
          d="m 0,0 c 0.098,-0.216 0.156,-0.454 0.156,-0.707 0,-0.951 -0.771,-1.723 -1.722,-1.723 -0.952,0 -1.723,0.772 -1.723,1.723 0,0.253 0.057,0.491 0.156,0.708 l -3.076,0 0,-2.596 c 0,-0.352 0.285,-0.639 0.639,-0.639 l 6.611,0 c 0.354,0 0.641,0.287 0.641,0.639 L 1.684,0 0,0 z"
@@ -253,7 +269,10 @@
     </g>
     <g
        id="g3116"
-       transform="matrix(71.129937,0,0,-65.639783,457.0473,326.87445)">
+       transform="matrix(71.129937,0,0,-65.639783,457.0473,326.87445)"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/camera.png"
+       inkscape:export-xdpi="32.260365"
+       inkscape:export-ydpi="32.260365">
       <path
          inkscape:connector-curvature="0"
          d="m 0,0 c -0.027,0.048 -0.061,0.093 -0.098,0.136 -0.201,0.242 -0.502,0.4 -0.841,0.4 -0.34,0 -0.641,-0.157 -0.842,-0.398 C -1.818,0.094 -1.852,0.049 -1.881,0 c -0.101,-0.166 -0.162,-0.358 -0.162,-0.566 0,-0.609 0.494,-1.102 1.104,-1.102 0.607,0 1.101,0.493 1.101,1.102 0,0.208 -0.06,0.4 -0.162,0.566"

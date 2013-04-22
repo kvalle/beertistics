@@ -22,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Blank globe, focus on Africa</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +59,10 @@
        style="fill:none;stroke:#000000;stroke-width:0.75000000000000000;display:inline;stroke-opacity:1"
        inkscape:connector-curvature="0"
        d="m 203.9637,106.15828 c 0,55.104 -44.673,99.777 -99.78,99.777 -55.107,0 -99.782997,-44.672 -99.782997,-99.777 l 0,0 c 0,-55.107 44.674997,-99.78 99.782997,-99.78 55.108,0 99.78,44.673 99.78,99.78 z"
-       id="path3106" />
+       id="path3106"
+       inkscape:export-filename="/home/kjetil/prosjekter/beertistics/beertistics/static/img/globe.png"
+       inkscape:export-xdpi="89.859596"
+       inkscape:export-ydpi="89.859596" />
   </g>
   <g
      inkscape:groupmode="layer"
