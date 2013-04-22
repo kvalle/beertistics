@@ -148,7 +148,7 @@ svg {
 
 .stats-overview .graph-img {
     opacity: .1; 
-    width: 33%; 
+    width: 100px; 
     height:  100px;
     position: absolute; 
     bottom: 15px; 
