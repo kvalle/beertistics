@@ -33,24 +33,13 @@ def test():
     return untappd.get_checkins()
 
 def influenced_ratings():
-    """Rating vs beers drunk the last 6 hours"""
-    period = timedelta(0, 6*60*60)
-
     dt = lambda string: datetime.strptime(string, untappd.DATE_FORMAT)
     checkins = [(dt(c["created_at"]), c["rating_score"]) for c in untappd.get_checkins()]
-    checkins = sorted(checkins)
     data = []
-    for i, c in enumerate(checkins):
-        if i == 0: continue
-        rating = c[1]
-        time = c[0]
-        beers = 0
-        for t, r in checkins[i-1::-1]:
-            if (time - t) < period:
-                beers += 1
-            else:
-                break
-        data.append((beers, rating))
+    for c in checkins:
+        is_recent = lambda (t,r): timedelta(0) < (c[0] - t) < timedelta(0, 6*60*60)
+        num = len(filter(is_recent, checkins))
+        data.append((num, c[1]))
     return [{
         "key": "Rating under the influence",
         "values": [{"rating": rating, "beers": beers, "size": size} 
