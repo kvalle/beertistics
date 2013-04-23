@@ -1,0 +1,56 @@
+{% extends "page.html" %}
+{% set active_page = "stats" %}
+
+{% block title %}Influenced ratings{% endblock %}
+
+{% block page_content %}
+  <h1>Influenced ratings</h1>
+  <div id="influenced-ratings"><svg></svg></div>
+{% endblock %}
+
+{% block script %}
+  <script>
+    $(document).ready(function() {
+
+        startLoading($("#influenced-ratings"));
+        $.getJSON("/api/influenced-ratings")
+        .done(function(data) {
+          stopLoading($("#influenced-ratings"));
+          var chart;
+          nv.addGraph(function() {
+            chart = nv.models.scatterChart()
+                          .showDistX(true)
+                          .showDistY(true)
+                          //.height(500)
+                          .x(function(d) { return d.beers })
+                          .y(function(d) { return d.rating })
+                          .useVoronoi(true)
+                          .showLegend(false)
+                          .color(d3.scale.category10().range());
+
+            chart.xAxis.axisLabel('Number of beers checked in last 6 hours')
+            chart.yAxis.axisLabel('Rating')
+
+            chart.xAxis.tickFormat(d3.format('d'))
+            chart.yAxis.tickFormat(d3.format('.01f'))
+
+            d3.select('#influenced-ratings svg')
+                .datum(data)
+              .transition().duration(500)
+                .call(chart);
+
+            nv.utils.windowResize(chart.update);
+
+            chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+
+            return chart;
+          });
+        })
+        .fail(function(error) {
+            stopLoadingWithError($("#influenced-ratings"), error.responseText);
+        });
+
+    });
+
+  </script>
+{% endblock %}

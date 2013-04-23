@@ -11,6 +11,7 @@ body {
 #ratings svg { height: 500px; }
 #rating-vs-abv svg { height: 400px; }
 #consumption-per-month svg { height: 500px; }
+#influenced-ratings svg { height: 500px; }
 
 svg {
     min-width: 100px; 
@@ -28,6 +29,7 @@ svg {
 /*------------------ special scatter plot styling */
 
 /* removing grid lines */
+#influenced-ratings .nvd3.nv-scatterChart .nv-axis line, 
 #rating-vs-abv .nvd3.nv-scatterChart .nv-axis line, 
 #punchcard .nvd3.nv-scatterChart .nv-axis line {
   stroke: none;
@@ -35,6 +37,7 @@ svg {
 }
 
 /* showing x-axis */
+#influenced-ratings .nvd3 .nv-axis.nv-x path.domain, 
 #rating-vs-abv .nvd3 .nv-axis.nv-x path.domain, 
 #punchcard .nvd3 .nv-axis.nv-x path.domain {
   stroke-opacity: .75;

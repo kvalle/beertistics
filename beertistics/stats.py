@@ -1,17 +1,15 @@
 import httplib2
 from json import loads, load
-import datetime
+from datetime import timedelta, datetime
 from calendar import month_abbr as months
-from beertistics import auth, cache, untappd
-import flask
+from beertistics import untappd
 from collections import Counter, defaultdict
-from beertistics import app
 from util import ensure_http_prefix
 
 def basic():
     def days_since(date_str):
-        then = datetime.datetime.strptime(date_str, untappd.DATE_FORMAT)
-        now = datetime.datetime.now()
+        then = datetime.strptime(date_str, untappd.DATE_FORMAT)
+        now = datetime.now()
         delta = now - then
         return delta.days
     data = untappd.get_user_info()
@@ -33,6 +31,31 @@ def basic():
 
 def test():
     return untappd.get_checkins()
+
+def influenced_ratings():
+    """Rating vs beers drunk the last 6 hours"""
+    period = timedelta(0, 6*60*60)
+
+    dt = lambda string: datetime.strptime(string, untappd.DATE_FORMAT)
+    checkins = [(dt(c["created_at"]), c["rating_score"]) for c in untappd.get_checkins()]
+    checkins = sorted(checkins)
+    data = []
+    for i, c in enumerate(checkins):
+        if i == 0: continue
+        rating = c[1]
+        time = c[0]
+        beers = 0
+        for t, r in checkins[i-1::-1]:
+            if (time - t) < period:
+                beers += 1
+            else:
+                break
+        data.append((beers, rating))
+    return [{
+        "key": "Rating under the influence",
+        "values": [{"rating": rating, "beers": beers, "size": size} 
+                    for (beers, rating), size in Counter(data).most_common()]
+    }]
 
 def beers_by_country():
     countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
@@ -111,7 +134,7 @@ def rating_distribution():
     ]
 
 def time_of_day():
-    dates = [datetime.datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT) 
+    dates = [datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT) 
                 for checkin in untappd.get_checkins()]
     tuples = [(d.weekday(), d.hour) for d in dates]
     return [{
@@ -148,7 +171,7 @@ def per_month():
     old = defaultdict(int)
     keys = set()
     for checkin in checkins:
-        date = datetime.datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT)
+        date = datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT)
         key = (int(date.strftime("%Y")), int(date.strftime("%m")))
         keys.add(key)
 

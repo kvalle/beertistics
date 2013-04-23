@@ -6,6 +6,11 @@ from beertistics import app, auth
 def stats_beers_by_country():
     return flask.render_template('stats/beers-by-country.html')
 
+@app.route('/stats/influenced-ratings')
+@auth.requires_auth
+def stats_influenced_ratings():
+    return flask.render_template('stats/influenced-ratings.html')
+
 @app.route('/stats/country-chart')
 @auth.requires_auth
 def stats_country_chart():
