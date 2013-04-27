@@ -21,6 +21,7 @@ def basic():
         "days": days,
         "date": data['response']['user']['date_joined'],
         "total": total,
+        "avatar": data['response']['user']['user_avatar'],
         "distinct": distinct,
         "badges": data['response']['user']['stats']['total_badges'],
         "friends": data['response']['user']['stats']['total_friends'],
