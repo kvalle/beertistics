@@ -11,7 +11,7 @@ def index():
 @app.route('/clear')
 @auth.requires_auth
 def clear():
-    username = flask.session['user']['username']
+    username = flask.session['logged_in_user']['username']
     cache.clear(username)
     flask.flash("Cleared cache for \"%s\"" % username, "success")
     return flask.redirect(flask.url_for("index"))

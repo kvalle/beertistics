@@ -9,28 +9,18 @@ def authorize(code):
         return False
     
     flask.session['untappd_token'] = token
-    flask.session['logged_in'] = True
+    flask.session['logged_in_user'] = user_service.get_logged_in_user()
 
-    info = user_service.info()
-    logged_in_user = info['response']['user']
-    flask.session['user'] = {
-        'name': "%s %s" % (logged_in_user['first_name'], logged_in_user['last_name']),
-        'username': logged_in_user['user_name'],
-        'avatar': logged_in_user['user_avatar'],
-        'url': logged_in_user['untappd_url']
-    }
-    app.logger.info('%s logged in' % logged_in_user["user_name"])
+    app.logger.info('%s logged in' % flask.session['logged_in_user']["username"])
     return True
-
-def get_token():
-    return flask.session.get('untappd_token', None)
 
 def is_logged_in():
     return 'untappd_token' in flask.session
 
 def logout():
     flask.session.pop('untappd_token', None)
-    flask.session['logged_in'] = False
+    flask.session.pop('logged_in_user', None)
+    flask.session.pop('show_for_username', None)
 
 def requires_auth(f):
     @wraps(f)

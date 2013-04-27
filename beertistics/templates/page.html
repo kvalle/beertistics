@@ -43,8 +43,8 @@
           </ul>
           <ul class="nav pull-right">
             <li id="user-info">
-              <img src="{{session.user['avatar']}}"/>
-              <a href="{{session.user['url']}}"><i class="icon-user"></i> {{session.user['name']}}</a>
+              <img src="{{session.logged_in_user['avatar']}}"/>
+              <a href="{{session.logged_in_user['url']}}"><i class="icon-user"></i> {{session.logged_in_user['name']}}</a>
             </li>
             <li>
               <a href="{{url_for('logout')}}">Log out</a>

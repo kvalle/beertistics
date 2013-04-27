@@ -11,8 +11,8 @@ def make_key(username):
     if username: 
         return util.normalize(username)
 
-    if "user" in flask.session and "username" in flask.session["user"]:
-        username = flask.session["user"]["username"]
+    if "logged_in_user" in flask.session and "username" in flask.session["logged_in_user"]:
+        username = flask.session["logged_in_user"]["username"]
         return util.normalize(username)
 
     return False

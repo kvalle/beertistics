@@ -12,7 +12,7 @@ def basic():
         now = datetime.now()
         delta = now - then
         return delta.days
-    data = user_service.info()
+    data = user_service.full_user_info()
     days = days_since(data['response']['user']['date_joined'])
     total = data['response']['user']['stats']['total_checkins']
     distinct = data['response']['user']['stats']['total_beers']
