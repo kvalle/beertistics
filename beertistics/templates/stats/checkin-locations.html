@@ -16,7 +16,8 @@
         $.getJSON("/api/checkin-locations")
         .done(function(data) {
             stopLoading($("#checkin-locations"));
-            var chartHeight = data[0].values.length * 25;
+            console.log("length is...... ", data[0].values.length)
+            var chartHeight = data[0].values.length * 35;
             $("#checkin-locations svg").css("height", chartHeight);
             var chart;
             nv.addGraph(function() {

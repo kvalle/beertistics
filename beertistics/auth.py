@@ -9,7 +9,9 @@ def authorize(code):
         return False
     
     flask.session['untappd_token'] = token
-    flask.session['logged_in_user'] = user_service.get_logged_in_user()
+    user = user_service.user_basis_info()
+    flask.session['logged_in_user'] = user
+    flask.session['shown_user'] = user
 
     app.logger.info('%s logged in' % flask.session['logged_in_user']["username"])
     return True

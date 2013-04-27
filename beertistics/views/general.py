@@ -1,5 +1,5 @@
 import flask
-from beertistics import app, auth, cache
+from beertistics import app, auth, cache, user_service
 
 @app.route('/')
 def index():
@@ -14,6 +14,18 @@ def clear():
     username = flask.session['logged_in_user']['username']
     cache.clear(username)
     flask.flash("Cleared cache for \"%s\"" % username, "success")
+    return flask.redirect(flask.url_for("index"))
+
+@app.route('/show-user')
+@auth.requires_auth
+def show_user():
+    username = flask.request.args.get('active-user', None)
+    user = user_service.user_basis_info(username)
+    if user:
+        flask.session['shown_user'] = user
+        flask.flash("Showing stats for %s (%s)." % (user['name'], user['username']), 'success')
+    else:
+        flask.flash("Found no user with username '%s'." % username, 'error')
     return flask.redirect(flask.url_for("index"))
 
 @app.route('/test')
