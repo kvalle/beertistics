@@ -9,6 +9,7 @@ def json_response(fn, *args):
         json = dumps(data, indent=4)
         return flask.Response(json, 200, {'content-type': 'text/plain'})
     except Exception as e:
+        app.logger.error('problem fetching json-data: %s', e.message)
         msg = e.message if e.message and app.config["DEBUG"] else "An internal application fuckup occured. Sorry."
         return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
