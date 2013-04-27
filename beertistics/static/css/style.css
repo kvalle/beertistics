@@ -26,6 +26,18 @@ svg {
     height: 100%; 
 }
 
+/*------------------ styling of non-link elements in nav-bar dropdowns */
+
+.dropdown-menu p {
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999;
+  white-space: nowrap;
+}
+
 /*------------------ special scatter plot styling */
 
 /* removing grid lines */

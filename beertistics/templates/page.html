@@ -42,12 +42,14 @@
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li id="user-info">
-              <img src="{{session.logged_in_user['avatar']}}"/>
-              <a href="{{session.logged_in_user['url']}}"><i class="icon-user"></i> {{session.logged_in_user['name']}}</a>
-            </li>
-            <li>
-              <a href="{{url_for('logout')}}">Log out</a>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="icon-cogs"></i></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><p>Logged in as {{session.logged_in_user['username']}}</p></li>
+                <li><a href="{{url_for('logout')}}">Log out</a></li>
+              </ul>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
