@@ -48,8 +48,6 @@ def cached(key):
         return wrapper
     return cache_fn
 
-
-
 def clear(username):
     username = make_key(username)
     try:
