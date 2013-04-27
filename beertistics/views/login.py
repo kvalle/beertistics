@@ -29,7 +29,8 @@ def login():
 
 @app.route('/log-out')
 def logout():
-    cache.clear()
+    username = flask.session['user']['username']
+    cache.clear(username)
     auth.logout()
     flask.session.clear()
     flask.flash('You were logged out. Tip: You might want to log out of Untappd as well, or anyone will be able to log you right back into Beertistics.', 'success')

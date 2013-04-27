@@ -1,7 +1,9 @@
 from beertistics import app, util
+import os.path
+import os 
 import flask
-import shelve
 from datetime import datetime, timedelta
+import json
 
 CACHE_FILE = app.config['BASE_DIR']+"/cache.db"
 
@@ -18,40 +20,43 @@ def make_key(username):
 def cached(key):
     def cache_fn(fn):
         def wrapper(username=None):  
-            stored = shelve.open(CACHE_FILE)
-
             username = make_key(username)
-
             if not username:
-                return fn()
+                return fn(username)
 
-            if not stored.has_key(username):
-                stored[username] = {}
+            cache_file = "%s/%s_%s.json" % (app.config["CACHE_DIR"], username, key)
 
-            limit = timedelta(0, app.config["CACHE_TTL"])
-            cache_hit = key in stored[username] \
-                and (datetime.now() - stored[username][key]["time"]) < limit
+            def is_current(cache_file):
+                if not os.path.exists(cache_file):
+                    return False
 
-            if cache_hit:
-                return stored[username][key]["data"]
+                ttl = timedelta(0, app.config["CACHE_TTL"])
+                age = datetime.now() - datetime.fromtimestamp(os.path.getmtime(cache_file))
+
+                return age < ttl
+
+            if is_current(cache_file):
+                with open(cache_file, "r") as f:
+                    return json.load(f)
             else:
                 app.logger.info('cache miss for %s/%s, retrieving' % (username, key))
-                cache = stored[username]
-                cache[key] = {}
-                cache[key]["data"] = fn(username)
-                cache[key]["time"] = datetime.now()
-                stored[username] = cache
-                return stored[username][key]["data"]
+                data = fn(username)
+                with open(cache_file, "w") as f:
+                    json.dump(data, f)
+                return data
+
         return wrapper
     return cache_fn
 
-def clear(username=None):
-    stored = shelve.open(CACHE_FILE)
+
+
+def clear(username):
     username = make_key(username)
-    if username:
-        if stored.has_key(username):
-            del stored[username]
-            app.logger.info("cleared cache for '%s'" % username)
-    else:
-        stored.clear()
-        app.logger.info('cleared cache')
+    try:
+        for cache_file in os.listdir(app.config["CACHE_DIR"]):
+            if cache_file.startswith(username + "_"):
+                file_path = os.path.join(app.config["CACHE_DIR"], cache_file)
+                os.unlink(file_path)
+        app.logger.info("cleared cache for '%s'" % username)
+    except Exception, e:
+        print e

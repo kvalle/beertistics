@@ -4,6 +4,9 @@ DEBUG = True
 import os
 BASE_DIR = os.path.normpath(os.path.dirname(__file__)+'/../../')
 
+# Directory for caching user data
+CACHE_DIR = BASE_DIR + "/cache"
+
 # How long to cache data fetched from Untappd (in seconds)
 CACHE_TTL = 1800
 

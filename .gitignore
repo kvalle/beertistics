@@ -1,4 +1,4 @@
 logs/
+cache/
 .venv
-cache.db
 beertistics/config/production.py
