@@ -4,8 +4,6 @@ import datetime
 from beertistics import app
 import flask
 
-DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
-
 ##
 ## Public functions
 ##

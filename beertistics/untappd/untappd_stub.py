@@ -4,8 +4,6 @@ import datetime
 from beertistics import app
 import flask
 
-DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
-
 def get_user_info(user=None):
     app.logger.info("Fetching user info for '%s' (stub)" % user)
     with open("data/user_info.json") as f:
