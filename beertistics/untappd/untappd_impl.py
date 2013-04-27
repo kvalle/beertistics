@@ -39,10 +39,6 @@ def get_checkins(user=None):
 
     return checkins
 
-def get_checkins_stub():
-    with open("beertistics/test.json") as f:
-        return load(f)
-
 def authenticate_url():
     url = _build_url('authenticate')
     print url
