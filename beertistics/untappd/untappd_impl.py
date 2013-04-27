@@ -1,7 +1,7 @@
 import httplib2
 from json import loads, load
 import datetime
-from beertistics import app, cache
+from beertistics import app
 import flask
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
@@ -10,7 +10,6 @@ DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 ## Public functions
 ##
 
-@cache.cached("user_info")
 def get_user_info(user=None):
     url = "http://api.untappd.com/v4/user/info"
     if user:
@@ -18,7 +17,6 @@ def get_user_info(user=None):
     url += "?%s" % _url_params()
     return _get(url)
 
-@cache.cached("checkins")
 def get_checkins(user=None):
     url = "http://api.untappd.com/v4/user/checkins"
     if user:

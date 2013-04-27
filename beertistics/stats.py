@@ -2,7 +2,7 @@ import httplib2
 from json import loads, load
 from datetime import timedelta, datetime
 from calendar import month_abbr as months
-from beertistics import untappd
+from beertistics import untappd, user_service, checkins_service
 from collections import Counter, defaultdict
 from util import ensure_http_prefix
 
@@ -12,7 +12,7 @@ def basic():
         now = datetime.now()
         delta = now - then
         return delta.days
-    data = untappd.get_user_info()
+    data = user_service.info()
     days = days_since(data['response']['user']['date_joined'])
     total = data['response']['user']['stats']['total_checkins']
     distinct = data['response']['user']['stats']['total_beers']
@@ -30,11 +30,11 @@ def basic():
     }
 
 def test():
-    return untappd.get_checkins()
+    return checkins_service.all()
 
 def influenced_ratings():
     dt = lambda string: datetime.strptime(string, untappd.DATE_FORMAT)
-    checkins = [(dt(c["created_at"]), c["rating_score"]) for c in untappd.get_checkins()]
+    checkins = [(dt(c["created_at"]), c["rating_score"]) for c in checkins_service.all()]
     data = []
     for c in checkins:
         is_recent = lambda (t,r): timedelta(0) < (c[0] - t) < timedelta(0, 6*60*60)
@@ -47,21 +47,21 @@ def influenced_ratings():
     }]
 
 def beers_by_country():
-    countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
+    countries = [c["brewery"]["country_name"] for c in checkins_service.all() if c["brewery"]]
     return [{
         "key": "Beers drunk from country",
         "values": [{"value": value, "label": label} for label, value in Counter(countries).most_common()]
     }]
 
 def beers_by_country_as_list():
-    countries = [c["brewery"]["country_name"] for c in untappd.get_checkins() if c["brewery"]]
+    countries = [c["brewery"]["country_name"] for c in checkins_service.all() if c["brewery"]]
     fix_gb = lambda country: "Great Britain" if country in ["Scotland", "England", "Wales"] else country
     countries = map(fix_gb, countries) # Google geo charts only support GB, not the sub-divisions
     return [['Country', 'Beers tasted']] + \
          [[country, count] for country, count in Counter(countries).most_common()]
 
 def map_checkins():
-    checkins = filter(lambda c: c["venue"], untappd.get_checkins())
+    checkins = filter(lambda c: c["venue"], checkins_service.all())
     venues = dict((c["venue"]["venue_id"], { "name": c["venue"]["venue_name"],
                                                     "lat": c["venue"]["location"]["lat"], 
                                                     "lng": c["venue"]["location"]["lng"],
@@ -81,7 +81,7 @@ def map_breweries():
     checkins = filter(lambda c: c["brewery"] 
                             and c["brewery"]["location"]["lat"] 
                             and c["brewery"]["location"]["lng"],
-                        untappd.get_checkins())
+                        checkins_service.all())
     breweries = dict((c["brewery"]["brewery_id"], { "name": c["brewery"]["brewery_name"],
                                                     "lat": c["brewery"]["location"]["lat"], 
                                                     "lng": c["brewery"]["location"]["lng"],
@@ -97,7 +97,7 @@ def map_breweries():
     return breweries.values()
 
 def rating_distribution():
-    checkins = untappd.get_checkins()
+    checkins = checkins_service.all()
 
     all_ratings = [checkin["rating_score"] for checkin in checkins if checkin["rating_score"]]
     total_counter = Counter(all_ratings)
@@ -124,7 +124,7 @@ def rating_distribution():
 
 def time_of_day():
     dates = [datetime.strptime(checkin["created_at"], untappd.DATE_FORMAT) 
-                for checkin in untappd.get_checkins()]
+                for checkin in checkins_service.all()]
     tuples = [(d.weekday(), d.hour) for d in dates]
     return [{
         "key": "Time and day",
@@ -134,7 +134,7 @@ def time_of_day():
 
 def rating_vs_abv():
     tuples = [(checkin["rating_score"], checkin["beer"]["beer_abv"]) 
-                for checkin in untappd.get_checkins() 
+                for checkin in checkins_service.all() 
                 if checkin["rating_score"] and checkin["beer"]["beer_abv"]]
     return [{
         "key": "Rating vs ABV",
@@ -144,7 +144,7 @@ def rating_vs_abv():
 
 def checkin_locations():
     venues = [checkin["venue"]["venue_name"] 
-                for checkin in untappd.get_checkins() 
+                for checkin in checkins_service.all() 
                 if checkin["venue"]]
     return [ 
       {
@@ -154,7 +154,7 @@ def checkin_locations():
     ]
 
 def per_month():
-    checkins = untappd.get_checkins()
+    checkins = checkins_service.all()
     beers = set()
     new = defaultdict(int)
     old = defaultdict(int)
@@ -207,4 +207,4 @@ def photos():
             "brewery": checkin["brewery"]["brewery_name"],
             "rating": checkin["rating_score"]
         }
-    return map(pick_data, filter(has_photo, untappd.get_checkins()))
+    return map(pick_data, filter(has_photo, checkins_service.all()))
