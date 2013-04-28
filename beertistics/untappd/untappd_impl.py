@@ -15,6 +15,9 @@ def get_user_info(user=None):
     url += "?%s" % _url_params()
     return _get(url)
 
+def get_user_friends(user=None):
+    pass # TODO
+
 def get_checkins(user=None):
     url = "http://api.untappd.com/v4/user/checkins"
     if user:

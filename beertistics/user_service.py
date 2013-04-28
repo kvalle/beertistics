@@ -7,6 +7,10 @@ def all_user_data(username=None):
 def user_stats(username=None):
     pass # TODO
 
+def user_friends(username=None):
+    # TODO:
+    return '["tnicolaysen", "valle"]'
+
 def user_basis_info(username=None):
     info = all_user_data(username)
     if not info: 
