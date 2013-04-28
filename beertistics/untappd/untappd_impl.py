@@ -2,6 +2,7 @@ import httplib2
 from json import loads, load, dumps
 import datetime
 from beertistics import app
+from beertistics.exceptions import UntappdException, NoSuchUserException
 import flask
 
 ##
@@ -75,7 +76,14 @@ def _url_params():
 def _get(url):
     print "FETCHING DATA FROM UNTAPPD:\n" + url
     _, content = httplib2.Http().request(url)
-    return loads(content)
+    data = loads(content)
+    if data["meta"]["code"] == 500:
+        msg = data["meta"]["error_detail"]
+        if data["meta"]["error_type"]:
+            raise NoSuchUserException(msg)
+        else:
+            raise UntappdException(msg)
+    return data
 
 def _build_url(base):
     return "http://untappd.com/oauth/" + base +"/" + \

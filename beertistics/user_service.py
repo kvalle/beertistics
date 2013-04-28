@@ -14,8 +14,6 @@ def user_friends(username=None):
 
 def user_basis_info(username=None):
     info = all_user_data(username)
-    if not info: 
-        return False
     user = info['response']['user']
     full_name = "%s %s" % (user['first_name'], user['last_name'])
     return {
