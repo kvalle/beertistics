@@ -1,5 +1,5 @@
 import httplib2
-from json import loads, load
+from json import loads, load, dumps
 import datetime
 from beertistics import app
 import flask

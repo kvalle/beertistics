@@ -5,34 +5,34 @@ from beertistics import app
 import flask
 import os.path
 
-def get_user_friends(username=None):
+def unknown_user():
+    return {
+        "meta": {
+            "error_type": "invalid_auth", 
+            "error_detail": "There is no user with that username.", 
+            "code": 500, 
+            "response_time": {"measure": "seconds", "time": 0.011}, 
+            "developer_friendly": "" }, 
+        "response": []
+    }
+
+def from_file(filename, username):
     if not username:
         username = 'valle'
     if not os.path.exists('stub/' + username):
-        return False
+        return unknown_user()
     app.logger.info("Fetching user info for '%s' (stub)" % username)
-    with open("stub/%s/user_friends.json" % username) as f:
+    with open("stub/%s/%s" % (username, filename)) as f:
         return load(f)
 
-    return ["tnicolaysen", "valle"]
+def get_user_friends(username=None):
+    return from_file("user_friends.json", username)
 
 def get_user_info(username=None):
-    if not username:
-        username = 'valle'
-    if not os.path.exists('stub/' + username):
-        return False
-    app.logger.info("Fetching user info for '%s' (stub)" % username)
-    with open("stub/%s/user_info.json" % username) as f:
-        return load(f)
+    return from_file("user_info.json", username)
 
 def get_checkins(username=None):
-    if not username:
-        username = 'valle'
-    if not os.path.exists('stub/' + username):
-        return False
-    app.logger.info("Fetching checkins for '%s' (stub)" % username)
-    with open("stub/%s/checkins.json" % username) as f:
-        return load(f)
+    return from_file("checkins.json", username)
 
 def authenticate_url():
     return flask.url_for("authentication") + "?code=stub"
