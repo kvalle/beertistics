@@ -21,10 +21,9 @@ def test():
     return json_response(stats.test)
 
 @app.route('/api/friends/')
-@app.route('/api/friends/<string:user>')
 @auth.requires_auth
-def friends(user=None):
-    return json_response(user_service.user_friends, user)
+def friends():
+    return json_response(user_service.user_friends)
 
 @app.route('/api/influenced-ratings')
 @auth.requires_auth

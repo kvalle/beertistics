@@ -88,3 +88,21 @@
   </div>
 {% endblock %}
 
+{% block page_script %}
+  <script>
+    $(document).ready(function() {
+      $.getJSON("/api/friends/")
+      .done(function(data) {
+        $("#active-user-input").typeahead({
+            minLength: 3,
+            source: data,
+            sorter: function (items) {
+              // in order to have exact typed match first among suggestions
+              items.unshift(this.query); 
+              return items;
+            }
+        });
+      });    
+    });
+  </script>
+{% endblock %}
