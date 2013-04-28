@@ -1,2 +1,3 @@
 .venv
 beertistics/config/production.py
+beertistics/config/default.py
