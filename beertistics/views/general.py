@@ -30,7 +30,6 @@ def show_user():
     return flask.redirect(flask.url_for("index"))
 
 @app.route('/test')
-@auth.requires_auth
 def test():
     return flask.render_template('test.html')
 

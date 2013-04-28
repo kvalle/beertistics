@@ -1,8 +1,24 @@
-{% extends "page.html" %}
+{% extends "base.html" %}
 
-{% block title %}Test{% endblock %}
+{% block title %}Test page{% endblock %}
 
-{% block page_content %}
-  <h1>Test page</h1>
-  <p>You are logged in.</p>
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="center-box">
+                    <h2>random</h2>
+                    <h1>test page</h1>
+                    <br/>
+                    <p>
+                        A neutron walks into a bar.<br/>
+                        "I'd like a beer," he says.<br/>
+                        The bartender promptly serves up a beer.<br/>
+                        "How much will that be?" asks the neutron.<br/>
+                        "For you?" replies the bartender, "no charge"<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

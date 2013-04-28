@@ -26,7 +26,7 @@ def fail_unless_logged_in(f):
 
 @app.route('/api/test')
 @fail_unless_logged_in
-def test():
+def api_test():
     return json_response(stats.test)
 
 @app.route('/api/friends/')
