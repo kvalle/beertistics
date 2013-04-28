@@ -7,9 +7,10 @@ def all_user_data(username=None):
 def user_stats(username=None):
     pass # TODO
 
+@cache.cached("user_friends")
 def user_friends(username=None):
-    # TODO:
-    return '["tnicolaysen", "valle"]'
+    friends = untappd.get_user_friends(username)
+    return [f["user"]["user_name"] for f in friends]
 
 def user_basis_info(username=None):
     info = all_user_data(username)

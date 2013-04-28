@@ -15,3 +15,18 @@ function stopLoadingWithError(el, msg) {
     var template = _.template($("script.loading-error-template").html());
     el.append(template({"message": msg}));
 }
+
+$(document).ready(function() {
+    $.getJSON("/api/friends/")
+    .done(function(data) {
+        $("#active-user-input").typeahead({
+            minLength: 3,
+            source: data,
+            sorter: function (items) {
+                // in order to have exact typed match first among suggestions
+                items.unshift(this.query); 
+                return items;
+            }
+        });
+    });    
+});

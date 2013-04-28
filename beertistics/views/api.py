@@ -1,7 +1,8 @@
 import flask
+import traceback
 from json import dumps
 
-from beertistics import app, auth, stats, untappd
+from beertistics import app, auth, stats, untappd, user_service
 
 def json_response(fn, *args):
     try:
@@ -9,7 +10,8 @@ def json_response(fn, *args):
         json = dumps(data, indent=4)
         return flask.Response(json, 200, {'content-type': 'text/plain'})
     except Exception as e:
-        app.logger.error('problem fetching json-data: %s', e.message)
+        stacktrace = traceback.format_exc()
+        app.logger.error('problem fetching json-data: %s\n%s', e.message, stacktrace)
         msg = e.message if e.message and app.config["DEBUG"] else "An internal application fuckup occured. Sorry."
         return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
@@ -17,6 +19,12 @@ def json_response(fn, *args):
 @auth.requires_auth
 def test():
     return json_response(stats.test)
+
+@app.route('/api/friends/')
+@app.route('/api/friends/<string:user>')
+@auth.requires_auth
+def friends(user=None):
+    return json_response(user_service.user_friends, user)
 
 @app.route('/api/influenced-ratings')
 @auth.requires_auth

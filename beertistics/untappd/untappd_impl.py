@@ -16,7 +16,17 @@ def get_user_info(user=None):
     return _get(url)
 
 def get_user_friends(user=None):
-    pass # TODO
+    url = "http://api.untappd.com/v4/user/friends"
+    if user:
+        url += "/%s" % user
+    url += "?%s" % _url_params()
+    url += "&limit=100"
+    friends = []
+    json = _get(url)
+    while json["response"]["count"] > 0:
+        friends += json["response"]["items"]
+        json = _get(url + "&offset=%d" % len(friends))
+    return friends
 
 def get_checkins(user=None):
     url = "http://api.untappd.com/v4/user/checkins"

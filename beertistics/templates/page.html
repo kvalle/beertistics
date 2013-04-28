@@ -44,7 +44,7 @@
           <ul class="nav pull-right">
             <li>
               <form action="{{url_for('show_user')}}" method="GET" class="navbar-search pull-right">
-                <input id="active-user-input" type="text" class="search-query" autocomplete="off" name="active-user" placeholder="{{session.shown_user['username']}}" data-provide="typeahead" data-source='{{session.user_suggestions}}'>
+                <input id="active-user-input" type="text" class="search-query" autocomplete="off" name="active-user" placeholder="{{session.shown_user['username']}}" >
               </form>
             </li>
             <li class="dropdown">
