@@ -25,3 +25,4 @@ sys.path[:0] = new_sys_path
 beertistics_path = os.path.dirname(__file__)
 sys.path.insert(0, beertistics_path)
 from beertistics import app as application
+application.logger.info('beertistics startup')
