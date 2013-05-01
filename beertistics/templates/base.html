@@ -6,17 +6,17 @@
   <title>{% block title %}{% endblock %} ~ Beertistics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link href="/static/css/nv.d3.css" type="text/css" rel="stylesheet">  
-  <link href="/static/css/bootstrap.css" type="text/css" rel="stylesheet">
+  <link href="/static/vendor/nvd3/css/nv.d3.css" type="text/css" rel="stylesheet">  
+  <link href="/static/vendor/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
 
   <!-- must be included between after base bootstrap css and before responsive bootstrap css-->
-  <link href="/static/css/style.css" type="text/css" rel="stylesheet">
+  <link href="/static/style.css" type="text/css" rel="stylesheet">
 
-  <link href="/static/css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/font-awesome.css">
-  <link href="/static/css/lightbox.css" rel="stylesheet" />
+  <link href="/static/vendor/bootstrap/css/bootstrap-responsive.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.css">
+  <link href="/static/vendor/lightbox/css/lightbox.css" rel="stylesheet" />
   <!--[if IE 7]>
-  <link rel="stylesheet" href="/static/css/font-awesome-ie7.min.css">
+  <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome-ie7.min.css">
   <![endif]-->
 
   
@@ -43,13 +43,13 @@
     </div>
   </script>
 
-  <script src="/static/js/jquery.js"></script>
-  <script src="/static/js/lightbox.js"></script>
-  <script src="/static/js/underscore.js"></script>
-  <script src="/static/js/bootstrap.js"></script>
-  <script src="/static/js/d3.v2.js"></script>
-  <script src="/static/js/nv.d3.js"></script>
-  <script src="/static/js/script.js"></script>
+  <script src="/static/vendor/jquery/jquery.js"></script>
+  <script src="/static/vendor/lightbox/js/lightbox.js"></script>
+  <script src="/static/vendor/underscore/underscore.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="/static/vendor/nvd3/js/d3.v2.js"></script>
+  <script src="/static/vendor/nvd3/js/nv.d3.js"></script>
+  <script src="/static/script.js"></script>
 
   {% block script %}{% endblock %}
   {% block page_script %}{% endblock %}
