@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e 
 
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+
 version_name=$(date +%F.%H.%M.%S)
 server="kjetil@kjetilvalle.com"
 target="/home/kjetil/web/beertistics"
