@@ -1,0 +1,7 @@
+{
+    "checkin" : {
+        "_id" : {
+            "path" : "checkin_id"
+        }
+    }
+}
