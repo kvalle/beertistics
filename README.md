@@ -5,7 +5,7 @@ Visualizing your drinking habits, based on your Untappd beer checkins.
 Beertistics offers visualization of your untappd checkin data in the form of charts, maps and photos.
 You log in using your
 
-### Contribute
+### Setup
 
 If you want to help contribute to beertistics, these are the steps needed to get verything up and running.
 
@@ -16,7 +16,11 @@ If you'd like to be able to actually authenticate with Untappd while developing 
 
 You start the development server with the provided script.
 
-    $ ./server.py
+    $ ./scripts/server.py
+
+You'll also need an Elastic Search instance running. Start one with this script (from another terminal/tab):
+
+    $ ./scripts/es.sh
 
 ### Author
 
