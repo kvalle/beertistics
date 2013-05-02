@@ -1,4 +1,4 @@
-from beertistics import untappd, cache, search
+from beertistics import untappd, search
 
 def all(username):
     if not search.is_current(username, "checkin"):
