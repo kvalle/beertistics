@@ -1,5 +1,8 @@
-from beertistics import untappd, cache
+from beertistics import untappd, cache, search
 
-@cache.cached("checkins")
-def all(user=None):
-    return untappd.get_checkins(user)
+def all(username):
+    if not search.is_current(username, "checkin"):
+        search.index("checkin", untappd.get_checkins(username))
+        search.update_last_indexed(username, "checkin")
+
+    return search.search({"term":{"user.user_name": username}})

@@ -32,4 +32,3 @@ def authorize(code):
         return "stub-token"
     else:
         return False
-
