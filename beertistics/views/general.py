@@ -1,5 +1,5 @@
 import flask
-from beertistics import app, auth, cache, user_service
+from beertistics import app, auth, user_service
 from beertistics.exceptions import NoSuchUserException
 
 @app.route('/')
@@ -9,20 +9,12 @@ def index():
     else:
         return flask.render_template('login.html')
 
-@app.route('/clear')
-@auth.requires_auth
-def clear():
-    username = flask.session['logged_in_user']['username']
-    cache.clear(username)
-    flask.flash("Cleared cache for \"%s\"" % username, "success")
-    return flask.redirect(flask.url_for("index"))
-
 @app.route('/show-user')
 @auth.requires_auth
 def show_user():
     username = flask.request.args.get('active-user', None)
     try:
-        user = user_service.user_basis_info(username)
+        user = user_service.user_info_for(username)
         flask.session['shown_user'] = user
         flask.flash("Showing stats for %s (%s)." % (user['name'], user['username']), 'success')
     except NoSuchUserException:

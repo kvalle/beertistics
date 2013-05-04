@@ -5,4 +5,4 @@ def all(username):
         search.index("checkin", untappd.get_checkins(username))
         search.update_last_indexed(username, "checkin")
 
-    return search.search({"term":{"user.user_name": username}})
+    return search.search("checkin", {"term":{"user.user_name": username}})

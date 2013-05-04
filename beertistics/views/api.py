@@ -32,7 +32,8 @@ def api_test():
 @app.route('/api/friends/')
 @fail_unless_logged_in
 def friends():
-    return json_response(user_service.user_friends)
+    username = flask.session["logged_in_user"]["username"]
+    return json_response(user_service.friend_list_for, username)
 
 @app.route('/api/influenced-ratings')
 @fail_unless_logged_in
@@ -87,7 +88,8 @@ def checkin_locations():
 @app.route('/api/basic')
 @fail_unless_logged_in
 def stats_basic():
-    return json_response(stats.basic)
+    username = flask.session['shown_user']['username']
+    return json_response(user_service.user_info_for_logged_in_user)
 
 @app.route('/api/per-month')
 @fail_unless_logged_in

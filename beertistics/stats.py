@@ -2,37 +2,10 @@ import httplib2
 from json import loads, load
 from datetime import timedelta, datetime
 from calendar import month_abbr as months
-from beertistics import untappd, user_service, checkins_service
+from beertistics import untappd, checkins_service
 from collections import Counter, defaultdict
 from util import ensure_http_prefix
 import flask
-
-def basic():
-    def days_since(date_str):
-        then = datetime.strptime(date_str, untappd.DATE_FORMAT)
-        now = datetime.now()
-        delta = now - then
-        return delta.days
-    data = user_service.all_user_data(flask.session['shown_user']['username'])
-    days = days_since(data['response']['user']['date_joined'])
-    total = data['response']['user']['stats']['total_checkins']
-    distinct = data['response']['user']['stats']['total_beers']
-    return {
-        "name": data['response']['user']['first_name'],
-        "days": days,
-        "date": data['response']['user']['date_joined'],
-        "total": total,
-        "avatar": data['response']['user']['user_avatar'],
-        "distinct": distinct,
-        "badges": data['response']['user']['stats']['total_badges'],
-        "friends": data['response']['user']['stats']['total_friends'],
-        "photos": data['response']['user']['stats']['total_photos'],
-        "total_avg": "%.3f" % (float(total) / days),
-        "distinct_avg": "%.3f" % (float(distinct) / days)
-    }
-
-def test():
-    return checkins_service.all(flask.session['shown_user']['username'])
 
 def influenced_ratings():
     dt = lambda string: datetime.strptime(string, untappd.DATE_FORMAT)

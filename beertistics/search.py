@@ -31,17 +31,25 @@ def is_current(username, datatype):
     return delta < ttl
 
 def index(datatype, items):
-    url = "http://localhost:9200/beertistics/checkin"
+    url = "http://localhost:9200/beertistics/%s" % datatype
     http = Http()
     for item in items:
         resp, content = http.request(url, "POST", json.dumps(item))
         print content
     http.request("http://localhost:9200/beertistics/_refresh", "POST")
 
-def search(query={}):
-    url = "http://localhost:9200/beertistics/checkin/_search"
+def search(datatype, query={}):
+    url = "http://localhost:9200/beertistics/%s/_search" % datatype
     data = {"query": query, "size": 100000}
+    print "POST %s -d" % url
+    print json.dumps(data)
     resp, content = Http().request(url, "POST", json.dumps(data))
     result = json.loads(content)
     print "found %d checkins" % result["hits"]["total"]
     return [hit["_source"] for hit in result["hits"]["hits"]]
+
+def get(datatype, id):
+    url = "http://localhost:9200/beertistics/%s/%s" % (datatype, id)
+    resp, content = Http().request(url, "GET")
+    data = json.loads(content)
+    return data["_source"] if data["exists"] else None

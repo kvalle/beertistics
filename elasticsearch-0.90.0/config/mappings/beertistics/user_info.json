@@ -1,0 +1,7 @@
+{
+    "user_info" : {
+        "_id" : {
+            "path" : "response.user.user_name"
+        }
+    }
+}
