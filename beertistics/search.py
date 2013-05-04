@@ -6,8 +6,13 @@ from beertistics import app
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
 def update_last_indexed(username, datatype):
+    data = get("cache", username)
+    if data:
+        data[datatype] = datetime.datetime.now().strftime(DATE_FORMAT)
+    else:
+        data = {datatype: datetime.datetime.now().strftime(DATE_FORMAT)}
+
     url = "http://localhost:9200/beertistics/cache/%s" % username
-    data = {datatype: datetime.datetime.now().strftime(DATE_FORMAT)}
     resp, content = Http().request(url, "POST", json.dumps(data))
     print content
 
@@ -15,7 +20,7 @@ def get_last_indexed(username, datatype):
     url = "http://localhost:9200/beertistics/cache/%s" % username
     resp, content = Http().request(url, "GET")
     try:
-        t = json.loads(content)["_source"]["checkin"]
+        t = json.loads(content)["_source"][datatype]
         return datetime.datetime.strptime(t, DATE_FORMAT)
     except:
         return None

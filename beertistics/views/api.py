@@ -85,7 +85,7 @@ def rating_vs_abv():
 def checkin_locations():
     return json_response(stats.checkin_locations)
 
-@app.route('/api/basic')
+@app.route('/api/user')
 @fail_unless_logged_in
 def stats_basic():
     username = flask.session['shown_user']['username']

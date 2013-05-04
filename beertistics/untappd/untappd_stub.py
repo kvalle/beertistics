@@ -11,7 +11,7 @@ def from_file(filename, username):
         username = 'valle'
     if not os.path.exists('stub/' + username):
         raise NoSuchUserException("There is no user with that username.")
-    app.logger.info("Fetching user info for '%s' (stub)" % username)
+    app.logger.info("Fetching %s for '%s' (stub)" % (filename, username))
     with open("stub/%s/%s" % (username, filename)) as f:
         return load(f)
 

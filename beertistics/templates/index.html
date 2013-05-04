@@ -110,7 +110,7 @@
     }
 
     $(document).ready(function() {
-        $.getJSON("/api/basic", function(data) {
+        $.getJSON("/api/user", function(data) {
             $("#basic-stats-message").html(basic_stats_message(data));
         });
     });
