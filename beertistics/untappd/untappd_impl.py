@@ -16,12 +16,8 @@ def get_user_info(user=None):
     url += "?%s" % _url_params()
     return _get(url)
 
-def get_user_friends(user=None):
-    url = "http://api.untappd.com/v4/user/friends"
-    if user:
-        url += "/%s" % user
-    url += "?%s" % _url_params()
-    url += "&limit=100"
+def get_user_friends(user):
+    url = "http://api.untappd.com/v4/user/friends/%s?%s&limit=100" % (user, _url_params())
     friends = []
     json = _get(url)
     while json["response"]["count"] > 0:
@@ -29,13 +25,8 @@ def get_user_friends(user=None):
         json = _get(url + "&offset=%d" % len(friends))
     return friends
 
-def get_checkins(user=None):
-    url = "http://api.untappd.com/v4/user/checkins"
-    if user:
-        url += "/%s" % user
-    url += "?%s" % _url_params()
-    url += "&limit=100"
-    json = _get(url)
+def get_checkins(user):
+    json = _get("http://api.untappd.com/v4/user/checkins/%s?%s&limit=100" % (user, _url_params()))
 
     checkins = json["response"]["checkins"]["items"]
     next = json["response"]["pagination"]["next_url"]

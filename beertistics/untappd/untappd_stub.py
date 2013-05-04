@@ -15,13 +15,13 @@ def from_file(filename, username):
     with open("stub/%s/%s" % (username, filename)) as f:
         return load(f)
 
-def get_user_friends(username=None):
+def get_user_friends(username):
     return from_file("user_friends.json", username)
 
 def get_user_info(username=None):
     return from_file("user_info.json", username)
 
-def get_checkins(username=None):
+def get_checkins(username):
     return from_file("checkins.json", username)
 
 def authenticate_url():
