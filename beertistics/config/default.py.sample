@@ -10,6 +10,9 @@ CACHE_DIR = BASE_DIR + "/cache"
 # How long to cache data fetched from Untappd (in seconds)
 CACHE_TTL = 1800
 
+# Should reporting to Google Analytics be turned on?
+ANALYTICS_ON = False
+
 # Stub signin and data retrieval from Untappd
 UNTAPPD_STUB = True
 
