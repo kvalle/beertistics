@@ -9,7 +9,7 @@ import flask
 def user_info_for(username):
     _refresh_user_info(username)
     info = search.get("user_info", username)
-    return _basis(info)
+    return _extract_info(info)
 
 def user_info_for_logged_in_user():
     if flask.session.get("logged_in_user", False):
@@ -17,7 +17,7 @@ def user_info_for_logged_in_user():
 
     data = untappd.get_user_info()
     search.index("user_info", [data])
-    info = _basis(data)
+    info = _extract_info(data)
     search.update_last_indexed(info["username"], "user_info")
     return info
 
@@ -27,7 +27,7 @@ def _refresh_user_info(username):
         search.index("user_info", [data])
         search.update_last_indexed(username, "user_info")
     
-def _basis(info):
+def _extract_info(info):
     user = info['response']['user']
     full_name = "%s %s" % (user['first_name'], user['last_name'])
     days = _days_since(user['date_joined'])
