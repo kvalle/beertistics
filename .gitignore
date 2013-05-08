@@ -1,3 +1,6 @@
 .venv
 beertistics/config/production.py
 beertistics/config/default.py
+*.pyc
+elasticsearch*/data
+elasticsearch*/logs
