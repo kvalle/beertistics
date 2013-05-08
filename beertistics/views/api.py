@@ -89,7 +89,7 @@ def checkin_locations():
 @fail_unless_logged_in
 def stats_basic():
     username = flask.session['shown_user']['username']
-    return json_response(user_service.user_info_for_logged_in_user)
+    return json_response(user_service.user_info_for, username)
 
 @app.route('/api/per-month')
 @fail_unless_logged_in
