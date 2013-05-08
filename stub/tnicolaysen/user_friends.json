@@ -1,230 +1,230 @@
 [
-    {
-        "friendship_hash": "631a376f4b6d2faf6df01e640b9992ec", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Sat, 06 Apr 2013 03:22:19 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "j\u00f8ran", 
-            "last_name": "", 
-            "user_avatar": "https://gravatar.com/avatar/f66cece7bb4d71f397d278d84e5df33b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 204348, 
-            "relationship": "friends", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "lillesand"
-        }
-    }, 
-    {
-        "friendship_hash": "cb350788c225f58ea0f447074ce2360c", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Thu, 14 Mar 2013 09:13:37 +0000", 
-        "user": {
-            "bio": "0", 
-            "first_name": "Erlend", 
-            "last_name": "O.", 
-            "user_avatar": "https://gravatar.com/avatar/ca03a53b1b1e9252422d2f3676c35b80?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 204325, 
-            "relationship": "none", 
-            "location": "Oslo, Norway", 
-            "is_supporter": 0, 
-            "user_name": "webtonull"
-        }
-    }, 
-    {
-        "friendship_hash": "441e0a5bd25f28665f9cba85d5531f5d", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Tue, 12 Mar 2013 13:51:42 +0000", 
-        "user": {
-            "bio": "Frauen und Wei\u00dfbier st\u00f6\u00dft man von unten an", 
-            "first_name": "Stein Inge", 
-            "last_name": "Morisbak", 
-            "user_avatar": "https://gravatar.com/avatar/73a3fd9e6ae54623af4bf59c832a498b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 236130, 
-            "relationship": "friends", 
-            "location": "Oslo", 
-            "is_supporter": 0, 
-            "user_name": "steinim"
-        }
-    }, 
-    {
-        "friendship_hash": "1d501655e432cfdd9d16b930489e7f3f", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Tue, 12 Mar 2013 13:51:34 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Thomas", 
-            "last_name": "G.", 
-            "user_avatar": "https://gravatar.com/avatar/ba85cb402e49278b1230f4ad59afca93?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 470148, 
-            "relationship": "none", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "Xnid"
-        }
-    }, 
-    {
-        "friendship_hash": "184fce7ca066bf2a997aa84f913d7deb", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Sat, 27 Oct 2012 17:58:22 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Espen", 
-            "last_name": "Halvorsen", 
-            "user_avatar": "https://gravatar.com/avatar/5e3ac92bb05d20e014e2ca332677c527?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 300063, 
-            "relationship": "friends", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "espenhh"
-        }
-    }, 
-    {
-        "friendship_hash": "4459672f60094a0a88918ec64406accb", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Mon, 22 Oct 2012 09:38:31 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "\u00d8ystein", 
-            "last_name": "", 
-            "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
-            "uid": 296217, 
-            "relationship": "friends", 
-            "location": "Oslo", 
-            "is_supporter": 0, 
-            "user_name": "oecarlsson"
-        }
-    }, 
-    {
-        "friendship_hash": "45d109c79f4fd6e7624373de20ac4440", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Sat, 13 Oct 2012 10:34:05 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Thomas", 
-            "last_name": "", 
-            "user_avatar": "https://gravatar.com/avatar/77cb36dfb0119821969e46f266418db8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 48159, 
-            "relationship": "friends", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "eritho"
-        }
-    }, 
-    {
-        "friendship_hash": "705d665337e53dbe6564b31e7a83a7a4", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Fri, 28 Sep 2012 11:44:32 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Marius", 
-            "last_name": "H.", 
-            "user_avatar": "https://gravatar.com/avatar/ff961d6b5e74fb38f78ef8045db956f0?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 203090, 
-            "relationship": "none", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "GadgetBoy"
-        }
-    }, 
-    {
-        "friendship_hash": "d268ac343b5df1eeecc157e8f82e2fee", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Thu, 26 Jul 2012 10:19:08 +0000", 
-        "user": {
-            "bio": "this.belly.contents += beer;", 
-            "first_name": "\u00d8yvind", 
-            "last_name": "M.", 
-            "user_avatar": "https://gravatar.com/avatar/7c5af454aae592d4f80e5c8277090fa5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 97571, 
-            "relationship": "none", 
-            "location": "Oslo", 
-            "is_supporter": 0, 
-            "user_name": "oyvindmal"
-        }
-    }, 
-    {
-        "friendship_hash": "0d032786f51628be8234b8546def95ff", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Tue, 24 Jul 2012 13:51:31 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Tine", 
-            "last_name": "", 
-            "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 184746, 
-            "relationship": "friends", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "tinekl"
-        }
-    }, 
-    {
-        "friendship_hash": "908ebbef5c62dfadddd1a3525f5945ee", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Tue, 24 Jul 2012 13:51:28 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Sveinung", 
-            "last_name": "Dalatun", 
-            "user_avatar": "https://gravatar.com/avatar/28c7beff2b53eb70bdefc78784d6c645?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-            "uid": 193228, 
-            "relationship": "friends", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "sveinung"
-        }
-    }, 
-    {
-        "friendship_hash": "56ea54c8b7bd906a04403c031200acae", 
-        "mutual_friends": {
-            "count": 0, 
-            "items": []
-        }, 
-        "created_at": "Tue, 24 Jul 2012 13:50:36 +0000", 
-        "user": {
-            "bio": "", 
-            "first_name": "Kjetil", 
-            "last_name": "Valle", 
-            "user_avatar": "https://untappd.s3.amazonaws.com/profile/3c83cf4bd482a81b3a204708aa7365cf_thumb.jpg", 
-            "uid": 141680, 
-            "relationship": "self", 
-            "location": "", 
-            "is_supporter": 0, 
-            "user_name": "valle"
-        }
-    }
+ {
+  "friendship_hash": "631a376f4b6d2faf6df01e640b9992ec", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Sat, 06 Apr 2013 03:22:19 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "j\u00f8ran", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/f66cece7bb4d71f397d278d84e5df33b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 204348, 
+   "relationship": "friends", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "lillesand"
+  }
+ }, 
+ {
+  "friendship_hash": "cb350788c225f58ea0f447074ce2360c", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Thu, 14 Mar 2013 09:13:37 +0000", 
+  "user": {
+   "bio": "0", 
+   "first_name": "Erlend", 
+   "last_name": "O.", 
+   "user_avatar": "https://gravatar.com/avatar/ca03a53b1b1e9252422d2f3676c35b80?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 204325, 
+   "relationship": "none", 
+   "location": "Oslo, Norway", 
+   "is_supporter": 0, 
+   "user_name": "webtonull"
+  }
+ }, 
+ {
+  "friendship_hash": "441e0a5bd25f28665f9cba85d5531f5d", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 12 Mar 2013 13:51:42 +0000", 
+  "user": {
+   "bio": "Frauen und Wei\u00dfbier st\u00f6\u00dft man von unten an", 
+   "first_name": "Stein Inge", 
+   "last_name": "M.", 
+   "user_avatar": "https://gravatar.com/avatar/73a3fd9e6ae54623af4bf59c832a498b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 236130, 
+   "relationship": "none", 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "steinim"
+  }
+ }, 
+ {
+  "friendship_hash": "1d501655e432cfdd9d16b930489e7f3f", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 12 Mar 2013 13:51:34 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Thomas", 
+   "last_name": "G.", 
+   "user_avatar": "https://gravatar.com/avatar/ba85cb402e49278b1230f4ad59afca93?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 470148, 
+   "relationship": "none", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "Xnid"
+  }
+ }, 
+ {
+  "friendship_hash": "184fce7ca066bf2a997aa84f913d7deb", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Sat, 27 Oct 2012 17:58:22 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Espen", 
+   "last_name": "Halvorsen", 
+   "user_avatar": "https://gravatar.com/avatar/5e3ac92bb05d20e014e2ca332677c527?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 300063, 
+   "relationship": "friends", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "espenhh"
+  }
+ }, 
+ {
+  "friendship_hash": "4459672f60094a0a88918ec64406accb", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Mon, 22 Oct 2012 09:38:31 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "\u00d8ystein", 
+   "last_name": "", 
+   "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
+   "uid": 296217, 
+   "relationship": "friends", 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "oecarlsson"
+  }
+ }, 
+ {
+  "friendship_hash": "45d109c79f4fd6e7624373de20ac4440", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Sat, 13 Oct 2012 10:34:05 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Thomas", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/77cb36dfb0119821969e46f266418db8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 48159, 
+   "relationship": "none", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "eritho"
+  }
+ }, 
+ {
+  "friendship_hash": "705d665337e53dbe6564b31e7a83a7a4", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Fri, 28 Sep 2012 11:44:32 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Marius", 
+   "last_name": "H.", 
+   "user_avatar": "https://gravatar.com/avatar/ff961d6b5e74fb38f78ef8045db956f0?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 203090, 
+   "relationship": "none", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "GadgetBoy"
+  }
+ }, 
+ {
+  "friendship_hash": "d268ac343b5df1eeecc157e8f82e2fee", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Thu, 26 Jul 2012 10:19:08 +0000", 
+  "user": {
+   "bio": "this.belly.contents += beer;", 
+   "first_name": "\u00d8yvind", 
+   "last_name": "Malin", 
+   "user_avatar": "https://gravatar.com/avatar/7c5af454aae592d4f80e5c8277090fa5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 97571, 
+   "relationship": "friends", 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "oyvindmal"
+  }
+ }, 
+ {
+  "friendship_hash": "0d032786f51628be8234b8546def95ff", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 24 Jul 2012 13:51:31 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Tine", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 184746, 
+   "relationship": "self", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "tinekl"
+  }
+ }, 
+ {
+  "friendship_hash": "908ebbef5c62dfadddd1a3525f5945ee", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 24 Jul 2012 13:51:28 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Sveinung", 
+   "last_name": "Dalatun", 
+   "user_avatar": "https://gravatar.com/avatar/28c7beff2b53eb70bdefc78784d6c645?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 193228, 
+   "relationship": "friends", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "sveinung"
+  }
+ }, 
+ {
+  "friendship_hash": "56ea54c8b7bd906a04403c031200acae", 
+  "mutual_friends": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 24 Jul 2012 13:50:36 +0000", 
+  "user": {
+   "bio": "", 
+   "first_name": "Kjetil", 
+   "last_name": "Valle", 
+   "user_avatar": "https://untappd.s3.amazonaws.com/profile/3c83cf4bd482a81b3a204708aa7365cf_thumb.jpg", 
+   "uid": 141680, 
+   "relationship": "friends", 
+   "location": "", 
+   "is_supporter": 0, 
+   "user_name": "valle"
+  }
+ }
 ]
