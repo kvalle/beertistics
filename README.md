@@ -5,14 +5,27 @@ Visualizing your drinking habits, based on your Untappd beer checkins.
 Beertistics offers visualization of your untappd checkin data in the form of charts, maps and photos.
 You log in using your
 
-### Setup
+### Getting started
 
-If you want to help contribute to beertistics, these are the steps needed to get verything up and running.
+If you want to help contribute to beertistics, follow these steps.
 
-1. `$ pip install -r requirements.txt`
-1. `$ cp beertistics/config/default.py.sample cp beertistics/config/default.py`
+#### Install
 
-If you'd like to be able to actually authenticate with Untappd while developing (and not just use the stubbed data), make sure you update the `UNTAPPD_CLIENT_ID` and `UNTAPPD_CLIENT_SECRET` fields and set `UNTAPPD_STUB` to `False`.
+1. Install dependencies:
+
+        $ pip install -r requirements.txt
+
+1. Create config-file:
+
+        $ cp beertistics/config/default.py.sample cp beertistics/config/default.py
+
+    If you'd like to be able to actually authenticate with Untappd while developing (and not just use the stubbed data), make sure you update the `UNTAPPD_CLIENT_ID` and `UNTAPPD_CLIENT_SECRET` fields and set `UNTAPPD_STUB` to `False`.
+
+1. Set up pre-commit hook:
+
+        $ ln -s ../../scripts/pre-commit.sh .git/hooks/pre-commit
+
+#### Startup
 
 You start the development server with the provided script.
 
@@ -21,10 +34,6 @@ You start the development server with the provided script.
 You'll also need an Elastic Search instance running. Start one with this script (from another terminal/tab):
 
     $ ./scripts/es.sh
-
-### Author
-
-Any questions and feedback is welcome at kjetil.valle AT gmail.com.
 
 ### Disclaimer
 

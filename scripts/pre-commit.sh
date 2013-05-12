@@ -3,7 +3,7 @@
 # Script intended for running as git pre-commit hook.
 # Setup hook using
 # 
-#   ln -s scripts/pre-commit.sh .git/hooks/pre-commit
+#   ln -s ../../scripts/pre-commit.sh .git/hooks/pre-commit
 # 
 # from the projects root directory
 
