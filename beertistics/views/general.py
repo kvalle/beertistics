@@ -1,5 +1,6 @@
 import flask
-from beertistics import app, auth, user_service
+import os.path
+from beertistics import app, auth, user_service, visuals
 from beertistics.exceptions import NoSuchUserException
 
 @app.route('/')
@@ -24,6 +25,12 @@ def show_user():
 @app.route('/test')
 def test():
     return flask.render_template('test.html')
+
+@app.route('/visual/<string:visual_id>')
+def test(visual_id):
+    visual = visuals.get_visual(visual_id)
+    return flask.render_template(os.path.join('visuals', visual['template_name']))
+
 
 @app.route('/photos')
 @auth.requires_auth
