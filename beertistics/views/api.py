@@ -1,6 +1,6 @@
 import flask
 import traceback
-from functools import wraps
+import functools
 from json import dumps
 
 from beertistics import app, auth, stats, untappd, user_service
@@ -17,17 +17,12 @@ def json_response(fn, *args):
         return flask.Response(msg, 500, {'content-type': 'text/plain'})
 
 def fail_unless_logged_in(f):
-    @wraps(f)
+    @functools.wraps(f)
     def decorated(*args, **kwargs):
         if not auth.is_logged_in():
-            return flask.Response("User not logged in.", 500, {'content-type': 'text/plain'})
+            return flask.Response("Not logged in.", 500, {'content-type': 'text/plain'})
         return f(*args, **kwargs)
     return decorated
-
-@app.route('/api/test')
-@fail_unless_logged_in
-def api_test():
-    return json_response(stats.test)
 
 @app.route('/api/friends/')
 @fail_unless_logged_in

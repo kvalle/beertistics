@@ -19,7 +19,7 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
         assert '<title>Overview' in response.data
 
     def test_other_pages_redirect_correctly_after_login(self):
-        response = self.get_with_redirect('/stats/punchcard')
+        response = self.get_with_redirect('/visual/punchcard')
         assert '<div id="punchcard">' in response.data
         
     def test_logout_works_and_redirects_to_login_page(self):
@@ -36,8 +36,8 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
                             if str(rule).startswith("/api")]
         for page in pages:
             response = self.app.get(page)
-            assert 302 == response.status_code
-            assert "log-in" in response.location
+            self.assertEqual(500, response.status_code)
+            self.assertIn("Not logged in.", response.data)
 
 if __name__ == '__main__':
     unittest.main()

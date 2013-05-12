@@ -27,6 +27,7 @@ def test():
     return flask.render_template('test.html')
 
 @app.route('/visual/<string:visual_id>')
+@auth.requires_auth
 def test(visual_id):
     visual = visuals.get_visual(visual_id)
     return flask.render_template(os.path.join('visuals', visual['template_name']))

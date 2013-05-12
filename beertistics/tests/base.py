@@ -15,7 +15,7 @@ class BeertisticsTestCase():
         low limit on how many redirects it will follow before a 
         "loop detected" is raised.
         """
-        response = self.app.get('/stats/punchcard')
+        response = self.app.get(url)
         while limit > 0 and 302 == response.status_code:
             next = response.location.strip("http://").strip(app.config["SERVER_NAME"])
             response = self.app.get(next)
