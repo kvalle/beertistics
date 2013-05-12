@@ -31,7 +31,6 @@ def test(visual_id):
     visual = visuals.get_visual(visual_id)
     return flask.render_template(os.path.join('visuals', visual['template_name']))
 
-
 @app.route('/photos')
 @auth.requires_auth
 def photos():
