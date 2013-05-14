@@ -1,0 +1,385 @@
+{
+ "friends": [
+  {
+   "friendship_hash": "3d777b52bfe7a75e39c9cb4f8ddeaf1a", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sat, 11 May 2013 13:11:37 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Eivind", 
+    "last_name": "B.", 
+    "user_avatar": "https://gravatar.com/avatar/26a0c99ecf6fc76dba680209b4097dd0?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 481264, 
+    "relationship": "none", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "eivinhb"
+   }
+  }, 
+  {
+   "friendship_hash": "05fd55b5b14889c3dc68e952fbb547d4", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sat, 20 Apr 2013 06:39:58 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Joakim", 
+    "last_name": "Bjerkheim", 
+    "user_avatar": "https://gravatar.com/avatar/9fd8fe333723acaebf3c924dcf3a72b8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 527605, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "Bjerkis"
+   }
+  }, 
+  {
+   "friendship_hash": "6357228bb0f54f057cde7fd8fb84f322", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Mon, 18 Feb 2013 10:43:32 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "j\u00f8ran", 
+    "last_name": "", 
+    "user_avatar": "https://gravatar.com/avatar/f66cece7bb4d71f397d278d84e5df33b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 204348, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "lillesand"
+   }
+  }, 
+  {
+   "friendship_hash": "123a7b8f601272a00381f14d0b82221c", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Wed, 13 Feb 2013 10:21:59 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Erik", 
+    "last_name": "Larsen", 
+    "user_avatar": "https://gravatar.com/avatar/71fa9d04fdf3bce34b8fbc27295a35f0?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 426587, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "manthemachetes"
+   }
+  }, 
+  {
+   "friendship_hash": "67a99618216b99b2226742404584ef96", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Wed, 23 Jan 2013 10:01:09 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Tore Stautland", 
+    "last_name": "B.", 
+    "user_avatar": "https://gravatar.com/avatar/4e3f4aee9b372ae4b8dcdf4efa0ea5f8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 360082, 
+    "relationship": "pending_them", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "Stautland"
+   }
+  }, 
+  {
+   "friendship_hash": "a4de51fb1a67b84b91ecfb1b67d6f7fa", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Wed, 19 Dec 2012 09:24:00 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Lars", 
+    "last_name": "E.", 
+    "user_avatar": "https://gravatar.com/avatar/0e136574fe2d7c8f5acb2cb5e22a079c?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 331705, 
+    "relationship": "none", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "larsmola"
+   }
+  }, 
+  {
+   "friendship_hash": "77ab537eca721da1ab89360c567f546f", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Wed, 07 Nov 2012 10:53:54 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Martin", 
+    "last_name": "Juell", 
+    "user_avatar": "https://gravatar.com/avatar/e79e9488dfbe89eb999be42fc2711680?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 319624, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "juell"
+   }
+  }, 
+  {
+   "friendship_hash": "59a322673ad17c0a0ba8289c67778d4f", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sun, 28 Oct 2012 02:10:59 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Espen", 
+    "last_name": "Halvorsen", 
+    "user_avatar": "https://gravatar.com/avatar/5e3ac92bb05d20e014e2ca332677c527?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 300063, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "espenhh"
+   }
+  }, 
+  {
+   "friendship_hash": "cb82ea40504c8191db350f5803566979", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Fri, 12 Oct 2012 14:44:18 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "\u00d8ystein", 
+    "last_name": "", 
+    "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
+    "uid": 296217, 
+    "relationship": "friends", 
+    "location": "Oslo", 
+    "is_supporter": 0, 
+    "user_name": "oecarlsson"
+   }
+  }, 
+  {
+   "friendship_hash": "ea6de2d164e5f30ed425fe007b8c6cf5", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Fri, 12 Oct 2012 09:25:29 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Jon", 
+    "last_name": "P.", 
+    "user_avatar": "https://untappd.s3.amazonaws.com/profile/2408bcaa920e4dd47703b56240e93170_thumb.jpg", 
+    "uid": 83258, 
+    "relationship": "none", 
+    "location": "Bergen, Norway", 
+    "is_supporter": 0, 
+    "user_name": "jonpacker"
+   }
+  }, 
+  {
+   "friendship_hash": "e8c3340fe5a69ae51501763af551fb63", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Mon, 03 Sep 2012 10:40:03 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Mats", 
+    "last_name": "B.", 
+    "user_avatar": "https://gravatar.com/avatar/ab1d367fca4132ee31cfd869d4764a40?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 259867, 
+    "relationship": "pending_them", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "mbolstad"
+   }
+  }, 
+  {
+   "friendship_hash": "38e38ba9877871ac69b4fd5422a3710e", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Mon, 13 Aug 2012 11:12:38 +0000", 
+   "user": {
+    "bio": "0", 
+    "first_name": "Are", 
+    "last_name": "", 
+    "user_avatar": "https://gravatar.com/avatar/a17cdacedd41ce889973ea113a27b0cb?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 237366, 
+    "relationship": "none", 
+    "location": "Oslo", 
+    "is_supporter": 0, 
+    "user_name": "arehsan"
+   }
+  }, 
+  {
+   "friendship_hash": "2dec9bad33b30e8bb2f7a3c8dd77012c", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sat, 28 Jul 2012 10:23:08 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Ruby", 
+    "last_name": "R.", 
+    "user_avatar": "https://gravatar.com/avatar/fb10b58c189622c3b5b4ce32ad0b359b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 221704, 
+    "relationship": "none", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "Rubiks"
+   }
+  }, 
+  {
+   "friendship_hash": "2dda062034ae698df51383f9ad16d70e", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Tue, 24 Jul 2012 21:36:14 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Torstein", 
+    "last_name": "", 
+    "user_avatar": "https://gravatar.com/avatar/0773773e9d34d77decd2b61de897255b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 209345, 
+    "relationship": "friends", 
+    "location": "Oslo", 
+    "is_supporter": 0, 
+    "user_name": "tnicolaysen"
+   }
+  }, 
+  {
+   "friendship_hash": "b85fc03e878086844fb61b29b71f33e4", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sun, 01 Jul 2012 11:23:34 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Marius", 
+    "last_name": "Gundersen", 
+    "user_avatar": "https://gravatar.com/avatar/c5a3b1c896e51d58bdd5d92ffbd402d2?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 198551, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "Gundersen"
+   }
+  }, 
+  {
+   "friendship_hash": "5813667034f97b96e41cf040e692a529", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sun, 01 Jul 2012 11:17:08 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Magnus", 
+    "last_name": "", 
+    "user_avatar": "https://gravatar.com/avatar/603e1f9fbcb6b62ba19c2090b145eaa2?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 165379, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "emagnus"
+   }
+  }, 
+  {
+   "friendship_hash": "136c60862a833999c5c88ef9eb870bc2", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Sat, 23 Jun 2012 13:43:13 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Sveinung", 
+    "last_name": "Dalatun", 
+    "user_avatar": "https://gravatar.com/avatar/28c7beff2b53eb70bdefc78784d6c645?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 193228, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "sveinung"
+   }
+  }, 
+  {
+   "friendship_hash": "993b2e0c387ef47854b75d05aabc4629", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Fri, 15 Jun 2012 10:34:01 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "j\u00f8rgen", 
+    "last_name": "", 
+    "user_avatar": "https://gravatar.com/avatar/e23ed2207814778d80a48a3e8528ed67?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 167051, 
+    "relationship": "pending_them", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "porqpine"
+   }
+  }, 
+  {
+   "friendship_hash": "e9f8e9d485bfcfd0150837ccc4d03d69", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Fri, 15 Jun 2012 10:33:24 +0000", 
+   "user": {
+    "bio": "this.belly.contents += beer;", 
+    "first_name": "\u00d8yvind", 
+    "last_name": "M.", 
+    "user_avatar": "https://gravatar.com/avatar/7c5af454aae592d4f80e5c8277090fa5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 97571, 
+    "relationship": "none", 
+    "location": "Oslo", 
+    "is_supporter": 0, 
+    "user_name": "oyvindmal"
+   }
+  }, 
+  {
+   "friendship_hash": "a059c55c31e53ea797d8fc765dd80f4c", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Wed, 06 Jun 2012 08:54:03 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "Kjetil", 
+    "last_name": "Valle", 
+    "user_avatar": "https://untappd.s3.amazonaws.com/profile/3c83cf4bd482a81b3a204708aa7365cf_thumb.jpg", 
+    "uid": 141680, 
+    "relationship": "self", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "valle"
+   }
+  }
+ ], 
+ "user": "tinekl"
+}

@@ -1,0 +1,2416 @@
+{
+ "notifications": {
+  "unread_count": {
+   "messages": 0, 
+   "toasts": 0, 
+   "friends": 1, 
+   "comments": 0, 
+   "news": 0
+  }, 
+  "type": "notifications"
+ }, 
+ "meta": {
+  "code": 200, 
+  "response_time": {
+   "measure": "seconds", 
+   "time": 0.355
+  }
+ }, 
+ "response": {
+  "user": {
+   "bio": "", 
+   "first_name": "Tine", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 184746, 
+   "relationship": "friends", 
+   "untappd_url": "http://untappd.com/user/tinekl", 
+   "url": "", 
+   "checkins": {
+    "count": 15, 
+    "items": [
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Tue, 14 May 2013 19:36:01 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/STzNzf", 
+        "foursquare_id": "50c9de0be4b0b713c476623f"
+       }, 
+       "venue_id": 504642, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/brewery_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/brewery_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/brewery_256.png"
+       }, 
+       "venue_name": "Crowbar & Bryggeri", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Torggata 32", 
+        "lng": 10.7534, 
+        "venue_city": "Oslo", 
+        "lat": 59.9172
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d11b941735", 
+          "category_name": "Pub"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "50327c8591d4c4b30a586d5d", 
+          "category_name": "Brewery"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30437417, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 360524, 
+       "beer_style": "American Amber / Red Ale", 
+       "beer_name": "Strange Brew", 
+       "beer_active": 1, 
+       "beer_abv": 0, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 48143, 
+       "brewery_active": 1, 
+       "brewery_name": "Crowbar  Bryggeri", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 1, 
+       "items": [
+        {
+         "badge_description": "Everyone loves fresh beer, but obviously not as much as you do. You went straight to the source. That's 10 Beers at a Microbrewery/Brewery.", 
+         "badge_image": {
+          "md": "https://untappd.s3.amazonaws.com/assets/badges/bdg_findSource_md.png", 
+          "sm": "https://untappd.s3.amazonaws.com/assets/badges/bdg_findSource_sm.png", 
+          "lg": "https://untappd.s3.amazonaws.com/assets/badges/bdg_findSource_lg.png"
+         }, 
+         "created_at": "Tue, 14 May 2013 19:36:01 +0000", 
+         "user_badge_id": 4504727, 
+         "badge_id": 72, 
+         "badge_name": "Find the Source"
+        }
+       ]
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Tue, 14 May 2013 18:58:20 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/STzNzf", 
+        "foursquare_id": "50c9de0be4b0b713c476623f"
+       }, 
+       "venue_id": 504642, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/brewery_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/brewery_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/brewery_256.png"
+       }, 
+       "venue_name": "Crowbar & Bryggeri", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Torggata 32", 
+        "lng": 10.7534, 
+        "venue_city": "Oslo", 
+        "lat": 59.9172
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d11b941735", 
+          "category_name": "Pub"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "50327c8591d4c4b30a586d5d", 
+          "category_name": "Brewery"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30436007, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 277758, 
+       "beer_style": "American Pale Ale", 
+       "beer_name": "Crow's Scream Ale", 
+       "beer_active": 1, 
+       "beer_abv": 4.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 3, 
+      "toasts": {
+       "count": 1, 
+       "items": [
+        {
+         "created_at": "Tue, 14 May 2013 19:11:12 +0000", 
+         "like_owner": false, 
+         "like_id": 6137286, 
+         "user": {
+          "bio": "", 
+          "first_name": "Joakim", 
+          "last_name": "Bjerkheim", 
+          "user_avatar": "https://gravatar.com/avatar/9fd8fe333723acaebf3c924dcf3a72b8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+          "uid": 527605, 
+          "location": "", 
+          "account_type": "user", 
+          "user_name": "Bjerkis", 
+          "brewery_details": [], 
+          "user_link": "https://untappd.com/user/Bjerkis"
+         }
+        }
+       ], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 48143, 
+       "brewery_active": 1, 
+       "brewery_name": "Crowbar  Bryggeri", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Tue, 14 May 2013 16:56:23 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/cR6Dww", 
+        "foursquare_id": "4b73f90ef964a5202cc22de3"
+       }, 
+       "venue_id": 176622, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/arts_entertainment/bowling_88.png", 
+        "sm": "https://foursquare.com/img/categories/arts_entertainment/bowling_64.png", 
+        "lg": "https://foursquare.com/img/categories/arts_entertainment/bowling_256.png"
+       }, 
+       "venue_name": "Oslo Bar og Bowling", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Torggata 16", 
+        "lng": 10.7505, 
+        "venue_city": "Oslo", 
+        "lat": 59.9157
+       }, 
+       "parent_category_id": "4d4b7104d754a06370d81259", 
+       "primary_category": "Arts & Entertainment", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d1e4931735", 
+          "category_name": "Bowling Alley"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30432444, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 2, 
+       "wish_list": false, 
+       "bid": 6439, 
+       "beer_style": "American Adjunct Lager", 
+       "beer_name": "San Miguel", 
+       "beer_active": 1, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-SanMiguel_6439.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 3, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 4726, 
+       "brewery_active": 1, 
+       "brewery_name": "San Miguel (Spain)", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-SanMiguelSpain_4726.jpeg", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Spain"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Sat, 11 May 2013 23:56:03 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/STzNzf", 
+        "foursquare_id": "50c9de0be4b0b713c476623f"
+       }, 
+       "venue_id": 504642, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/brewery_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/brewery_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/brewery_256.png"
+       }, 
+       "venue_name": "Crowbar & Bryggeri", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Torggata 32", 
+        "lng": 10.7534, 
+        "venue_city": "Oslo", 
+        "lat": 59.9172
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d11b941735", 
+          "category_name": "Pub"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "50327c8591d4c4b30a586d5d", 
+          "category_name": "Brewery"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30193952, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 171135, 
+       "beer_style": "American Amber / Red Ale", 
+       "beer_name": "Dead Cat", 
+       "beer_active": 1, 
+       "beer_abv": 4.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-DeadCat_171135.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 2888, 
+       "brewery_active": 1, 
+       "brewery_name": "Beer Here", 
+       "contact": {
+        "url": "http://www.beerhere.dk", 
+        "twitter": "", 
+        "facebook": "http://www.facebook.com/groups/56002734018/"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-BeerHere_2888.jpeg", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "Copenhagen", 
+        "lng": 12.5567, 
+        "lat": 55.6684
+       }, 
+       "country_name": "Denmark"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Sat, 11 May 2013 21:24:51 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/aQaG1U", 
+        "foursquare_id": "4b0ab28ef964a520882623e3"
+       }, 
+       "venue_id": 182075, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "Posthallen Restaurant | Bar | Caf\u00e9", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Prinsens gate 8", 
+        "lng": 10.7455, 
+        "venue_city": "Oslo", 
+        "lat": 59.9105
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30159609, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 4.5, 
+       "wish_list": false, 
+       "bid": 31823, 
+       "beer_style": "Imperial / Double IPA", 
+       "beer_name": "#100", 
+       "beer_active": 1, 
+       "beer_abv": 10, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-100_31823.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 1, 
+       "items": [
+        {
+         "created_at": "Sat, 11 May 2013 22:03:20 +0000", 
+         "like_owner": false, 
+         "like_id": 6053004, 
+         "user": {
+          "bio": "", 
+          "first_name": "\u00d8ystein", 
+          "last_name": "", 
+          "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
+          "uid": 296217, 
+          "location": "Oslo", 
+          "account_type": "user", 
+          "user_name": "oecarlsson", 
+          "brewery_details": [], 
+          "user_link": "https://untappd.com/user/oecarlsson"
+         }
+        }
+       ], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Sat, 11 May 2013 20:11:21 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/aQaG1U", 
+        "foursquare_id": "4b0ab28ef964a520882623e3"
+       }, 
+       "venue_id": 182075, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "Posthallen Restaurant | Bar | Caf\u00e9", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Prinsens gate 8", 
+        "lng": 10.7455, 
+        "venue_city": "Oslo", 
+        "lat": 59.9105
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30145151, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 1.5, 
+       "wish_list": false, 
+       "bid": 5050, 
+       "beer_style": "Witbier", 
+       "beer_name": "Wit", 
+       "beer_active": 1, 
+       "beer_abv": 4.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-Wit_5050.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Sat, 11 May 2013 18:17:04 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/aQaG1U", 
+        "foursquare_id": "4b0ab28ef964a520882623e3"
+       }, 
+       "venue_id": 182075, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "Posthallen Restaurant | Bar | Caf\u00e9", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Prinsens gate 8", 
+        "lng": 10.7455, 
+        "venue_city": "Oslo", 
+        "lat": 59.9105
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30125020, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 2.5, 
+       "wish_list": false, 
+       "bid": 33765, 
+       "beer_style": "American Pale Ale", 
+       "beer_name": "Pale Ale", 
+       "beer_active": 1, 
+       "beer_abv": 6, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-PaleAle_33765.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 3, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 10 May 2013 21:07:23 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/9OQoAL", 
+        "foursquare_id": "4b0da026f964a5208f4c23e3"
+       }, 
+       "venue_id": 80191, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "People's", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": "http://www.cafepeoples.no"
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Arbeidersamfunnets plass 1", 
+        "lng": 10.7511, 
+        "venue_city": "Oslo", 
+        "lat": 59.9153
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29998142, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 3, 
+       "wish_list": false, 
+       "bid": 3759, 
+       "beer_style": "American IPA", 
+       "beer_name": "Snake Dog IPA", 
+       "beer_active": 1, 
+       "beer_abv": 7.1, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-flyingDogSnakeDog.jpg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 2, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 540, 
+       "brewery_active": 1, 
+       "brewery_name": "Flying Dog Brewery", 
+       "contact": {
+        "url": "http://flyingdogales.com", 
+        "twitter": "flyingdog", 
+        "facebook": "http://www.facebook.com/flyingdog"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-flyingDog.jpg", 
+       "location": {
+        "brewery_city": "Frederick", 
+        "brewery_state": "MD", 
+        "lng": -77.4265, 
+        "lat": 39.3627
+       }, 
+       "country_name": "United States"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 1, 
+       "items": [
+        {
+         "photo": {
+          "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_320x320.jpg", 
+          "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_640x640.jpg", 
+          "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_100x100.jpg", 
+          "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_raw.jpg"
+         }, 
+         "photo_id": 3369430
+        }
+       ]
+      }, 
+      "created_at": "Fri, 10 May 2013 19:48:07 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/9OQoAL", 
+        "foursquare_id": "4b0da026f964a5208f4c23e3"
+       }, 
+       "venue_id": 80191, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "People's", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": "http://www.cafepeoples.no"
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Arbeidersamfunnets plass 1", 
+        "lng": 10.7511, 
+        "venue_city": "Oslo", 
+        "lat": 59.9153
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29990599, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 4, 
+       "wish_list": false, 
+       "bid": 15929, 
+       "beer_style": "American IPA", 
+       "beer_name": "India Pale Ale (IPA)", 
+       "beer_active": 1, 
+       "beer_abv": 7.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-IndiaPaleAle_15929.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 1, 
+       "items": [
+        {
+         "badge_description": "We believe in IPA and you should too. Try 3 different IPA style beers in a 30 days period.", 
+         "badge_image": {
+          "md": "https://untappd.s3.amazonaws.com/assets/badges/bdg_hoptopia_md.png", 
+          "sm": "https://untappd.s3.amazonaws.com/assets/badges/bdg_hoptopia_sm.png", 
+          "lg": "https://untappd.s3.amazonaws.com/assets/badges/bdg_hoptopia_lg.png"
+         }, 
+         "created_at": "Fri, 10 May 2013 19:48:08 +0000", 
+         "user_badge_id": 4427780, 
+         "badge_id": 111, 
+         "badge_name": "I Believe in IPA! (Level 7)"
+        }
+       ]
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Thu, 09 May 2013 20:31:41 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/e7V8nM", 
+        "foursquare_id": "4d5e99e05b276dcbdd3bfcc5"
+       }, 
+       "venue_id": 47552, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/food/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/food/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/food/default_256.png"
+       }, 
+       "venue_name": "Amundsen Bryggeri & Spiseri", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": "http://amundsenbryggeri.no"
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Stortingsgata 20", 
+        "lng": 10.7349, 
+        "venue_city": "Oslo", 
+        "lat": 59.9134
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "50327c8591d4c4b30a586d5d", 
+          "category_name": "Brewery"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d155941735", 
+          "category_name": "Gastropub"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29904070, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 3, 
+       "wish_list": false, 
+       "bid": 35135, 
+       "beer_style": "American Amber / Red Ale", 
+       "beer_name": "Rallar Amber Ale", 
+       "beer_active": 1, 
+       "beer_abv": 4.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-RallarAmberAle_35135.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 3778, 
+       "brewery_active": 1, 
+       "brewery_name": "\u00c6gir Bryggeri", 
+       "contact": {
+        "url": "http://www.flamsbrygga.no/bryggeri/", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-girBryggeri_3778.jpeg", 
+       "location": {
+        "brewery_city": "Fl\u00e5m", 
+        "brewery_state": "Aurland", 
+        "lng": 7.12075, 
+        "lat": 60.8381
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 1, 
+       "items": [
+        {
+         "photo": {
+          "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_320x320.jpg", 
+          "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_640x640.jpg", 
+          "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_100x100.jpg", 
+          "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_raw.jpg"
+         }, 
+         "photo_id": 3265085
+        }
+       ]
+      }, 
+      "created_at": "Fri, 03 May 2013 21:47:22 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/qQy3up", 
+        "foursquare_id": "4e346b9fd4c0634348232484"
+       }, 
+       "venue_id": 357140, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Munkegata", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 10.7688, 
+        "venue_city": "", 
+        "lat": 59.9082
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4d954b06a243a5684965b473", 
+          "category_name": "Residential Building (Apartment/Condo)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29313022, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 54209, 
+       "beer_style": "Imperial / Double IPA", 
+       "beer_name": "Brewers Reserve Rye IPA", 
+       "beer_active": 1, 
+       "beer_abv": 8.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-BrewersReserveRyeIPA_54209.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 6826, 
+       "brewery_active": 1, 
+       "brewery_name": "Lervig Aktiebryggeri", 
+       "contact": {
+        "url": "http://www.lervig.no", 
+        "twitter": "", 
+        "facebook": "http://www.facebook.com/lervigaktiebryggeri"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-LervigAktiebryggeri_6826.jpeg", 
+       "location": {
+        "brewery_city": "Stavanger", 
+        "brewery_state": "", 
+        "lng": 5.74646, 
+        "lat": 58.9457
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 03 May 2013 18:00:39 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/qQy3up", 
+        "foursquare_id": "4e346b9fd4c0634348232484"
+       }, 
+       "venue_id": 357140, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Munkegata", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 10.7688, 
+        "venue_city": "", 
+        "lat": 59.9082
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4d954b06a243a5684965b473", 
+          "category_name": "Residential Building (Apartment/Condo)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29293252, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 171802, 
+       "beer_style": "Imperial / Double Pilsner", 
+       "beer_name": "Kiwi Imperial Pils", 
+       "beer_active": 1, 
+       "beer_abv": 7.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_171802_sm_3e721aa062d6e77c1dac176fa49f2d.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 3, 
+      "toasts": {
+       "count": 2, 
+       "items": [
+        {
+         "created_at": "Fri, 03 May 2013 18:05:16 +0000", 
+         "like_owner": false, 
+         "like_id": 5789126, 
+         "user": {
+          "bio": "", 
+          "first_name": "\u00d8ystein", 
+          "last_name": "", 
+          "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
+          "uid": 296217, 
+          "location": "Oslo", 
+          "account_type": "user", 
+          "user_name": "oecarlsson", 
+          "brewery_details": [], 
+          "user_link": "https://untappd.com/user/oecarlsson"
+         }
+        }, 
+        {
+         "created_at": "Fri, 03 May 2013 18:08:53 +0000", 
+         "like_owner": false, 
+         "like_id": 5789288, 
+         "user": {
+          "bio": "", 
+          "first_name": "Tine", 
+          "last_name": "", 
+          "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+          "uid": 184746, 
+          "location": "", 
+          "account_type": "user", 
+          "user_name": "tinekl", 
+          "brewery_details": [], 
+          "user_link": "https://untappd.com/user/tinekl"
+         }
+        }
+       ], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 3735, 
+       "brewery_active": 1, 
+       "brewery_name": "Evil Twin Brewing", 
+       "contact": {
+        "url": "http://www.eviltwin.dk", 
+        "twitter": "EvilTwinBrewing", 
+        "facebook": "http://www.facebook.com/EvilTwinBrewing"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-TheEvilTwin_3735.jpeg", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "2500 Valby", 
+        "lng": 12.4959, 
+        "lat": 55.6617
+       }, 
+       "country_name": "Denmark"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 03 May 2013 17:58:07 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/qQy3up", 
+        "foursquare_id": "4e346b9fd4c0634348232484"
+       }, 
+       "venue_id": 357140, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Munkegata", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 10.7688, 
+        "venue_city": "", 
+        "lat": 59.9082
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4d954b06a243a5684965b473", 
+          "category_name": "Residential Building (Apartment/Condo)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29293124, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 4, 
+       "wish_list": false, 
+       "bid": 84508, 
+       "beer_style": "Saison / Farmhouse Ale", 
+       "beer_name": "India-style Saison (Bridge Road Brewers Collab)", 
+       "beer_active": 1, 
+       "beer_abv": 7.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-IndiaSaison_84508.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 4, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 26 Apr 2013 21:27:55 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/STzNzf", 
+        "foursquare_id": "50c9de0be4b0b713c476623f"
+       }, 
+       "venue_id": 504642, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/brewery_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/brewery_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/brewery_256.png"
+       }, 
+       "venue_name": "Crowbar & Bryggeri", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Torggata 32", 
+        "lng": 10.7534, 
+        "venue_city": "Oslo", 
+        "lat": 59.9172
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d11b941735", 
+          "category_name": "Pub"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "50327c8591d4c4b30a586d5d", 
+          "category_name": "Brewery"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 28634908, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 348454, 
+       "beer_style": "Hefeweizen", 
+       "beer_name": "Besserweizen", 
+       "beer_active": 1, 
+       "beer_abv": 5.4, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 3, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 26238, 
+       "brewery_active": 1, 
+       "brewery_name": "Sundbytunet", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Norway"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 26 Apr 2013 20:14:41 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/clrB04", 
+        "foursquare_id": "4ba3db5ef964a520246738e3"
+       }, 
+       "venue_id": 124503, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/food/burger_88.png", 
+        "sm": "https://foursquare.com/img/categories/food/burger_64.png", 
+        "lg": "https://foursquare.com/img/categories/food/burger_256.png"
+       }, 
+       "venue_name": "Bugges Eftf", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Leirfallsgaten 6", 
+        "lng": 10.7574, 
+        "venue_city": "Oslo", 
+        "lat": 59.9191
+       }, 
+       "parent_category_id": "4d4b7105d754a06374d81259", 
+       "primary_category": "Food", 
+       "categories": {
+        "count": 2, 
+        "items": [
+         {
+          "is_primary": false, 
+          "category_id": "4bf58dd8d48988d16d941735", 
+          "category_name": "Caf\u00e9"
+         }, 
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d16c941735", 
+          "category_name": "Burger Joint"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 28627665, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 0, 
+       "wish_list": false, 
+       "bid": 8668, 
+       "beer_style": "English Pale Ale", 
+       "beer_name": "Whitstable Bay Organic Ale", 
+       "beer_active": 1, 
+       "beer_abv": 4.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-WhitstableBayOrganicAle_8668.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 2, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 1132, 
+       "brewery_active": 1, 
+       "brewery_name": "Shepherd Neame", 
+       "contact": {
+        "url": "http://www.shepherdneame.co.uk/", 
+        "twitter": "ShepherdNeame", 
+        "facebook": "http://www.facebook.com/shepherdneame"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-ShepherdNeame_1132.jpeg", 
+       "location": {
+        "brewery_city": "Faversham", 
+        "brewery_state": "", 
+        "lng": 0.892661, 
+        "lat": 51.3174
+       }, 
+       "country_name": "England"
+      }, 
+      "badges": {
+       "count": 1, 
+       "items": [
+        {
+         "badge_description": "Can't stay in the same place for 1 night? That's 3 bars in 1 night.", 
+         "badge_image": {
+          "md": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_md.png", 
+          "sm": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_sm.png", 
+          "lg": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_lg.png"
+         }, 
+         "created_at": "Fri, 26 Apr 2013 20:14:42 +0000", 
+         "user_badge_id": 4246969, 
+         "badge_id": 24, 
+         "badge_name": "Brew Crawl"
+        }
+       ]
+      }
+     }
+    ]
+   }, 
+   "settings": [], 
+   "media": {
+    "count": 5, 
+    "items": [
+     {
+      "photo_id": 3369430, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_10/f6fb27ae37fb7ca5f8c3548187d253d9_raw.jpg"
+      }, 
+      "created_at": "Fri, 10 May 2013 19:47:52 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/9OQoAL", 
+        "foursquare_id": "4b0da026f964a5208f4c23e3"
+       }, 
+       "venue_id": 80191, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/bar_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/bar_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/bar_256.png"
+       }, 
+       "venue_name": "People's", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": "http://www.cafepeoples.no"
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Arbeidersamfunnets plass 1", 
+        "lng": 10.7511, 
+        "venue_city": "Oslo", 
+        "lat": 59.9153
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d116941735", 
+          "category_name": "Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29990599, 
+      "beer": {
+       "auth_rating": 4, 
+       "beer_description": "A rich, malty, and very bitter ale. Cascade hops provide a long, fruity, and spicy after-taste. Recommended serving temperature 10\u00b0C/50\u00b0F. Ideal with barbequed or smoked meat dishes.", 
+       "bid": 15929, 
+       "beer_style": "American IPA", 
+       "beer_name": "India Pale Ale (IPA)", 
+       "wish_list": false, 
+       "beer_abv": 7.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-IndiaPaleAle_15929.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "url": null, 
+       "location": "", 
+       "account_type": "user", 
+       "user_name": "tinekl"
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }
+     }, 
+     {
+      "photo_id": 3265085, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_03/527694030e5d09c71cb59268dc0fc3c1_raw.jpg"
+      }, 
+      "created_at": "Fri, 03 May 2013 21:47:51 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/qQy3up", 
+        "foursquare_id": "4e346b9fd4c0634348232484"
+       }, 
+       "venue_id": 357140, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Munkegata", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 10.7688, 
+        "venue_city": "", 
+        "lat": 59.9082
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4d954b06a243a5684965b473", 
+          "category_name": "Residential Building (Apartment/Condo)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 29313022, 
+      "beer": {
+       "auth_rating": 4, 
+       "beer_description": "", 
+       "bid": 54209, 
+       "beer_style": "Imperial / Double IPA", 
+       "beer_name": "Brewers Reserve Rye IPA", 
+       "wish_list": false, 
+       "beer_abv": 8.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-BrewersReserveRyeIPA_54209.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "url": null, 
+       "location": "", 
+       "account_type": "user", 
+       "user_name": "tinekl"
+      }, 
+      "brewery": {
+       "brewery_id": 6826, 
+       "brewery_active": 1, 
+       "brewery_name": "Lervig Aktiebryggeri", 
+       "contact": {
+        "url": "http://www.lervig.no", 
+        "twitter": "", 
+        "facebook": "http://www.facebook.com/lervigaktiebryggeri"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-LervigAktiebryggeri_6826.jpeg", 
+       "location": {
+        "brewery_city": "Stavanger", 
+        "brewery_state": "", 
+        "lng": 5.74646, 
+        "lat": 58.9457
+       }, 
+       "country_name": "Norway"
+      }
+     }, 
+     {
+      "photo_id": 3036335, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_04_17/d277557eab230b6f9f7acb22e267c4ec_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_04_17/d277557eab230b6f9f7acb22e267c4ec_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_04_17/d277557eab230b6f9f7acb22e267c4ec_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_04_17/d277557eab230b6f9f7acb22e267c4ec_raw.jpg"
+      }, 
+      "created_at": "Wed, 17 Apr 2013 19:45:26 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/bzsBbS", 
+        "foursquare_id": "4c31de24452620a16025210f"
+       }, 
+       "venue_id": 224860, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/home_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/home_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/home_256.png"
+       }, 
+       "venue_name": "Badebakken", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "", 
+        "lng": 10.7632, 
+        "venue_city": "Oslo", 
+        "lat": 59.9401
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d103941735", 
+          "category_name": "Home (private)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 27823111, 
+      "beer": {
+       "auth_rating": 4.5, 
+       "beer_description": "", 
+       "bid": 297727, 
+       "beer_style": "American Strong Ale", 
+       "beer_name": "Red Horizon 3. Edition", 
+       "wish_list": false, 
+       "beer_abv": 12.5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_297727_3b70f1ee3e4a03e8b92faee84f77.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "url": null, 
+       "location": "", 
+       "account_type": "user", 
+       "user_name": "tinekl"
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }
+     }, 
+     {
+      "photo_id": 3035810, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_04_17/f599aa81796667ccda7d6ea25ad3efd7_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_04_17/f599aa81796667ccda7d6ea25ad3efd7_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_04_17/f599aa81796667ccda7d6ea25ad3efd7_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_04_17/f599aa81796667ccda7d6ea25ad3efd7_raw.jpg"
+      }, 
+      "created_at": "Wed, 17 Apr 2013 18:11:22 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/bzsBbS", 
+        "foursquare_id": "4c31de24452620a16025210f"
+       }, 
+       "venue_id": 224860, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/home_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/home_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/home_256.png"
+       }, 
+       "venue_name": "Badebakken", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "", 
+        "lng": 10.7632, 
+        "venue_city": "Oslo", 
+        "lat": 59.9401
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d103941735", 
+          "category_name": "Home (private)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 27820223, 
+      "beer": {
+       "auth_rating": 3.5, 
+       "beer_description": "Flavored with Yde with lemon and lime.", 
+       "bid": 76389, 
+       "beer_style": "Fruit Beer", 
+       "beer_name": "Kiin Kiin", 
+       "wish_list": false, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_76389_sm_e07f3ad08219a17baaa12d81bf1830.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "url": null, 
+       "location": "", 
+       "account_type": "user", 
+       "user_name": "tinekl"
+      }, 
+      "brewery": {
+       "brewery_id": 2813, 
+       "brewery_active": 1, 
+       "brewery_name": "Mikkeller", 
+       "contact": {
+        "url": "http://www.mikkeller.dk", 
+        "twitter": "MikkellerBeer", 
+        "facebook": "http://www.facebook.com/mikkeller"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-Mikkeller_2813.jpeg", 
+       "location": {
+        "brewery_city": "Copenhagen", 
+        "brewery_state": "", 
+        "lng": 12.5575, 
+        "lat": 55.672
+       }, 
+       "country_name": "Denmark"
+      }
+     }, 
+     {
+      "photo_id": 2691579, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_raw.jpg"
+      }, 
+      "created_at": "Sat, 23 Mar 2013 14:19:01 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/ooYQqp", 
+        "foursquare_id": "4e5fae2062e19bc92add0010"
+       }, 
+       "venue_id": 340683, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/parks_outdoors/harbor_88.png", 
+        "sm": "https://foursquare.com/img/categories/parks_outdoors/harbor_64.png", 
+        "lg": "https://foursquare.com/img/categories/parks_outdoors/harbor_256.png"
+       }, 
+       "venue_name": "Fjonesundet", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 8.48162, 
+        "venue_city": "", 
+        "lat": 59.1757
+       }, 
+       "parent_category_id": "4d4b7105d754a06377d81259", 
+       "primary_category": "Great Outdoors", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d1e0941735", 
+          "category_name": "Harbor or Marina"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 25498006, 
+      "beer": {
+       "auth_rating": 5, 
+       "beer_description": "", 
+       "bid": 5991, 
+       "beer_style": "Euro Lager", 
+       "beer_name": "Carlsberg", 
+       "wish_list": false, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-Carlsberg_5991.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "url": null, 
+       "location": "", 
+       "account_type": "user", 
+       "user_name": "tinekl"
+      }, 
+      "brewery": {
+       "brewery_id": 344, 
+       "brewery_active": 1, 
+       "brewery_name": "Carlsberg Group", 
+       "contact": {
+        "url": "www.carlsberggroup.com", 
+        "twitter": "carlsberggroup", 
+        "facebook": "http://www.facebook.com/Carlsberg"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-CarlsbergBrewery_344.jpeg", 
+       "location": {
+        "brewery_city": "Copenhagen", 
+        "brewery_state": "", 
+        "lng": 12.535, 
+        "lat": 55.6673
+       }, 
+       "country_name": "Denmark"
+      }
+     }
+    ]
+   }, 
+   "contact": {
+    "facebook": 0
+   }, 
+   "date_joined": "Wed, 06 Jun 2012 15:52:57 +0000", 
+   "location": "", 
+   "account_type": "user", 
+   "is_supporter": 0, 
+   "recent_brews": {
+    "count": 5, 
+    "items": [
+     {
+      "beer": {
+       "auth_rating": 4, 
+       "beer_description": "", 
+       "bid": 360524, 
+       "beer_style": "American Amber / Red Ale", 
+       "beer_name": "Strange Brew", 
+       "wish_list": false, 
+       "beer_abv": 0, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+      }, 
+      "brewery": {
+       "brewery_id": 48143, 
+       "brewery_active": 1, 
+       "brewery_name": "Crowbar  Bryggeri", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Norway"
+      }
+     }, 
+     {
+      "beer": {
+       "auth_rating": 3, 
+       "beer_description": "", 
+       "bid": 277758, 
+       "beer_style": "American Pale Ale", 
+       "beer_name": "Crow's Scream Ale", 
+       "wish_list": false, 
+       "beer_abv": 4.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+      }, 
+      "brewery": {
+       "brewery_id": 48143, 
+       "brewery_active": 1, 
+       "brewery_name": "Crowbar  Bryggeri", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Norway"
+      }
+     }, 
+     {
+      "beer": {
+       "auth_rating": 3, 
+       "beer_description": "A truly satisfying beer with a refined, well-balanced flavor. First brewed in 1890 under Spanish Royal Grant and enjoyed for over a century.", 
+       "bid": 6439, 
+       "beer_style": "American Adjunct Lager", 
+       "beer_name": "San Miguel", 
+       "wish_list": false, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-SanMiguel_6439.jpeg"
+      }, 
+      "brewery": {
+       "brewery_id": 4726, 
+       "brewery_active": 1, 
+       "brewery_name": "San Miguel (Spain)", 
+       "contact": {
+        "url": "", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-SanMiguelSpain_4726.jpeg", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "", 
+        "lng": 0, 
+        "lat": 0
+       }, 
+       "country_name": "Spain"
+      }
+     }, 
+     {
+      "beer": {
+       "auth_rating": 4, 
+       "beer_description": "", 
+       "bid": 171135, 
+       "beer_style": "American Amber / Red Ale", 
+       "beer_name": "Dead Cat", 
+       "wish_list": false, 
+       "beer_abv": 4.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-DeadCat_171135.jpeg"
+      }, 
+      "brewery": {
+       "brewery_id": 2888, 
+       "brewery_active": 1, 
+       "brewery_name": "Beer Here", 
+       "contact": {
+        "url": "http://www.beerhere.dk", 
+        "twitter": "", 
+        "facebook": "http://www.facebook.com/groups/56002734018/"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-BeerHere_2888.jpeg", 
+       "location": {
+        "brewery_city": "", 
+        "brewery_state": "Copenhagen", 
+        "lng": 12.5567, 
+        "lat": 55.6684
+       }, 
+       "country_name": "Denmark"
+      }
+     }, 
+     {
+      "beer": {
+       "auth_rating": 4, 
+       "beer_description": "Our 100th batch, brewed for the enjoyment of the brewers, but popular demand forced us to release it commercially. This malty, yet light bodied ale has a massive hop bitterness. Most enjoyable in a comfortable chair in front of a roaring fire.\n\nRecommended serving temperature 16\u00b0C/61\u00b0F\n\nEven though the label says Barley Wine in the States, the brewery says it\u2019s brewed to be an IIPA. The American label was supposedly a glitch. In Europe it\u2019s sold as an IIPA.", 
+       "bid": 31823, 
+       "beer_style": "Imperial / Double IPA", 
+       "beer_name": "#100", 
+       "wish_list": false, 
+       "beer_abv": 10, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-100_31823.jpeg"
+      }, 
+      "brewery": {
+       "brewery_id": 923, 
+       "brewery_active": 1, 
+       "brewery_name": "N\u00f8gne \u00d8", 
+       "contact": {
+        "url": "http://www.nogne-o.com/", 
+        "twitter": "nogneo", 
+        "facebook": "http://www.facebook.com/nogneo"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "location": {
+        "brewery_city": "Grimstad", 
+        "brewery_state": "", 
+        "lng": 8.63551, 
+        "lat": 58.405
+       }, 
+       "country_name": "Norway"
+      }
+     }
+    ]
+   }, 
+   "user_name": "tinekl", 
+   "id": 184746, 
+   "is_private": 1, 
+   "stats": {
+    "total_badges": 33, 
+    "total_beers": 118, 
+    "total_followings": 0, 
+    "total_created_beers": 1, 
+    "total_photos": 40, 
+    "total_friends": 20, 
+    "total_checkins": 145
+   }
+  }
+ }
+}

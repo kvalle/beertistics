@@ -5,6 +5,216 @@
    "count": 0, 
    "items": []
   }, 
+  "created_at": "Tue, 14 May 2013 18:57:25 +0000", 
+  "venue": [], 
+  "checkin_id": 30435992, 
+  "comments": {
+   "count": 0, 
+   "items": []
+  }, 
+  "source": {
+   "app_website": "http://untpd.it/androidapp", 
+   "app_name": "Untappd for Android - (V2)"
+  }, 
+  "beer": {
+   "auth_rating": 0, 
+   "wish_list": false, 
+   "bid": 277758, 
+   "beer_style": "American Pale Ale", 
+   "beer_name": "Crow's Scream Ale", 
+   "beer_active": 1, 
+   "beer_abv": 4.7, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+  }, 
+  "user": {
+   "bio": "", 
+   "first_name": "Torstein", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/0773773e9d34d77decd2b61de897255b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 209345, 
+   "relationship": "friends", 
+   "url": "", 
+   "contact": [], 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "tnicolaysen", 
+   "is_private": 0
+  }, 
+  "rating_score": 2.5, 
+  "toasts": {
+   "count": 0, 
+   "items": [], 
+   "auth_toast": false
+  }, 
+  "brewery": {
+   "brewery_id": 48143, 
+   "brewery_active": 1, 
+   "brewery_name": "Crowbar  Bryggeri", 
+   "contact": {
+    "url": "", 
+    "twitter": "", 
+    "facebook": ""
+   }, 
+   "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+   "location": {
+    "brewery_city": "", 
+    "brewery_state": "", 
+    "lng": 0, 
+    "lat": 0
+   }, 
+   "country_name": "Norway"
+  }, 
+  "badges": {
+   "count": 0, 
+   "items": []
+  }
+ }, 
+ {
+  "checkin_comment": "", 
+  "media": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 14 May 2013 18:55:38 +0000", 
+  "venue": [], 
+  "checkin_id": 30435949, 
+  "comments": {
+   "count": 0, 
+   "items": []
+  }, 
+  "source": {
+   "app_website": "http://untpd.it/androidapp", 
+   "app_name": "Untappd for Android - (V2)"
+  }, 
+  "beer": {
+   "auth_rating": 3, 
+   "wish_list": false, 
+   "bid": 352550, 
+   "beer_style": "American IPA", 
+   "beer_name": "Experimental IPA #3", 
+   "beer_active": 1, 
+   "beer_abv": 6.5, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+  }, 
+  "user": {
+   "bio": "", 
+   "first_name": "Torstein", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/0773773e9d34d77decd2b61de897255b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 209345, 
+   "relationship": "friends", 
+   "url": "", 
+   "contact": [], 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "tnicolaysen", 
+   "is_private": 0
+  }, 
+  "rating_score": 3.5, 
+  "toasts": {
+   "count": 0, 
+   "items": [], 
+   "auth_toast": false
+  }, 
+  "brewery": {
+   "brewery_id": 48143, 
+   "brewery_active": 1, 
+   "brewery_name": "Crowbar  Bryggeri", 
+   "contact": {
+    "url": "", 
+    "twitter": "", 
+    "facebook": ""
+   }, 
+   "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
+   "location": {
+    "brewery_city": "", 
+    "brewery_state": "", 
+    "lng": 0, 
+    "lat": 0
+   }, 
+   "country_name": "Norway"
+  }, 
+  "badges": {
+   "count": 0, 
+   "items": []
+  }
+ }, 
+ {
+  "checkin_comment": "", 
+  "media": {
+   "count": 0, 
+   "items": []
+  }, 
+  "created_at": "Tue, 14 May 2013 18:13:39 +0000", 
+  "venue": [], 
+  "checkin_id": 30434592, 
+  "comments": {
+   "count": 0, 
+   "items": []
+  }, 
+  "source": {
+   "app_website": "http://untpd.it/androidapp", 
+   "app_name": "Untappd for Android - (V2)"
+  }, 
+  "beer": {
+   "auth_rating": 0, 
+   "wish_list": false, 
+   "bid": 143851, 
+   "beer_style": "American Pale Ale", 
+   "beer_name": "O'Hara's Irish Pale Ale", 
+   "beer_active": 1, 
+   "beer_abv": 5.2, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
+  }, 
+  "user": {
+   "bio": "", 
+   "first_name": "Torstein", 
+   "last_name": "", 
+   "user_avatar": "https://gravatar.com/avatar/0773773e9d34d77decd2b61de897255b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+   "uid": 209345, 
+   "relationship": "friends", 
+   "url": "", 
+   "contact": [], 
+   "location": "Oslo", 
+   "is_supporter": 0, 
+   "user_name": "tnicolaysen", 
+   "is_private": 0
+  }, 
+  "rating_score": 3, 
+  "toasts": {
+   "count": 0, 
+   "items": [], 
+   "auth_toast": false
+  }, 
+  "brewery": {
+   "brewery_id": 342, 
+   "brewery_active": 1, 
+   "brewery_name": "Carlow Brewing", 
+   "contact": {
+    "url": "http://www.carlowbrewing.com", 
+    "twitter": "", 
+    "facebook": "http://www.facebook.com/OHarasIrishStoutsAndAles"
+   }, 
+   "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-CarlowBrewing_342.jpeg", 
+   "location": {
+    "brewery_city": "Bagenalstown", 
+    "brewery_state": "", 
+    "lng": -6.97615, 
+    "lat": 52.6974
+   }, 
+   "country_name": "Ireland"
+  }, 
+  "badges": {
+   "count": 0, 
+   "items": []
+  }
+ }, 
+ {
+  "checkin_comment": "", 
+  "media": {
+   "count": 0, 
+   "items": []
+  }, 
   "created_at": "Sat, 04 May 2013 09:00:07 +0000", 
   "venue": [], 
   "checkin_id": 29407920, 
@@ -17,7 +227,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 57462, 
    "beer_style": "Smoked Beer", 
@@ -167,7 +377,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 27099, 
    "beer_style": "Belgian Tripel", 
@@ -259,8 +469,8 @@
       "brewery_details": [], 
       "user_link": "https://untappd.com/user/tinekl"
      }, 
-     "comment_owner": true, 
-     "comment_editor": true, 
+     "comment_owner": false, 
+     "comment_editor": false, 
      "comment_source": "mobile"
     }
    ]
@@ -299,7 +509,7 @@
    "items": [
     {
      "created_at": "Fri, 03 May 2013 18:09:44 +0000", 
-     "like_owner": true, 
+     "like_owner": false, 
      "like_id": 5789314, 
      "user": {
       "bio": "", 
@@ -315,7 +525,7 @@
      }
     }
    ], 
-   "auth_toast": true
+   "auth_toast": false
   }, 
   "brewery": {
    "brewery_id": 923, 
@@ -368,7 +578,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3.5, 
    "wish_list": false, 
    "bid": 36225, 
    "beer_style": "Smoked Beer", 
@@ -508,7 +718,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3.5, 
    "wish_list": false, 
    "bid": 15078, 
    "beer_style": "Black Lager", 
@@ -578,14 +788,14 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 13131, 
    "beer_style": "Scottish Export Ale", 
    "beer_name": "Rum Cask (aka Rum Finish)", 
    "beer_active": 1, 
-   "beer_abv": 7.4, 
-   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_6a5125a42306a37b25aa52af1c60.jpeg"
+   "beer_abv": 6.8, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_sm_3abecf0ddf6faf7e754df2c463930b.jpeg"
   }, 
   "user": {
    "bio": "", 
@@ -648,7 +858,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 23287, 
    "beer_style": "American Amber / Red Ale", 
@@ -728,7 +938,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 5, 
    "wish_list": false, 
    "bid": 5712, 
    "beer_style": "American Imperial / Double Stout", 
@@ -798,7 +1008,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 42871, 
    "beer_style": "American Imperial / Double Stout", 
@@ -1269,7 +1479,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 0, 
    "wish_list": false, 
    "bid": 10088, 
    "beer_style": "American IPA", 
@@ -1571,8 +1781,8 @@
       "brewery_details": [], 
       "user_link": "https://untappd.com/user/valle"
      }, 
-     "comment_owner": false, 
-     "comment_editor": false, 
+     "comment_owner": true, 
+     "comment_editor": true, 
      "comment_source": "mobile"
     }
    ]
@@ -1582,7 +1792,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 5, 
    "wish_list": false, 
    "bid": 36779, 
    "beer_style": "American Imperial / Double Stout", 
@@ -1611,7 +1821,7 @@
    "items": [
     {
      "created_at": "Sun, 24 Feb 2013 23:23:13 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 3880979, 
      "user": {
       "bio": "", 
@@ -1627,7 +1837,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 923, 
@@ -1670,7 +1880,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 42871, 
    "beer_style": "American Imperial / Double Stout", 
@@ -1750,7 +1960,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 5, 
    "wish_list": false, 
    "bid": 12983, 
    "beer_style": "Winter Warmer", 
@@ -1855,7 +2065,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 3557, 
    "beer_style": "American Brown Ale", 
@@ -1960,7 +2170,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 38700, 
    "beer_style": "Czech Pilsener", 
@@ -2075,7 +2285,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3.5, 
    "wish_list": false, 
    "bid": 5940, 
    "beer_style": "Belgian Blonde / Golden", 
@@ -2195,7 +2405,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 35462, 
    "beer_style": "American IPA", 
@@ -2265,14 +2475,14 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 13131, 
    "beer_style": "Scottish Export Ale", 
    "beer_name": "Rum Cask (aka Rum Finish)", 
    "beer_active": 1, 
-   "beer_abv": 7.4, 
-   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_6a5125a42306a37b25aa52af1c60.jpeg"
+   "beer_abv": 6.8, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_sm_3abecf0ddf6faf7e754df2c463930b.jpeg"
   }, 
   "user": {
    "bio": "", 
@@ -2370,7 +2580,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 5856, 
    "beer_style": "English Brown Ale", 
@@ -2504,7 +2714,7 @@
    "items": [
     {
      "created_at": "Sat, 09 Feb 2013 00:28:53 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 3412276, 
      "user": {
       "bio": "", 
@@ -2520,7 +2730,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 629, 
@@ -2736,7 +2946,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 138864, 
    "beer_style": "Scotch Ale / Wee Heavy", 
@@ -2851,7 +3061,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 0, 
    "wish_list": false, 
    "bid": 7420, 
    "beer_style": "Hefeweizen", 
@@ -2981,7 +3191,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 35135, 
    "beer_style": "American Amber / Red Ale", 
@@ -3191,7 +3401,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2.5, 
    "wish_list": false, 
    "bid": 205064, 
    "beer_style": "American Amber / Red Ale", 
@@ -3311,7 +3521,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 17844, 
    "beer_style": "American IPA", 
@@ -3501,7 +3711,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 240903, 
    "beer_style": "American Imperial / Double Stout", 
@@ -3584,7 +3794,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 65993, 
    "beer_style": "Winter Ale", 
@@ -3667,7 +3877,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 17844, 
    "beer_style": "American IPA", 
@@ -3782,7 +3992,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 69, 
    "beer_style": "Winter Ale", 
@@ -3897,7 +4107,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 0, 
    "wish_list": false, 
    "bid": 92971, 
    "beer_style": "Stout", 
@@ -4012,7 +4222,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 1, 
+   "auth_rating": 5, 
    "wish_list": false, 
    "bid": 267048, 
    "beer_style": "American Imperial / Double Stout", 
@@ -4170,7 +4380,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 105307, 
    "beer_style": "Imperial / Double Porter", 
@@ -4285,7 +4495,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 4, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 65993, 
    "beer_style": "Winter Ale", 
@@ -4314,7 +4524,7 @@
    "items": [
     {
      "created_at": "Fri, 14 Dec 2012 19:46:56 +0000", 
-     "like_owner": true, 
+     "like_owner": false, 
      "like_id": 2489102, 
      "user": {
       "bio": "", 
@@ -4347,7 +4557,7 @@
      }
     }
    ], 
-   "auth_toast": true
+   "auth_toast": false
   }, 
   "brewery": {
    "brewery_id": 923, 
@@ -4400,7 +4610,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 69, 
    "beer_style": "Winter Ale", 
@@ -4515,7 +4725,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 7539, 
    "beer_style": "Belgian Strong Dark Ale", 
@@ -4585,7 +4795,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 6601, 
    "beer_style": "Pale Lager", 
@@ -4655,7 +4865,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 2241, 
    "beer_style": "English Porter", 
@@ -4783,7 +4993,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 142353, 
    "beer_style": "Porter", 
@@ -4911,7 +5121,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 5, 
+   "auth_rating": 4.5, 
    "wish_list": false, 
    "bid": 31823, 
    "beer_style": "Imperial / Double IPA", 
@@ -5051,7 +5261,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 3, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 146842, 
    "beer_style": "Black IPA / Cascadian Dark Ale", 
@@ -5166,7 +5376,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 3759, 
    "beer_style": "American IPA", 
@@ -5281,7 +5491,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 226275, 
    "beer_style": "Imperial / Double IPA", 
@@ -5396,7 +5606,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 14780, 
    "beer_style": "Belgian Strong Dark Ale", 
@@ -5466,14 +5676,14 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 13131, 
    "beer_style": "Scottish Export Ale", 
    "beer_name": "Rum Cask (aka Rum Finish)", 
    "beer_active": 1, 
-   "beer_abv": 7.4, 
-   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_6a5125a42306a37b25aa52af1c60.jpeg"
+   "beer_abv": 6.8, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_sm_3abecf0ddf6faf7e754df2c463930b.jpeg"
   }, 
   "user": {
    "bio": "", 
@@ -5495,7 +5705,7 @@
    "items": [
     {
      "created_at": "Sat, 13 Oct 2012 23:32:35 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 1810674, 
      "user": {
       "bio": "", 
@@ -5511,7 +5721,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 1673, 
@@ -5644,7 +5854,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2.5, 
    "wish_list": false, 
    "bid": 205064, 
    "beer_style": "American Amber / Red Ale", 
@@ -5753,7 +5963,7 @@
    "items": [
     {
      "created_at": "Fri, 12 Oct 2012 06:07:11 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 1792416, 
      "user": {
       "bio": "", 
@@ -5769,7 +5979,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 38149, 
@@ -5822,7 +6032,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 10316, 
    "beer_style": "English Porter", 
@@ -5944,7 +6154,7 @@
    "items": [
     {
      "created_at": "Fri, 28 Sep 2012 20:17:21 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 1680728, 
      "user": {
       "bio": "", 
@@ -5960,7 +6170,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 38149, 
@@ -6679,7 +6889,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 6601, 
    "beer_style": "Pale Lager", 
@@ -6802,7 +7012,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 28768, 
    "beer_style": "Stout", 
@@ -7142,7 +7352,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 10166, 
    "beer_style": "Milk / Sweet Stout", 
@@ -7362,7 +7572,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 37936, 
    "beer_style": "Czech Pilsener", 
@@ -7495,7 +7705,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 44678, 
    "beer_style": "American Imperial / Double Stout", 
@@ -7615,7 +7825,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 5, 
    "wish_list": false, 
    "bid": 4744, 
    "beer_style": "American Imperial / Double Stout", 
@@ -7644,7 +7854,7 @@
    "items": [
     {
      "created_at": "Fri, 24 Aug 2012 19:09:31 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 1412393, 
      "user": {
       "bio": "", 
@@ -7660,7 +7870,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 956, 
@@ -7753,7 +7963,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 33994, 
    "beer_style": "Imperial / Double Brown Ale", 
@@ -7836,7 +8046,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 5, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 29512, 
    "beer_style": "American IPA", 
@@ -8009,14 +8219,14 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 13131, 
    "beer_style": "Scottish Export Ale", 
    "beer_name": "Rum Cask (aka Rum Finish)", 
    "beer_active": 1, 
-   "beer_abv": 7.4, 
-   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_6a5125a42306a37b25aa52af1c60.jpeg"
+   "beer_abv": 6.8, 
+   "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_13131_sm_3abecf0ddf6faf7e754df2c463930b.jpeg"
   }, 
   "user": {
    "bio": "", 
@@ -8142,7 +8352,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 138864, 
    "beer_style": "Scotch Ale / Wee Heavy", 
@@ -8275,7 +8485,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 28768, 
    "beer_style": "Stout", 
@@ -8395,7 +8605,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 205082, 
    "beer_style": "American Brown Ale", 
@@ -8515,7 +8725,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 3, 
    "wish_list": false, 
    "bid": 202141, 
    "beer_style": "Pale Lager", 
@@ -8630,7 +8840,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 2, 
+   "auth_rating": 4, 
    "wish_list": false, 
    "bid": 5729, 
    "beer_style": "American IPA", 
@@ -8745,7 +8955,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 38700, 
    "beer_style": "Czech Pilsener", 
@@ -8860,7 +9070,7 @@
    "app_name": "Untappd for Android - (V2)"
   }, 
   "beer": {
-   "auth_rating": 0, 
+   "auth_rating": 2, 
    "wish_list": false, 
    "bid": 5856, 
    "beer_style": "English Brown Ale", 
@@ -9105,7 +9315,7 @@
    "items": [
     {
      "created_at": "Tue, 24 Jul 2012 21:12:04 +0000", 
-     "like_owner": false, 
+     "like_owner": true, 
      "like_id": 1191433, 
      "user": {
       "bio": "", 
@@ -9121,7 +9331,7 @@
      }
     }
    ], 
-   "auth_toast": false
+   "auth_toast": true
   }, 
   "brewery": {
    "brewery_id": 923, 

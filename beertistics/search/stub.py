@@ -24,5 +24,5 @@ def get(datatype, id):
     return _default_result(datatype)
 
 def _default_result(datatype):
-    with open("stub/search/%s/valle.json" % datatype) as f:
+    with open("stub/valle/%s.json" % datatype) as f:
         return json.load(f)
