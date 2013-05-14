@@ -1,30 +1,25 @@
 import flask
 import json 
-import os, os.path
+from os import mkdir
+from os.path import join, exists
 from beertistics import app, auth, untappd
 
 @app.route('/dev/stub/<string:user>')
 @auth.requires_auth
 def dev_stub(user):
     if app.config["UNTAPPD_STUB"]:
-        return "Untapped is in stubbed mode. Not possible to update data!"
+        return "Unable to update stubs because Untapped is in stubbed mode."
 
-    checkins = untappd.get_checkins(user)
-    friends = untappd.get_user_friends(user)
-    user_info = untappd.get_user_info(user)
+    user_dir = join('stub/untappd', user)
 
-    user_dir = os.path.join('stub/untappd',user)
+    if not exists(user_dir):
+        mkdir(user_dir)
 
-    if not os.path.exists(user_dir):
-        os.mkdir(user_dir)
-
-    with open(os.path.join(user_dir, 'checkins.json'), 'w') as f:
-        json.dump(checkins, f, indent = True)
-
-    with open(os.path.join(user_dir, 'user_friends.json'), 'w') as f:
-        json.dump(friends, f, indent = True)
-
-    with open(os.path.join(user_dir, 'user_info.json'), 'w') as f:
-        json.dump(user_info, f, indent = True)
+    with open(join(user_dir, 'checkins.json'), 'w') as f:
+        json.dump(untappd.get_checkins(user), f, indent = True)
+    with open(join(user_dir, 'user_friends.json'), 'w') as f:
+        json.dump(untappd.get_user_friends(user), f, indent = True)
+    with open(join(user_dir, 'user_info.json'), 'w') as f:
+        json.dump(untappd.get_user_info(user), f, indent = True)
         
-    return 'Your data for %s is complete' % user 
+    return 'Updated stub for user "%s".' % user 
