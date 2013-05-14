@@ -30,7 +30,7 @@ class GeneralViewsTests(unittest.TestCase, BeertisticsTestCase):
                             if str(rule).startswith("/api")]
         for page in pages:
             response = self.app.get(page)
-            assert 200 == response.status_code
+            self.assertEqual(200, response.status_code)
             try:
                 loads(response.data)
             except:

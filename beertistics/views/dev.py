@@ -6,16 +6,14 @@ from beertistics import app, auth, untappd
 @app.route('/dev/stub/<string:user>')
 @auth.requires_auth
 def dev_stub(user):
-
     if app.config["UNTAPPD_STUB"]:
         return "Untapped is in stubbed mode. Not possible to update data!"
-
 
     checkins = untappd.get_checkins(user)
     friends = untappd.get_user_friends(user)
     user_info = untappd.get_user_info(user)
 
-    user_dir = os.path.join('stub',user)
+    user_dir = os.path.join('stub/untappd',user)
 
     if not os.path.exists(user_dir):
         os.mkdir(user_dir)
