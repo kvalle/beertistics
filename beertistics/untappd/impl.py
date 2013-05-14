@@ -23,7 +23,7 @@ def get_user_friends(user):
     while json["response"]["count"] > 0:
         friends += json["response"]["items"]
         json = _get(url + "&offset=%d" % len(friends))
-    return friends
+    return {"user": user, "friends": friends}
 
 def get_checkins(user):
     json = _get("http://api.untappd.com/v4/user/checkins/%s?%s&limit=100" % (user, _url_params()))

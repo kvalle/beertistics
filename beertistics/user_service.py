@@ -62,16 +62,9 @@ def _days_since(date_str):
 
 def friend_list_for(username):
     if not search.is_current(username, "friend_list"):
-        info = assemble_friend_list_data(username)
+        info = untappd.get_user_friends(username)
         search.index("friend_list", info)
         search.update_last_indexed(username, "friend_list")
 
-    return search.get("friend_list", username)["friends"]
-
-def assemble_friend_list_data(username):
-    data = untappd.get_user_friends(username)
-    friends = [friend["user"]["user_name"] for friend in data]
-    return [{
-        "user": username, 
-        "friends": friends
-    }]
+    data = search.get("friend_list", username)["friends"]
+    return [friend["user"]["user_name"] for friend in data]
