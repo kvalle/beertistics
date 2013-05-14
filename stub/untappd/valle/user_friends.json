@@ -9,10 +9,10 @@
   "user": {
    "bio": "", 
    "first_name": "Erik", 
-   "last_name": "L.", 
+   "last_name": "Leer", 
    "user_avatar": "https://gravatar.com/avatar/76224d90fd42626c17e8b6ff1344d34e?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 354299, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "erleyo"
@@ -47,10 +47,10 @@
   "user": {
    "bio": "Det eneste jeg vet om \u00f8l er at det er godt, men hva mer trenger man egentlig \u00e5 vite?", 
    "first_name": "Morten", 
-   "last_name": "H.", 
+   "last_name": "Holla", 
    "user_avatar": "https://gravatar.com/avatar/68db0f706516ac5b0027f734c5928d37?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 508385, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "MrHolla"
@@ -66,10 +66,10 @@
   "user": {
    "bio": "", 
    "first_name": "kim", 
-   "last_name": "s.", 
+   "last_name": "skildheim", 
    "user_avatar": "https://untappd.s3.amazonaws.com/profile/09fa484a8ee29f2b2171523ca2466d6d_thumb.JPG", 
    "uid": 503543, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "kimskildheim"
@@ -88,7 +88,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/77cb36dfb0119821969e46f266418db8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 48159, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "eritho"
@@ -107,7 +107,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/493880c9b79ac75f352027611cabd01b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 97841, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "MagneDavidsen"
@@ -126,7 +126,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/66abb16896d7d0e71c2bebaf65b81cb8?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 165200, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "helgejenssen"
@@ -142,10 +142,10 @@
   "user": {
    "bio": "", 
    "first_name": "Anders", 
-   "last_name": "K.", 
+   "last_name": "Karlsen", 
    "user_avatar": "https://gravatar.com/avatar/1233707bea01da8899d3e00e50c553cb?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 300888, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "anders88"
@@ -180,10 +180,10 @@
   "user": {
    "bio": "Glad i \u00f8l, roastbeef og hornmusikk.", 
    "first_name": "Andreas", 
-   "last_name": "H.", 
+   "last_name": "Heim", 
    "user_avatar": "https://gravatar.com/avatar/0b338633166bd112a33a1404e5b5c846?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 309335, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "andreasheim"
@@ -218,10 +218,10 @@
   "user": {
    "bio": "", 
    "first_name": "Ole Christian", 
-   "last_name": "L.", 
+   "last_name": "Langfj\u00e6ran", 
    "user_avatar": "https://gravatar.com/avatar/e36ebce4ab76ac233a45ff5973bc46f5?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 309283, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "judoole"
@@ -237,10 +237,10 @@
   "user": {
    "bio": "", 
    "first_name": "Beate", 
-   "last_name": "M.", 
+   "last_name": "Myrvoll", 
    "user_avatar": "https://gravatar.com/avatar/e334b1e4201f4c65fb78e6ca48be6d53?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 272760, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "bmyrvoll"
@@ -256,10 +256,10 @@
   "user": {
    "bio": "", 
    "first_name": "Ole-Martin", 
-   "last_name": "M.", 
+   "last_name": "M\u00f8rk", 
    "user_avatar": "https://gravatar.com/avatar/3b522a5c34dc172dcc0fce3e2178e736?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 354015, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "olemartin"
@@ -278,7 +278,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/aa1df09a6f348b753f91e43da2db35cc?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 62937, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "kimaage"
@@ -297,7 +297,7 @@
    "last_name": "", 
    "user_avatar": "https://untappd.s3.amazonaws.com/profile/c78c6d1adadf05dad61bb793b437df0f_thumb.jpg", 
    "uid": 128998, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "Oslo", 
    "is_supporter": 0, 
    "user_name": "Steinmann"
@@ -332,10 +332,10 @@
   "user": {
    "bio": "Frauen und Wei\u00dfbier st\u00f6\u00dft man von unten an", 
    "first_name": "Stein Inge", 
-   "last_name": "M.", 
+   "last_name": "Morisbak", 
    "user_avatar": "https://gravatar.com/avatar/73a3fd9e6ae54623af4bf59c832a498b?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 236130, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "Oslo", 
    "is_supporter": 0, 
    "user_name": "steinim"
@@ -370,10 +370,10 @@
   "user": {
    "bio": "", 
    "first_name": "Johannes", 
-   "last_name": "O.", 
+   "last_name": "Odland", 
    "user_avatar": "https://gravatar.com/avatar/f0ee9119d8366ef0994644328302ed75?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 282415, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "mrodland"
@@ -408,10 +408,10 @@
   "user": {
    "bio": "", 
    "first_name": "Kim", 
-   "last_name": "B.", 
+   "last_name": "Bekkelund", 
    "user_avatar": "https://gravatar.com/avatar/6c51c14716e24bc1f1a3fb5ad234e773?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 219295, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "kimjoar"
@@ -487,7 +487,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 184746, 
-   "relationship": "self", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "tinekl"
@@ -503,10 +503,10 @@
   "user": {
    "bio": "", 
    "first_name": "Snorre", 
-   "last_name": "C.", 
+   "last_name": "Corneliussen", 
    "user_avatar": "https://gravatar.com/avatar/b31769205b97d340a4817606f8e57eca?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 182376, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "snorrec"
@@ -544,7 +544,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/c2b9690a5ef5ff614b1a8001b3958356?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 143702, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "fossus"
@@ -563,7 +563,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/7b2557154269a6329b250f25af42e5c7?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 97112, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "ehh"
@@ -582,7 +582,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/f7964d8e468c319f6e7d288f8389c28a?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 112078, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "", 
    "is_supporter": 0, 
    "user_name": "petterw"
@@ -601,7 +601,7 @@
    "last_name": "", 
    "user_avatar": "https://gravatar.com/avatar/28a9946384e6433689969e51a96c3392?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
    "uid": 90960, 
-   "relationship": "none", 
+   "relationship": "friends", 
    "location": "Trondheim", 
    "is_supporter": 0, 
    "user_name": "computerlove"
