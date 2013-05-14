@@ -17,7 +17,7 @@ find beertistics | grep ".pyc$" | xargs rm
 
 # Run tests
 export BEERTISTICS_CONFIG=test
-python -m unittest discover -v beertistics
+python -m unittest discover --failfast -s beertistics/tests/ -p '*.py'
 CODE=$?
 
 if [[ $CODE -ne 0 ]]; then

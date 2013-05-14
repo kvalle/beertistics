@@ -2,10 +2,14 @@
 
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
+function run_tests() {
+    python -m unittest discover -v -s beertistics/tests/ -p '*.py'
+}
+
 export BEERTISTICS_CONFIG=test
 
-python -m unittest discover -v beertistics
+run_tests
 
 while inotifywait -r -e modify ./beertistics; do
-    python -m unittest discover -v beertistics
+    run_tests
 done

@@ -5,7 +5,6 @@ import logging
 class BeertisticsTestCase():
 
     def commonSetUp(self):
-        app.config['TESTING'] = True
         app.logger.setLevel(logging.FATAL)
         self.app = app.test_client()
 
