@@ -16,6 +16,9 @@ ANALYTICS_ON = False
 # Stub signin and data retrieval from Untappd
 UNTAPPD_STUB = True
 
+# Stub integration with ES
+SEARCH_STUB = False
+
 # Key used for signing sessions
 SECRET_KEY = "dev_key"
 
