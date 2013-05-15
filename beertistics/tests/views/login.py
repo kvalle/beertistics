@@ -2,6 +2,7 @@ import unittest
 from beertistics import app
 from beertistics.tests.base import BeertisticsTestCase
 
+
 class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
     """
     Unit tests for all parts of the login other than the Untappd OAuth itself.
@@ -21,7 +22,7 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
     def test_other_pages_redirect_correctly_after_login(self):
         response = self.get_with_redirect('/visual/punchcard')
         assert '<div id="punchcard">' in response.data
-        
+
     def test_logout_works_and_redirects_to_login_page(self):
         self.login()
         response = self.app.get('/', follow_redirects=True)
@@ -32,8 +33,8 @@ class LoginWithStubTests(unittest.TestCase, BeertisticsTestCase):
         assert "log in" in response.data
 
     def test_login_reuired_for_all_api_pages(self):
-        pages = [str(rule) for rule in app.url_map.iter_rules() 
-                            if str(rule).startswith("/api")]
+        pages = [str(rule) for rule in app.url_map.iter_rules()
+                    if str(rule).startswith("/api")]
         for page in pages:
             response = self.app.get(page)
             self.assertEqual(500, response.status_code)

@@ -12,11 +12,14 @@ except:
 
 app.config.from_object("beertistics.config.%s" % config)
 
-file_handler = RotatingFileHandler(app.config['BASE_DIR']+'/logs/beertistics.log', 'a+', 1 * 1024 * 1024, 10)
-file_handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s: %(message)s'))
+log_file = app.config['BASE_DIR'] + '/logs/beertistics.log'
+log_formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s')
+file_handler = RotatingFileHandler(log_file, 'a+', 1 * 1024 * 1024, 10)
+file_handler.setFormatter(log_formatter)
 app.logger.setLevel(logging.INFO)
 file_handler.setLevel(logging.INFO)
 app.logger.addHandler(file_handler)
+
 
 @app.errorhandler(404)
 def page_not_found(e):

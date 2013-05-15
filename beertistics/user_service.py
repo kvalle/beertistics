@@ -26,7 +26,7 @@ def _refresh_user_info(username):
         data = untappd.get_user_info(username)
         search.index("user_info", [data])
         search.update_last_indexed(username, "user_info")
-    
+
 def _extract_info(info):
     user = info['response']['user']
     full_name = "%s %s" % (user['first_name'], user['last_name'])

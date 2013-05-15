@@ -3,6 +3,7 @@ from flask import g
 
 from beertistics import app, auth, untappd
 
+
 @app.route('/auth')
 def authentication():
     """
@@ -17,7 +18,8 @@ def authentication():
 
     else:
         flask.flash('Authentication with Untappd failed.', 'error')
-        return flask.redirect(flask.url_for('index'))    
+        return flask.redirect(flask.url_for('index'))
+
 
 @app.route('/log-in')
 def login():
@@ -25,12 +27,17 @@ def login():
         return flask.redirect(untappd.authenticate_url())
 
     next_page = flask.session.pop('next_page', flask.url_for('index'))
-    return flask.redirect(next_page) 
+    return flask.redirect(next_page)
+
 
 @app.route('/log-out')
 def logout():
     auth.logout()
     flask.session.clear()
-    flask.flash('You were logged out. Tip: You might want to log out of Untappd as well, or anyone will be able to log you right back into Beertistics.', 'success')
+    message = (
+        "You were logged out. "
+        "Tip: You might want to log out of Untappd as well. "
+        "Otherwise anyone will be able to log you right back into Beertistics."
+    )
+    flask.flash(message, 'success')
     return flask.redirect(flask.url_for('index'))
-

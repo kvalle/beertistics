@@ -2,7 +2,7 @@ DEBUG = True
 
 # Location of applicatoin root directory
 import os
-BASE_DIR = os.path.normpath(os.path.dirname(__file__)+'/../../')
+BASE_DIR = os.path.normpath(os.path.dirname(__file__) + '/../../')
 
 # Directory for caching user data
 CACHE_DIR = BASE_DIR + "/cache"

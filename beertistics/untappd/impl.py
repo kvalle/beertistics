@@ -9,6 +9,7 @@ import flask
 ## Public functions
 ##
 
+
 def get_user_info(user=None):
     url = "http://api.untappd.com/v4/user/info"
     if user:
@@ -16,8 +17,10 @@ def get_user_info(user=None):
     url += "?%s" % _url_params()
     return _get(url)
 
+
 def get_user_friends(user):
-    url = "http://api.untappd.com/v4/user/friends/%s?%s&limit=100" % (user, _url_params())
+    params = (user, _url_params())
+    url = "http://api.untappd.com/v4/user/friends/%s?%s&limit=100" % params
     friends = []
     json = _get(url)
     while json["response"]["count"] > 0:
@@ -25,8 +28,11 @@ def get_user_friends(user):
         json = _get(url + "&offset=%d" % len(friends))
     return {"user": user, "friends": friends}
 
+
 def get_checkins(user):
-    json = _get("http://api.untappd.com/v4/user/checkins/%s?%s&limit=100" % (user, _url_params()))
+    params = (user, _url_params())
+    url = "http://api.untappd.com/v4/user/checkins/%s?%s&limit=100" % params
+    json = _get(url)
 
     checkins = json["response"]["checkins"]["items"]
     next = json["response"]["pagination"]["next_url"]
@@ -40,10 +46,12 @@ def get_checkins(user):
 
     return checkins
 
+
 def authenticate_url():
     url = _build_url('authenticate')
     print url
     return url
+
 
 def authorize(code):
     url = _build_url('authorize') + "&code=" + code
@@ -59,10 +67,12 @@ def authorize(code):
 ## Helper functions for making calls to Untappd
 ##
 
+
 def _url_params():
     return "client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
-            "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
-            "&access_token=" + flask.session.get('untappd_token', None)
+        "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
+        "&access_token=" + flask.session.get('untappd_token', None)
+
 
 def _get(url):
     print "FETCHING DATA FROM UNTAPPD:\n" + url
@@ -76,8 +86,9 @@ def _get(url):
             raise UntappdException(msg)
     return data
 
+
 def _build_url(base):
-    return "http://untappd.com/oauth/" + base +"/" + \
+    return "http://untappd.com/oauth/" + base + "/" + \
         "?client_id=" + app.config['UNTAPPD_CLIENT_ID'] + \
         "&client_secret=" + app.config['UNTAPPD_CLIENT_SECRET'] + \
         "&redirect_url=" + flask.url_for('authentication', _external=True) + \

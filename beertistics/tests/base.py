@@ -2,6 +2,7 @@ from beertistics import app
 import hashlib
 import logging
 
+
 class BeertisticsTestCase():
 
     def commonSetUp(self):
@@ -10,8 +11,8 @@ class BeertisticsTestCase():
 
     def get_with_redirect(self, url, limit=10):
         """
-        Custom get method, since app.get seems to have a rather 
-        low limit on how many redirects it will follow before a 
+        Custom get method, since app.get seems to have a rather
+        low limit on how many redirects it will follow before a
         "loop detected" is raised.
         """
         response = self.app.get(url)
@@ -23,4 +24,3 @@ class BeertisticsTestCase():
 
     def login(self):
         self.app.get('/log-in', follow_redirects=True)
-    
