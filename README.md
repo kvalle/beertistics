@@ -35,6 +35,18 @@ You'll also need an Elastic Search instance running. Start one with this script 
 
     $ ./scripts/es.sh
 
+### Code style
+
+The project uses [Flake8](https://flake8.readthedocs.org/en/2.0/) to check for good style and detect code smells.
+
+You might stumble upon comments containing the word `noqa` scattered around some places in the project.
+This is where something is intentionally done despite Flake8 considering it bad.
+
+- any line ending with `# noqa` is ignored
+- any file with the line `# flake8: noqa` is ignored
+
+Use these when needed, but sparingly.
+
 ### Disclaimer
 
 *Although based on data provided by them, Beertistics is in no way affiliated with Untappd.*

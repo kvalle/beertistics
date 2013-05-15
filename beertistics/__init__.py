@@ -1,4 +1,4 @@
-from flask import Flask, render_template, g
+from flask import Flask, render_template
 from logging.handlers import RotatingFileHandler
 import logging
 import os
@@ -25,4 +25,4 @@ app.logger.addHandler(file_handler)
 def page_not_found(e):
     return render_template('404.html'), 404
 
-import beertistics.views
+import beertistics.views  # noqa

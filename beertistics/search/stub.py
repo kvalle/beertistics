@@ -1,7 +1,4 @@
 import json
-from httplib2 import Http
-import datetime
-from beertistics import app
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 

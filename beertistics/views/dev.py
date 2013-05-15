@@ -1,4 +1,3 @@
-import flask
 import json
 from os import mkdir
 from os.path import join, exists

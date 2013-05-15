@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from beertistics import app
 
 if app.config["SEARCH_STUB"]:

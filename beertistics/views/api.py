@@ -3,7 +3,7 @@ import traceback
 import functools
 from json import dumps
 
-from beertistics import app, auth, stats, untappd, user_service
+from beertistics import app, auth, stats, user_service
 
 
 def json_response(fn, *args):

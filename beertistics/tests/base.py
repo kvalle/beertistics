@@ -1,5 +1,4 @@
 from beertistics import app
-import hashlib
 import logging
 
 

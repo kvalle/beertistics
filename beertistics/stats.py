@@ -1,11 +1,8 @@
-import httplib2
-from json import loads, load
 from datetime import timedelta, datetime
 from calendar import month_abbr as months
 from beertistics import untappd, checkins_service
 from collections import Counter, defaultdict
 from util import ensure_http_prefix
-import flask
 
 def influenced_ratings():
     dt = lambda string: datetime.strptime(string, untappd.DATE_FORMAT)

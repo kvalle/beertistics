@@ -33,7 +33,7 @@ def test():
 
 @app.route('/visual/<string:visual_id>')
 @auth.requires_auth
-def test(visual_id):
+def visual(visual_id):
     visual = visuals.get_visual(visual_id)
     template = os.path.join('visuals', visual['template_name'])
     return flask.render_template(template)

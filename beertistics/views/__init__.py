@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from beertistics.views import general
 from beertistics.views import login
 from beertistics.views import api

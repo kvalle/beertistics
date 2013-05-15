@@ -1,6 +1,4 @@
-import httplib2
-from json import loads, load
-import datetime
+from json import load
 from beertistics import app
 from beertistics.exceptions import NoSuchUserException
 import flask

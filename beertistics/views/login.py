@@ -1,6 +1,4 @@
 import flask
-from flask import g
-
 from beertistics import app, auth, untappd
 
 

@@ -1,5 +1,5 @@
 # Import default config and overwrite
-from beertistics.config.default import *
+from beertistics.config.default import *  # noqa
 
 # Stub signin and data retrieval from Untappd
 UNTAPPD_STUB = True
