@@ -11,7 +11,7 @@
 {% block script %}
   <script>
     $(document).ready(function() {
-        
+
         startLoading($("#beers-by-country"));
         $.getJSON("/api/beers-by-country")
         .done(function(data) {
