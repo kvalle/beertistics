@@ -30,6 +30,5 @@ visuals = [
 def get_visual(visual_id):
     return filter(lambda v: v['visual_id'] == visual_id, visuals)[0]
 
-
 def get_next_url_for(visual_id):
     return "hei, jeg er en test"
