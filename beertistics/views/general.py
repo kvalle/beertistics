@@ -36,7 +36,7 @@ def test():
 def visual(visual_id):
     visual = visuals.get_visual(visual_id)
     template = os.path.join('visuals', visual['template_name'])
-    return flask.render_template(template)
+    return flask.render_template(template, next_url=visuals.get_next_url_for(visual_id))
 
 
 @app.route('/photos')
