@@ -16,28 +16,13 @@
           <ul class="nav">
             <li class="dropdown {% if 'stats' == active_page %}active{% endif %}">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-bar-chart"></i> stats <b class="caret"></b>
+                <i class="icon-bar-chart"></i> visualization <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="/visual/punchcard">punchcard</a></li>
-                <li><a href="/visual/by-country">beers by country</a></li>
-                <li><a href="/visual/rating-distribution">rating distribution</a></li>
-                <li><a href="/visual/rating-vs-abv">rating vs ABV</a></li>
-                <li><a href="/visual/locations">checkin locations</a></li>
-                <li><a href="/visual/consumption">consumption per month</a></li>
-                <li><a href="/visual/influence">influenced ratings</a></li>
-              </ul>
-            </li>
-            <li class="{% if 'photos' == active_page %}active{% endif %}">
-              <a href="/photos"><i class="icon-camera"></i> photos</a>
-            </li>
-            <li class="dropdown {% if 'map' == active_page %}active{% endif %}">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-globe"></i> maps <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="/map">beer map</a></li>
-                <li><a href="/visual/country-chart"></i> country chart</a></li>
+                {% for v in visuals %}
+                {% set icon = {'photos': 'camera', 'map': 'globe'}.get(v.type, 'bar-chart') %}
+                <li><a href="/visual/{{v.visual_id}}"><i class="icon-{{icon}}"></i> {{v.name}}</a></li>
+                {% endfor %}
               </ul>
             </li>
           </ul>
