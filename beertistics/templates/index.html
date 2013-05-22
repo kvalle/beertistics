@@ -5,18 +5,20 @@
 {% block page_content %}
   <p><em id="basic-stats-message" class="clearfix"></em></p>
 
-  <div class="row stats-overview">
-  {% for v in visuals %}
-    <div class="span4">
-      <a href="/visual/{{v.visual_id}}">
-        <img class="graph-img" src="/static/img/{{v.type}}.png"/>
-        <span class="graph-type">{{v.type|replace('-', ' ')}}</span><br/>
-        <h3>{{v.name}}</h3>
-        <p>{{v.description}}</p>
-      </a>
+  {% for row in visuals|batch(3) %}
+    <div class="row stats-overview">
+    {% for v in row %}
+      <div class="span4">
+        <a href="/visual/{{v.visual_id}}">
+          <img class="graph-img" src="/static/img/{{v.type}}.png"/>
+          <span class="graph-type">{{v.type|replace('-', ' ')}}</span><br/>
+          <h3>{{v.name}}</h3>
+          <p>{{v.description}}</p>
+        </a>
+      </div>
+    {% endfor %}
     </div>
   {% endfor %}
-  </div>
 {% endblock %}
 
 {% block script %}
