@@ -34,16 +34,6 @@ def visual(visual_id):
     template = os.path.join('visuals', visual['template_name'])
     return flask.render_template(template, next_url=visuals.get_next_url_for(visual_id))
 
-@app.route('/photos')
-@auth.requires_auth
-def photos():
-    return flask.render_template('photos.html')
-
-@app.route('/map')
-@auth.requires_auth
-def map():
-    return flask.render_template('map.html')
-
 @app.route('/about')
 @auth.requires_auth
 def about():
