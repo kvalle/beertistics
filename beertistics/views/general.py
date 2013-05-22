@@ -43,3 +43,9 @@ def visual(visual_id):
 @auth.requires_auth
 def about():
     return flask.render_template('about.html')
+
+@app.route('/friend-list')
+@auth.requires_auth
+def friend_list():
+    friends = user_service.friend_list_for('valle')
+    return flask.render_template('friend-list.html', friends=friends)

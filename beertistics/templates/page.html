@@ -21,14 +21,26 @@
               <ul class="dropdown-menu">
                 {% for v in visuals %}
                 {% set icon = {'photos': 'camera', 'map': 'globe'}.get(v.type, 'bar-chart') %}
-                <li><a href="/visual/{{v.visual_id}}"><i class="icon-{{icon}}"></i> {{v.name}}</a></li>
+                <li>
+                  <a href="/visual/{{v.visual_id}}">
+                    <i class="icon-{{icon}}"></i> {{v.name}}
+                  </a>
+                </li>
                 {% endfor %}
               </ul>
             </li>
           </ul>
           <ul class="nav pull-right">
-            <li><a href="#"><i class="icon-exchange"></i> {{session.shown_user['name']}}</a></li>
-            <li><a href="{{url_for('logout')}}"><i class="icon-signout"></i> Log out</a></li>
+            <li>
+              <a href="{{url_for('friend_list')}}">
+                <i class="icon-exchange"></i> {{session.shown_user['name']}}
+             </a>
+            </li>
+            <li>
+              <a href="{{url_for('logout')}}">
+                <i class="icon-signout"></i> Log out
+              </a>
+            </li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->

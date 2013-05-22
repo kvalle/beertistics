@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block page_content %}
+
+  <div class="row">
+    <div class="span12">
+      <h1>Drinking buddies</h1>
+      <p>The list blow contains all your friends on Untappd. Click on any of them to start viewing their data.</p>
+
+      <ul>
+      {% for friend in friends %}
+        {% set full_name = " ".join([friend.user.first_name, friend.user.last_name]) %}
+        <li>
+          <img width="40px" height="40px" src="{{friend.user.user_avatar}}"/>
+          {{full_name}} ({{friend.user.user_name}})
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
