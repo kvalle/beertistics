@@ -3,10 +3,15 @@ import os.path
 from beertistics import app, auth, user_service, visuals
 from beertistics.exceptions import NoSuchUserException
 
+@app.context_processor
+def inject_visuals():
+    # Adding the list of visuals to the context of all templates
+    return dict(visuals=visuals.visuals)
+
 @app.route('/')
 def index():
     if auth.is_logged_in():
-        return flask.render_template('index.html', visuals=visuals.visuals)
+        return flask.render_template('index.html')
     else:
         return flask.render_template('login.html')
 
