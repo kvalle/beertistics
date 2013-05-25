@@ -15,10 +15,9 @@ def index():
     else:
         return flask.render_template('login.html')
 
-@app.route('/show-user')
+@app.route('/show-user/<string:username>')
 @auth.requires_auth
-def show_user():
-    username = flask.request.args.get('active-user', None)
+def show_user(username):
     try:
         user = user_service.user_info_for(username)
         flask.session['shown_user'] = user

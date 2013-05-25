@@ -3,7 +3,11 @@
 {% block title %}Overview{% endblock %}
 
 {% block page_content %}
-  <p><em id="basic-stats-message" class="clearfix"></em></p>
+  <div class="row">
+    <div class="span12">
+      <p><em id="basic-stats-message" class="clearfix"></em></p>
+    </div>
+  </div>
 
   {% for row in visuals|batch(3) %}
     <div class="row stats-overview">

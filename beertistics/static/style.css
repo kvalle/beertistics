@@ -14,7 +14,7 @@ body {
 #influenced-ratings svg { height: 500px; }
 
 svg {
-    min-width: 100px; 
+    min-width: 100px;
     min-height: 100px;
 }
 
@@ -22,8 +22,8 @@ svg {
     color: gray;
 }
 
-.page { 
-    height: 100%; 
+.page {
+    height: 100%;
 }
 
 /*------------------ styling of non-link elements in nav-bar dropdowns */
@@ -92,15 +92,15 @@ svg {
             border-radius: 4px;
 }
 
-.center-box h1 { 
+.center-box h1 {
     color: #222;
     padding-bottom: 15px;
-    font-size: 5em; 
+    font-size: 5em;
 }
-.center-box h2 { 
+.center-box h2 {
     color: #999;
     padding: 5px;
-    font-size: 1.8em; 
+    font-size: 1.8em;
     padding-bottom: 10px;
 }
 .center-box p {
@@ -108,7 +108,7 @@ svg {
     line-height: 1.2em;
     max-width: 500px;
     margin: 0 auto;
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 .center-box a {
     color: #ccc;
@@ -118,14 +118,14 @@ svg {
     color: #999;
 }
 .center-box p + p {
-    padding-top: 1.4em; 
+    padding-top: 1.4em;
 }
 
 /*------------------ stats */
 
 #basic-stats-message img {
     float: left;
-    margin-right: 10px; 
+    margin-right: 10px;
     max-width: 100px;
     max-height: 100px;
     -webkit-border-radius: 4px;
@@ -149,7 +149,7 @@ svg {
 .stats-overview a:hover {
     text-decoration: none;
     background-color: #ccc;
-} 
+}
 
 .stats-overview p {
     color: #333;
@@ -229,6 +229,25 @@ svg {
 #map_container img{
     /* fixed problem with google maps zoom controller not displaying correctly:
        http://stackoverflow.com/questions/9663375/google-map-infowindow-not-showing-properly */
-    max-width: none; 
+    max-width: none;
 }
 
+/*------------------- friend list */
+
+.friend-list a:hover {
+    text-decoration: none;
+}
+
+.friend-list-item {
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.friend-list-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+.friend-list-item p {
+    margin-top: 10px;
+}
