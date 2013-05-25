@@ -13,7 +13,7 @@
   <div class="row friend-list">
     <div class="span6">
       {% set user = session.shown_user %}
-      <img src='{{user.avatar}}' style="float: left; padding-right: 10px"/>
+      <img src='{{user.avatar}}' class="current-avatar"/>
         <p>
           Showing data for<br/>
           <strong>{{user.name}}</strong>

@@ -283,3 +283,10 @@ a.friend-list-item:hover {
 .friend-list-item p {
     margin-top: 10px;
 }
+
+.current-avatar {
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px
+}
