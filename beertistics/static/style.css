@@ -26,6 +26,10 @@ svg {
     height: 100%;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
 /*------------------ styling of non-link elements in nav-bar dropdowns */
 
 .dropdown-menu p {
