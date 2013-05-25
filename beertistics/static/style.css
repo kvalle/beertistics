@@ -234,18 +234,46 @@ svg {
 
 /*------------------- friend list */
 
-.friend-list a:hover {
-    text-decoration: none;
+.friend-list-item {
+    display: block;
+    background-color: #eee;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.friend-list-item {
-    background-color: #eee;
-    margin-bottom: 10px;
+a.friend-list-item:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
 }
 
 .friend-list-item img {
     float: left;
     margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.friend-list-item button {
+    float: left;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.friend-list-item form {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.friend-list-item input {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 40px; /* 2 * (padding + border) = 10px */
+    padding-left: 10px;
+    width: 200px;
 }
 
 .friend-list-item p {

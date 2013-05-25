@@ -15,6 +15,14 @@ def index():
     else:
         return flask.render_template('login.html')
 
+@app.route('/show-user')
+@auth.requires_auth
+def show_user_form():
+    username = flask.request.args.get('username', None)
+    if not username:
+        return flask.redirect(flask.url_for('friend_list'))
+    return show_user(username)
+
 @app.route('/show-user/<string:username>')
 @auth.requires_auth
 def show_user(username):

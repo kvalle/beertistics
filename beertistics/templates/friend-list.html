@@ -12,26 +12,33 @@
 
   <div class="row friend-list">
     <div class="span6">
-      <a href="{{url_for('show_user', username=session.logged_in_user.username)}}">
-        <div class="friend-list-item clearfix">
-          <img width="60px" height="60px" src="{{session.logged_in_user.avatar}}"/>
-          <p>
-            Logged in as {{session.logged_in_user.name}}.<br/>
-            Show my data!
-          </p>
-        </div>
+      <a class="friend-list-item clearfix" href="{{url_for('show_user', username=session.logged_in_user.username)}}">
+        <img src="{{session.logged_in_user.avatar}}"/>
+        <p>
+          <strong>Logged in as {{session.logged_in_user.name}}.</strong><br/>
+          Show my data!
+        </p>
       </a>
     </div>
     <div class="span6">
-      <a href="{{url_for('show_user', username=session.shown_user.username)}}">
-        <div class="friend-list-item clearfix">
-          <img width="60px" height="60px" src="{{session.shown_user.avatar}}"/>
-          <p>
-            Currently showing data for {{session.shown_user.name}}.<br/>
-            Continue viewing!
-          </p>
-        </div>
-      </a>
+      <a class="friend-list-item clearfix" href="{{url_for('show_user', username=session.shown_user.username)}}">
+        <img src="{{session.shown_user.avatar}}"/>
+        <p>
+          <strong>Currently showing data for {{session.shown_user.name}}</strong>.<br/>
+          Continue viewing!
+        </p>
+       </a>
+    </div>
+  </div>
+
+  <div class="row friend-list">
+    <div class="offset6 span6">
+      <div class="friend-list-item clearfix">
+        <form action="/show-user" class="form">
+          <button type="submit" class="btn"><i class="icon-search icon-2x"></i></button>
+          <input type="text" name="username" class="input-medium" placeholder="Serach by username">
+        </form>
+      </div>
     </div>
   </div>
 
@@ -41,15 +48,13 @@
   <div class="row friend-list">
     {% for friend in row %}
       <div class="span4">
-        <a href="{{url_for('show_user', username=friend.user.user_name)}}">
-          <div class="friend-list-item clearfix">
-            {% set full_name = " ".join([friend.user.first_name, friend.user.last_name]) %}
-            <img width="60px" height="60px" src="{{friend.user.user_avatar}}"/>
-            <p>
-              <strong>{{full_name}}</strong><br/>
-              <em>{{friend.user.user_name}}</em>
-            </p>
-          </div>
+        <a class="friend-list-item clearfix" href="{{url_for('show_user', username=friend.user.user_name)}}">
+          {% set full_name = " ".join([friend.user.first_name, friend.user.last_name]) %}
+          <img src="{{friend.user.user_avatar}}"/>
+          <p>
+            <strong>{{full_name}}</strong><br/>
+            <em>{{friend.user.user_name}}</em>
+          </p>
         </a>
       </div>
     {% endfor %}
