@@ -17,23 +17,17 @@ def index():
 
 @app.route('/show-user')
 @auth.requires_auth
-def show_user_form():
+def show_user():
     username = flask.request.args.get('username', None)
     if not username:
         return flask.redirect(flask.url_for('friend_list'))
-    return show_user(username)
 
-@app.route('/show-user/<string:username>')
-@auth.requires_auth
-def show_user(username):
     try:
         user = user_service.user_info_for(username)
         flask.session['shown_user'] = user
-        msg = "Showing stats for %s (%s)." % (user['name'], user['username'])
-        flask.flash(msg, 'success')
     except NoSuchUserException:
         flask.flash("Found no user with username '%s'." % username, 'error')
-    return flask.redirect(flask.url_for("index"))
+    return flask.redirect(flask.url_for("friend_list"))
 
 @app.route('/test')
 def test():
