@@ -13,7 +13,7 @@
   "code": 200, 
   "response_time": {
    "measure": "seconds", 
-   "time": 0.355
+   "time": 0.209
   }
  }, 
  "response": {
@@ -29,6 +29,355 @@
    "checkins": {
     "count": 15, 
     "items": [
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 17 May 2013 13:15:13 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/amolBo", 
+        "foursquare_id": "4b0588b3f964a52089d422e3"
+       }, 
+       "venue_id": 166766, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/nightlife/pub_88.png", 
+        "sm": "https://foursquare.com/img/categories/nightlife/pub_64.png", 
+        "lg": "https://foursquare.com/img/categories/nightlife/pub_256.png"
+       }, 
+       "venue_name": "Andy's Pub", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Stortingsgata 8", 
+        "lng": 10.7376, 
+        "venue_city": "Oslo", 
+        "lat": 59.9134
+       }, 
+       "parent_category_id": "4d4b7105d754a06376d81259", 
+       "primary_category": "Nightlife Spot", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d11d941735", 
+          "category_name": "Sports Bar"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30693481, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 2, 
+       "wish_list": false, 
+       "bid": 2, 
+       "beer_style": "Belgian Pale Ale", 
+       "beer_name": "Grimbergen Blonde", 
+       "beer_active": 1, 
+       "beer_abv": 6.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-GrimbergenBlonde_2.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 2, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 264, 
+       "brewery_active": 1, 
+       "brewery_name": "Brouwerij Alken-Maes (Heineken)", 
+       "contact": {
+        "url": "www.alken-maes.be", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-BrouwerijAlkenMaesHeineken_264.jpeg", 
+       "location": {
+        "brewery_city": "Mechelen", 
+        "brewery_state": "", 
+        "lng": 4.45378, 
+        "lat": 51.0514
+       }, 
+       "country_name": "Belgium"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 0, 
+       "items": []
+      }, 
+      "created_at": "Fri, 17 May 2013 11:01:58 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/cUs61T", 
+        "foursquare_id": "4b6836f0f964a520496c2be3"
+       }, 
+       "venue_id": 599603, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Ciber hovedkontor", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "Oslo", 
+        "venue_address": "Stortorvet 10", 
+        "lng": 10.7459, 
+        "venue_city": "Oslo", 
+        "lat": 59.9131
+       }, 
+       "parent_category_id": "4d4b7105d754a06375d81259", 
+       "primary_category": "Professional & Other Places", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4bf58dd8d48988d124941735", 
+          "category_name": "Office"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30690959, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 1.5, 
+       "wish_list": false, 
+       "bid": 5991, 
+       "beer_style": "Euro Lager", 
+       "beer_name": "Carlsberg", 
+       "beer_active": 1, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-Carlsberg_5991.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 2, 
+      "toasts": {
+       "count": 0, 
+       "items": [], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 344, 
+       "brewery_active": 1, 
+       "brewery_name": "Carlsberg Group", 
+       "contact": {
+        "url": "www.carlsberggroup.com", 
+        "twitter": "carlsberggroup", 
+        "facebook": "http://www.facebook.com/Carlsberg"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-CarlsbergBrewery_344.jpeg", 
+       "location": {
+        "brewery_city": "Copenhagen", 
+        "brewery_state": "", 
+        "lng": 12.535, 
+        "lat": 55.6673
+       }, 
+       "country_name": "Denmark"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
+     {
+      "checkin_comment": "", 
+      "media": {
+       "count": 1, 
+       "items": [
+        {
+         "photo": {
+          "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_320x320.jpg", 
+          "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_640x640.jpg", 
+          "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_100x100.jpg", 
+          "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_raw.jpg"
+         }, 
+         "photo_id": 3473923
+        }
+       ]
+      }, 
+      "created_at": "Fri, 17 May 2013 09:32:58 +0000", 
+      "venue": {
+       "foursquare": {
+        "foursquare_url": "http://4sq.com/qQy3up", 
+        "foursquare_id": "4e346b9fd4c0634348232484"
+       }, 
+       "venue_id": 357140, 
+       "venue_icon": {
+        "md": "https://foursquare.com/img/categories/building/default_88.png", 
+        "sm": "https://foursquare.com/img/categories/building/default_64.png", 
+        "lg": "https://foursquare.com/img/categories/building/default_256.png"
+       }, 
+       "venue_name": "Munkegata", 
+       "contact": {
+        "twitter": "", 
+        "venue_url": ""
+       }, 
+       "location": {
+        "venue_state": "", 
+        "venue_address": "", 
+        "lng": 10.7688, 
+        "venue_city": "", 
+        "lat": 59.9082
+       }, 
+       "parent_category_id": "4e67e38e036454776db1fb3a", 
+       "primary_category": "Residence", 
+       "categories": {
+        "count": 1, 
+        "items": [
+         {
+          "is_primary": true, 
+          "category_id": "4d954b06a243a5684965b473", 
+          "category_name": "Residential Building (Apartment/Condo)"
+         }
+        ]
+       }
+      }, 
+      "checkin_id": 30689718, 
+      "comments": {
+       "count": 0, 
+       "items": []
+      }, 
+      "source": {
+       "app_website": "http://untpd.it/androidapp", 
+       "app_name": "Untappd for Android - (V2)"
+      }, 
+      "beer": {
+       "auth_rating": 2, 
+       "wish_list": false, 
+       "bid": 5860, 
+       "beer_style": "Euro Lager", 
+       "beer_name": "Heineken", 
+       "beer_active": 1, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_5860_b030fadf70b76c074a13e47b719c.jpeg"
+      }, 
+      "user": {
+       "bio": "", 
+       "first_name": "Tine", 
+       "last_name": "", 
+       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+       "uid": 184746, 
+       "relationship": "friends", 
+       "url": "", 
+       "contact": {
+        "facebook": 0
+       }, 
+       "location": "", 
+       "is_supporter": 0, 
+       "user_name": "tinekl", 
+       "is_private": 1
+      }, 
+      "rating_score": 2, 
+      "toasts": {
+       "count": 1, 
+       "items": [
+        {
+         "created_at": "Fri, 17 May 2013 09:35:55 +0000", 
+         "like_owner": false, 
+         "like_id": 6214883, 
+         "user": {
+          "bio": "", 
+          "first_name": "\u00d8ystein", 
+          "last_name": "", 
+          "user_avatar": "https://untappd.s3.amazonaws.com/profile/00b702378bde5464266e2a0c34ec7839_thumb.jpg", 
+          "uid": 296217, 
+          "location": "Oslo", 
+          "account_type": "user", 
+          "user_name": "oecarlsson", 
+          "brewery_details": [], 
+          "user_link": "https://untappd.com/user/oecarlsson"
+         }
+        }
+       ], 
+       "auth_toast": false
+      }, 
+      "brewery": {
+       "brewery_id": 1400, 
+       "brewery_active": 1, 
+       "brewery_name": "Heineken", 
+       "contact": {
+        "url": "http://www.heineken.com", 
+        "twitter": "heineken", 
+        "facebook": "https://www.facebook.com/heineken"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-HeinekenBV_1400.jpeg", 
+       "location": {
+        "brewery_city": "Zoeterwoude", 
+        "brewery_state": "Zuid Holland", 
+        "lng": 4.53398, 
+        "lat": 52.1375
+       }, 
+       "country_name": "Netherlands"
+      }, 
+      "badges": {
+       "count": 0, 
+       "items": []
+      }
+     }, 
      {
       "checkin_comment": "", 
       "media": {
@@ -1454,14 +1803,22 @@
        "count": 0, 
        "items": []
       }
-     }, 
+     }
+    ]
+   }, 
+   "settings": [], 
+   "media": {
+    "count": 5, 
+    "items": [
      {
-      "checkin_comment": "", 
-      "media": {
-       "count": 0, 
-       "items": []
+      "photo_id": 3473923, 
+      "photo": {
+       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_320x320.jpg", 
+       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_640x640.jpg", 
+       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_100x100.jpg", 
+       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_05_17/a5b9a094265942c13b506dd59af0cc4d_raw.jpg"
       }, 
-      "created_at": "Fri, 03 May 2013 17:58:07 +0000", 
+      "created_at": "Fri, 17 May 2013 09:32:20 +0000", 
       "venue": {
        "foursquare": {
         "foursquare_url": "http://4sq.com/qQy3up", 
@@ -1498,24 +1855,16 @@
         ]
        }
       }, 
-      "checkin_id": 29293124, 
-      "comments": {
-       "count": 0, 
-       "items": []
-      }, 
-      "source": {
-       "app_website": "http://untpd.it/androidapp", 
-       "app_name": "Untappd for Android - (V2)"
-      }, 
+      "checkin_id": 30689718, 
       "beer": {
-       "auth_rating": 4, 
+       "auth_rating": 2, 
+       "beer_description": "Heineken is a 5% abv pale lager, made by Heineken International since 1873. It is available in a 4.3% alcohol by volume, in countries such as Ireland. It is the flagship product of the company and is made of purified water, malted barley, hops, and yeast. In 1886 H. Elion finished the development of the Heineken A-yeast. This is the yeast that is still used for the beer.[1] The beer is force carbonated. It is popular in the United States, Europe and Middle Eastern countries.", 
+       "bid": 5860, 
+       "beer_style": "Euro Lager", 
+       "beer_name": "Heineken", 
        "wish_list": false, 
-       "bid": 84508, 
-       "beer_style": "Saison / Farmhouse Ale", 
-       "beer_name": "India-style Saison (Bridge Road Brewers Collab)", 
-       "beer_active": 1, 
-       "beer_abv": 7.5, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-IndiaSaison_84508.jpeg"
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_5860_b030fadf70b76c074a13e47b719c.jpeg"
       }, 
       "user": {
        "bio": "", 
@@ -1523,288 +1872,30 @@
        "last_name": "", 
        "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
        "uid": 184746, 
-       "relationship": "friends", 
-       "url": "", 
-       "contact": {
-        "facebook": 0
-       }, 
+       "url": null, 
        "location": "", 
-       "is_supporter": 0, 
-       "user_name": "tinekl", 
-       "is_private": 1
-      }, 
-      "rating_score": 4, 
-      "toasts": {
-       "count": 0, 
-       "items": [], 
-       "auth_toast": false
+       "account_type": "user", 
+       "user_name": "tinekl"
       }, 
       "brewery": {
-       "brewery_id": 923, 
+       "brewery_id": 1400, 
        "brewery_active": 1, 
-       "brewery_name": "N\u00f8gne \u00d8", 
+       "brewery_name": "Heineken", 
        "contact": {
-        "url": "http://www.nogne-o.com/", 
-        "twitter": "nogneo", 
-        "facebook": "http://www.facebook.com/nogneo"
+        "url": "http://www.heineken.com", 
+        "twitter": "heineken", 
+        "facebook": "https://www.facebook.com/heineken"
        }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-HeinekenBV_1400.jpeg", 
        "location": {
-        "brewery_city": "Grimstad", 
-        "brewery_state": "", 
-        "lng": 8.63551, 
-        "lat": 58.405
+        "brewery_city": "Zoeterwoude", 
+        "brewery_state": "Zuid Holland", 
+        "lng": 4.53398, 
+        "lat": 52.1375
        }, 
-       "country_name": "Norway"
-      }, 
-      "badges": {
-       "count": 0, 
-       "items": []
+       "country_name": "Netherlands"
       }
      }, 
-     {
-      "checkin_comment": "", 
-      "media": {
-       "count": 0, 
-       "items": []
-      }, 
-      "created_at": "Fri, 26 Apr 2013 21:27:55 +0000", 
-      "venue": {
-       "foursquare": {
-        "foursquare_url": "http://4sq.com/STzNzf", 
-        "foursquare_id": "50c9de0be4b0b713c476623f"
-       }, 
-       "venue_id": 504642, 
-       "venue_icon": {
-        "md": "https://foursquare.com/img/categories/nightlife/brewery_88.png", 
-        "sm": "https://foursquare.com/img/categories/nightlife/brewery_64.png", 
-        "lg": "https://foursquare.com/img/categories/nightlife/brewery_256.png"
-       }, 
-       "venue_name": "Crowbar & Bryggeri", 
-       "contact": {
-        "twitter": "", 
-        "venue_url": ""
-       }, 
-       "location": {
-        "venue_state": "Oslo", 
-        "venue_address": "Torggata 32", 
-        "lng": 10.7534, 
-        "venue_city": "Oslo", 
-        "lat": 59.9172
-       }, 
-       "parent_category_id": "4d4b7105d754a06374d81259", 
-       "primary_category": "Food", 
-       "categories": {
-        "count": 2, 
-        "items": [
-         {
-          "is_primary": false, 
-          "category_id": "4bf58dd8d48988d11b941735", 
-          "category_name": "Pub"
-         }, 
-         {
-          "is_primary": true, 
-          "category_id": "50327c8591d4c4b30a586d5d", 
-          "category_name": "Brewery"
-         }
-        ]
-       }
-      }, 
-      "checkin_id": 28634908, 
-      "comments": {
-       "count": 0, 
-       "items": []
-      }, 
-      "source": {
-       "app_website": "http://untpd.it/androidapp", 
-       "app_name": "Untappd for Android - (V2)"
-      }, 
-      "beer": {
-       "auth_rating": 0, 
-       "wish_list": false, 
-       "bid": 348454, 
-       "beer_style": "Hefeweizen", 
-       "beer_name": "Besserweizen", 
-       "beer_active": 1, 
-       "beer_abv": 5.4, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-beer-default.png"
-      }, 
-      "user": {
-       "bio": "", 
-       "first_name": "Tine", 
-       "last_name": "", 
-       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-       "uid": 184746, 
-       "relationship": "friends", 
-       "url": "", 
-       "contact": {
-        "facebook": 0
-       }, 
-       "location": "", 
-       "is_supporter": 0, 
-       "user_name": "tinekl", 
-       "is_private": 1
-      }, 
-      "rating_score": 3, 
-      "toasts": {
-       "count": 0, 
-       "items": [], 
-       "auth_toast": false
-      }, 
-      "brewery": {
-       "brewery_id": 26238, 
-       "brewery_active": 1, 
-       "brewery_name": "Sundbytunet", 
-       "contact": {
-        "url": "", 
-        "twitter": "", 
-        "facebook": ""
-       }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/assets/images/temp/badge-brewery-default.png", 
-       "location": {
-        "brewery_city": "", 
-        "brewery_state": "", 
-        "lng": 0, 
-        "lat": 0
-       }, 
-       "country_name": "Norway"
-      }, 
-      "badges": {
-       "count": 0, 
-       "items": []
-      }
-     }, 
-     {
-      "checkin_comment": "", 
-      "media": {
-       "count": 0, 
-       "items": []
-      }, 
-      "created_at": "Fri, 26 Apr 2013 20:14:41 +0000", 
-      "venue": {
-       "foursquare": {
-        "foursquare_url": "http://4sq.com/clrB04", 
-        "foursquare_id": "4ba3db5ef964a520246738e3"
-       }, 
-       "venue_id": 124503, 
-       "venue_icon": {
-        "md": "https://foursquare.com/img/categories/food/burger_88.png", 
-        "sm": "https://foursquare.com/img/categories/food/burger_64.png", 
-        "lg": "https://foursquare.com/img/categories/food/burger_256.png"
-       }, 
-       "venue_name": "Bugges Eftf", 
-       "contact": {
-        "twitter": "", 
-        "venue_url": ""
-       }, 
-       "location": {
-        "venue_state": "Oslo", 
-        "venue_address": "Leirfallsgaten 6", 
-        "lng": 10.7574, 
-        "venue_city": "Oslo", 
-        "lat": 59.9191
-       }, 
-       "parent_category_id": "4d4b7105d754a06374d81259", 
-       "primary_category": "Food", 
-       "categories": {
-        "count": 2, 
-        "items": [
-         {
-          "is_primary": false, 
-          "category_id": "4bf58dd8d48988d16d941735", 
-          "category_name": "Caf\u00e9"
-         }, 
-         {
-          "is_primary": true, 
-          "category_id": "4bf58dd8d48988d16c941735", 
-          "category_name": "Burger Joint"
-         }
-        ]
-       }
-      }, 
-      "checkin_id": 28627665, 
-      "comments": {
-       "count": 0, 
-       "items": []
-      }, 
-      "source": {
-       "app_website": "http://untpd.it/androidapp", 
-       "app_name": "Untappd for Android - (V2)"
-      }, 
-      "beer": {
-       "auth_rating": 0, 
-       "wish_list": false, 
-       "bid": 8668, 
-       "beer_style": "English Pale Ale", 
-       "beer_name": "Whitstable Bay Organic Ale", 
-       "beer_active": 1, 
-       "beer_abv": 4.5, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-WhitstableBayOrganicAle_8668.jpeg"
-      }, 
-      "user": {
-       "bio": "", 
-       "first_name": "Tine", 
-       "last_name": "", 
-       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-       "uid": 184746, 
-       "relationship": "friends", 
-       "url": "", 
-       "contact": {
-        "facebook": 0
-       }, 
-       "location": "", 
-       "is_supporter": 0, 
-       "user_name": "tinekl", 
-       "is_private": 1
-      }, 
-      "rating_score": 2, 
-      "toasts": {
-       "count": 0, 
-       "items": [], 
-       "auth_toast": false
-      }, 
-      "brewery": {
-       "brewery_id": 1132, 
-       "brewery_active": 1, 
-       "brewery_name": "Shepherd Neame", 
-       "contact": {
-        "url": "http://www.shepherdneame.co.uk/", 
-        "twitter": "ShepherdNeame", 
-        "facebook": "http://www.facebook.com/shepherdneame"
-       }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-ShepherdNeame_1132.jpeg", 
-       "location": {
-        "brewery_city": "Faversham", 
-        "brewery_state": "", 
-        "lng": 0.892661, 
-        "lat": 51.3174
-       }, 
-       "country_name": "England"
-      }, 
-      "badges": {
-       "count": 1, 
-       "items": [
-        {
-         "badge_description": "Can't stay in the same place for 1 night? That's 3 bars in 1 night.", 
-         "badge_image": {
-          "md": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_md.png", 
-          "sm": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_sm.png", 
-          "lg": "https://untappd.s3.amazonaws.com/assets/badges/bdg_brewCrawl_lg.png"
-         }, 
-         "created_at": "Fri, 26 Apr 2013 20:14:42 +0000", 
-         "user_badge_id": 4246969, 
-         "badge_id": 24, 
-         "badge_name": "Brew Crawl"
-        }
-       ]
-      }
-     }
-    ]
-   }, 
-   "settings": [], 
-   "media": {
-    "count": 5, 
-    "items": [
      {
       "photo_id": 3369430, 
       "photo": {
@@ -2148,55 +2239,52 @@
        }, 
        "country_name": "Denmark"
       }
+     }
+    ]
+   }, 
+   "contact": {
+    "facebook": 0
+   }, 
+   "date_joined": "Wed, 06 Jun 2012 15:52:57 +0000", 
+   "location": "", 
+   "account_type": "user", 
+   "is_supporter": 0, 
+   "recent_brews": {
+    "count": 5, 
+    "items": [
+     {
+      "beer": {
+       "auth_rating": 2, 
+       "beer_description": "", 
+       "bid": 2, 
+       "beer_style": "Belgian Pale Ale", 
+       "beer_name": "Grimbergen Blonde", 
+       "wish_list": false, 
+       "beer_abv": 6.7, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-GrimbergenBlonde_2.jpeg"
+      }, 
+      "brewery": {
+       "brewery_id": 264, 
+       "brewery_active": 1, 
+       "brewery_name": "Brouwerij Alken-Maes (Heineken)", 
+       "contact": {
+        "url": "www.alken-maes.be", 
+        "twitter": "", 
+        "facebook": ""
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-BrouwerijAlkenMaesHeineken_264.jpeg", 
+       "location": {
+        "brewery_city": "Mechelen", 
+        "brewery_state": "", 
+        "lng": 4.45378, 
+        "lat": 51.0514
+       }, 
+       "country_name": "Belgium"
+      }
      }, 
      {
-      "photo_id": 2691579, 
-      "photo": {
-       "photo_img_md": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_320x320.jpg", 
-       "photo_img_lg": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_640x640.jpg", 
-       "photo_img_sm": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_100x100.jpg", 
-       "photo_img_og": "https://untappd.s3.amazonaws.com/photo/2013_03_23/f9acd869540cd4e6cd529015b6f8f1c3_raw.jpg"
-      }, 
-      "created_at": "Sat, 23 Mar 2013 14:19:01 +0000", 
-      "venue": {
-       "foursquare": {
-        "foursquare_url": "http://4sq.com/ooYQqp", 
-        "foursquare_id": "4e5fae2062e19bc92add0010"
-       }, 
-       "venue_id": 340683, 
-       "venue_icon": {
-        "md": "https://foursquare.com/img/categories/parks_outdoors/harbor_88.png", 
-        "sm": "https://foursquare.com/img/categories/parks_outdoors/harbor_64.png", 
-        "lg": "https://foursquare.com/img/categories/parks_outdoors/harbor_256.png"
-       }, 
-       "venue_name": "Fjonesundet", 
-       "contact": {
-        "twitter": "", 
-        "venue_url": ""
-       }, 
-       "location": {
-        "venue_state": "", 
-        "venue_address": "", 
-        "lng": 8.48162, 
-        "venue_city": "", 
-        "lat": 59.1757
-       }, 
-       "parent_category_id": "4d4b7105d754a06377d81259", 
-       "primary_category": "Great Outdoors", 
-       "categories": {
-        "count": 1, 
-        "items": [
-         {
-          "is_primary": true, 
-          "category_id": "4bf58dd8d48988d1e0941735", 
-          "category_name": "Harbor or Marina"
-         }
-        ]
-       }
-      }, 
-      "checkin_id": 25498006, 
       "beer": {
-       "auth_rating": 5, 
+       "auth_rating": 2, 
        "beer_description": "", 
        "bid": 5991, 
        "beer_style": "Euro Lager", 
@@ -2204,17 +2292,6 @@
        "wish_list": false, 
        "beer_abv": 5, 
        "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-Carlsberg_5991.jpeg"
-      }, 
-      "user": {
-       "bio": "", 
-       "first_name": "Tine", 
-       "last_name": "", 
-       "user_avatar": "https://gravatar.com/avatar/2a28ece3274a35f36190046700dd157d?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
-       "uid": 184746, 
-       "url": null, 
-       "location": "", 
-       "account_type": "user", 
-       "user_name": "tinekl"
       }, 
       "brewery": {
        "brewery_id": 344, 
@@ -2234,19 +2311,37 @@
        }, 
        "country_name": "Denmark"
       }
-     }
-    ]
-   }, 
-   "contact": {
-    "facebook": 0
-   }, 
-   "date_joined": "Wed, 06 Jun 2012 15:52:57 +0000", 
-   "location": "", 
-   "account_type": "user", 
-   "is_supporter": 0, 
-   "recent_brews": {
-    "count": 5, 
-    "items": [
+     }, 
+     {
+      "beer": {
+       "auth_rating": 2, 
+       "beer_description": "Heineken is a 5% abv pale lager, made by Heineken International since 1873. It is available in a 4.3% alcohol by volume, in countries such as Ireland. It is the flagship product of the company and is made of purified water, malted barley, hops, and yeast. In 1886 H. Elion finished the development of the Heineken A-yeast. This is the yeast that is still used for the beer.[1] The beer is force carbonated. It is popular in the United States, Europe and Middle Eastern countries.", 
+       "bid": 5860, 
+       "beer_style": "Euro Lager", 
+       "beer_name": "Heineken", 
+       "wish_list": false, 
+       "beer_abv": 5, 
+       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-_5860_b030fadf70b76c074a13e47b719c.jpeg"
+      }, 
+      "brewery": {
+       "brewery_id": 1400, 
+       "brewery_active": 1, 
+       "brewery_name": "Heineken", 
+       "contact": {
+        "url": "http://www.heineken.com", 
+        "twitter": "heineken", 
+        "facebook": "https://www.facebook.com/heineken"
+       }, 
+       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-HeinekenBV_1400.jpeg", 
+       "location": {
+        "brewery_city": "Zoeterwoude", 
+        "brewery_state": "Zuid Holland", 
+        "lng": 4.53398, 
+        "lat": 52.1375
+       }, 
+       "country_name": "Netherlands"
+      }
+     }, 
      {
       "beer": {
        "auth_rating": 4, 
@@ -2306,96 +2401,6 @@
        }, 
        "country_name": "Norway"
       }
-     }, 
-     {
-      "beer": {
-       "auth_rating": 3, 
-       "beer_description": "A truly satisfying beer with a refined, well-balanced flavor. First brewed in 1890 under Spanish Royal Grant and enjoyed for over a century.", 
-       "bid": 6439, 
-       "beer_style": "American Adjunct Lager", 
-       "beer_name": "San Miguel", 
-       "wish_list": false, 
-       "beer_abv": 5, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-SanMiguel_6439.jpeg"
-      }, 
-      "brewery": {
-       "brewery_id": 4726, 
-       "brewery_active": 1, 
-       "brewery_name": "San Miguel (Spain)", 
-       "contact": {
-        "url": "", 
-        "twitter": "", 
-        "facebook": ""
-       }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-SanMiguelSpain_4726.jpeg", 
-       "location": {
-        "brewery_city": "", 
-        "brewery_state": "", 
-        "lng": 0, 
-        "lat": 0
-       }, 
-       "country_name": "Spain"
-      }
-     }, 
-     {
-      "beer": {
-       "auth_rating": 4, 
-       "beer_description": "", 
-       "bid": 171135, 
-       "beer_style": "American Amber / Red Ale", 
-       "beer_name": "Dead Cat", 
-       "wish_list": false, 
-       "beer_abv": 4.7, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-DeadCat_171135.jpeg"
-      }, 
-      "brewery": {
-       "brewery_id": 2888, 
-       "brewery_active": 1, 
-       "brewery_name": "Beer Here", 
-       "contact": {
-        "url": "http://www.beerhere.dk", 
-        "twitter": "", 
-        "facebook": "http://www.facebook.com/groups/56002734018/"
-       }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-BeerHere_2888.jpeg", 
-       "location": {
-        "brewery_city": "", 
-        "brewery_state": "Copenhagen", 
-        "lng": 12.5567, 
-        "lat": 55.6684
-       }, 
-       "country_name": "Denmark"
-      }
-     }, 
-     {
-      "beer": {
-       "auth_rating": 4, 
-       "beer_description": "Our 100th batch, brewed for the enjoyment of the brewers, but popular demand forced us to release it commercially. This malty, yet light bodied ale has a massive hop bitterness. Most enjoyable in a comfortable chair in front of a roaring fire.\n\nRecommended serving temperature 16\u00b0C/61\u00b0F\n\nEven though the label says Barley Wine in the States, the brewery says it\u2019s brewed to be an IIPA. The American label was supposedly a glitch. In Europe it\u2019s sold as an IIPA.", 
-       "bid": 31823, 
-       "beer_style": "Imperial / Double IPA", 
-       "beer_name": "#100", 
-       "wish_list": false, 
-       "beer_abv": 10, 
-       "beer_label": "https://untappd.s3.amazonaws.com/site/beer_logos/beer-100_31823.jpeg"
-      }, 
-      "brewery": {
-       "brewery_id": 923, 
-       "brewery_active": 1, 
-       "brewery_name": "N\u00f8gne \u00d8", 
-       "contact": {
-        "url": "http://www.nogne-o.com/", 
-        "twitter": "nogneo", 
-        "facebook": "http://www.facebook.com/nogneo"
-       }, 
-       "brewery_label": "https://untappd.s3.amazonaws.com/site/brewery_logos/brewery-nogneo_923.jpeg", 
-       "location": {
-        "brewery_city": "Grimstad", 
-        "brewery_state": "", 
-        "lng": 8.63551, 
-        "lat": 58.405
-       }, 
-       "country_name": "Norway"
-      }
      }
     ]
    }, 
@@ -2404,12 +2409,12 @@
    "is_private": 1, 
    "stats": {
     "total_badges": 33, 
-    "total_beers": 118, 
+    "total_beers": 120, 
     "total_followings": 0, 
     "total_created_beers": 1, 
-    "total_photos": 40, 
+    "total_photos": 41, 
     "total_friends": 20, 
-    "total_checkins": 145
+    "total_checkins": 148
    }
   }
  }

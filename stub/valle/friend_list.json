@@ -1,6 +1,25 @@
 {
  "friends": [
   {
+   "friendship_hash": "33eed0ece9a983c9fe6d78c933815280", 
+   "mutual_friends": {
+    "count": 0, 
+    "items": []
+   }, 
+   "created_at": "Thu, 23 May 2013 16:02:19 +0000", 
+   "user": {
+    "bio": "", 
+    "first_name": "stian", 
+    "last_name": "valle", 
+    "user_avatar": "https://gravatar.com/avatar/61fbb548e9449dc45b5a6fd0008ca224?size=100&d=https%3A%2F%2Funtappd.s3.amazonaws.com%2Fsite%2Fassets%2Fimages%2Fdefault_avatar_v2.jpg%3Fv%3D1", 
+    "uid": 582993, 
+    "relationship": "friends", 
+    "location": "", 
+    "is_supporter": 0, 
+    "user_name": "oysang"
+   }
+  }, 
+  {
    "friendship_hash": "92ca58424d4a4d44125ce00aa9bacaf4", 
    "mutual_friends": {
     "count": 0, 
