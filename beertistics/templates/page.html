@@ -16,30 +16,31 @@
           <ul class="nav">
             <li class="dropdown {% if 'stats' == active_page %}active{% endif %}">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-bar-chart"></i> visualization <b class="caret"></b>
+                <i class="icon-caret-down"></i> Visualizations
               </a>
               <ul class="dropdown-menu">
                 {% for v in visuals %}
                 {% set icon = {'photos': 'camera', 'map': 'globe'}.get(v.type, 'bar-chart') %}
-                <li><a href="/visual/{{v.visual_id}}"><i class="icon-{{icon}}"></i> {{v.name}}</a></li>
+                <li>
+                  <a href="/visual/{{v.visual_id}}">
+                    <i class="icon-{{icon}}"></i> {{v.name}}
+                  </a>
+                </li>
                 {% endfor %}
               </ul>
             </li>
           </ul>
           <ul class="nav pull-right">
             <li>
-              <form action="{{url_for('show_user')}}" method="GET" class="navbar-search pull-right">
-                <input id="active-user-input" type="text" class="search-query" autocomplete="off" name="active-user" placeholder="{{session.shown_user['username']}}" >
-              </form>
+              <a href="{{url_for('friend_list')}}">
+                <i class="icon-exchange"></i> {{session.shown_user['name']}}
+             </a>
             </li>
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <i class="icon-cogs"></i></b>
+            <li>
+              <a href="{{url_for('logout')}}">
+                <i class="icon-signout"></i> Log out
               </a>
-              <ul class="dropdown-menu">
-                <li><p>Logged in as {{session.logged_in_user['username']}}</p></li>
-                <li><a href="{{url_for('logout')}}">Log out</a></li>
-              </ul>
+            </li>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -71,23 +72,4 @@
     </div>
 
   </div>
-{% endblock %}
-
-{% block page_script %}
-  <script>
-    $(document).ready(function() {
-      $.getJSON("/api/friends/")
-      .done(function(data) {
-        $("#active-user-input").typeahead({
-            minLength: 3,
-            source: data,
-            sorter: function (items) {
-              // in order to have exact typed match first among suggestions
-              items.unshift(this.query);
-              return items;
-            }
-        });
-      });
-    });
-  </script>
 {% endblock %}

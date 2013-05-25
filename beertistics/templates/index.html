@@ -3,7 +3,11 @@
 {% block title %}Overview{% endblock %}
 
 {% block page_content %}
-  <p><em id="basic-stats-message" class="clearfix"></em></p>
+  <div class="row">
+    <div class="span12">
+      <p><em id="basic-stats-message" class="clearfix"></em></p>
+    </div>
+  </div>
 
   {% for row in visuals|batch(3) %}
     <div class="row stats-overview">
@@ -19,25 +23,4 @@
     {% endfor %}
     </div>
   {% endfor %}
-{% endblock %}
-
-{% block script %}
-  <script>
-    function basic_stats_message(data) {
-        return "<img src='" + data.avatar + "'/>" +
-            "<p>Hello there, " + data.name + ".</p>" +
-            "<p>In your "+ data.days +" days of using Untappd, you have checked in " +
-            "a total of " + data.total + " beers, " + data.distinct + " of which " +
-            "are distinct. That averages to "+data.total_avg+" beers per day " +
-            "(" + data.distinct_avg + " distinct).</p>" +
-            "<p>You have also posted " + data.photos +
-            " photos, earned "+data.badges+" badges, and made "+data.friends+" friends.</p>"
-    }
-
-    $(document).ready(function() {
-        $.getJSON("/api/user", function(data) {
-            $("#basic-stats-message").html(basic_stats_message(data));
-        });
-    });
-  </script>
 {% endblock %}

@@ -1,0 +1,71 @@
+{% extends "page.html" %}
+
+{% block title %}View other{% endblock %}
+
+{% block page_content %}
+
+  <div class="row">
+    <div class="span12">
+      <h1>View other user</h1>
+    </div>
+  </div>
+
+  <div class="row friend-list">
+    <div class="span6">
+      {% set user = session.shown_user %}
+      <img src='{{user.avatar}}' style="float: left; padding-right: 10px"/>
+        <p>
+          Showing data for<br/>
+          <strong>{{user.name}}</strong>
+          <em>({{user.username}})</em>
+        </p>
+        <p>
+          During {{user.days}} days of using Untappd, {{user.name}} have checked in a total of {{user.total}} beers, {{user.distinct}} of which are distinct. This averages to {{user.total_avg}} beers per day ({{user.distinct_avg}} distinct).
+        </p>
+        <p>
+          {{user.name}} has also posted {{user.photos}} photos, earned {{user.badges}} badges, and made {{user.friends}} friends.
+        </p>
+    </div>
+    <div class="span6">
+      <a class="friend-list-item clearfix" href="{{url_for('show_user', username=session.logged_in_user.username)}}">
+        <img src="{{session.logged_in_user.avatar}}"/>
+        <p>
+          <strong>Logged in as {{session.logged_in_user.name}}.</strong><br/>
+          Show my data!
+        </p>
+      </a>
+      <div class="friend-list-item clearfix">
+        <form action="/show-user" class="form">
+          <button type="submit" class="btn"><i class="icon-search icon-2x"></i></button>
+          <input type="text" name="username" class="input-medium" placeholder="Serach by username">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row friend-list">
+    <div class="span6">
+    </div>
+  </div>
+
+  {% if friends %}
+  <hr/>
+  {% for row in friends|batch(3) %}
+  <div class="row friend-list">
+    {% for friend in row %}
+      <div class="span4">
+        <a class="friend-list-item clearfix" href="{{url_for('show_user')}}?username={{friend.user.user_name}}">
+          {% set full_name = " ".join([friend.user.first_name, friend.user.last_name]) %}
+          <img src="{{friend.user.user_avatar}}"/>
+          <p>
+            <strong>{{full_name}}</strong><br/>
+            <em>{{friend.user.user_name}}</em>
+          </p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  {% endif %}
+
+{% endblock %}

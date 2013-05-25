@@ -18,15 +18,16 @@ def index():
 @app.route('/show-user')
 @auth.requires_auth
 def show_user():
-    username = flask.request.args.get('active-user', None)
+    username = flask.request.args.get('username', None)
+    if not username:
+        return flask.redirect(flask.url_for('friend_list'))
+
     try:
         user = user_service.user_info_for(username)
         flask.session['shown_user'] = user
-        msg = "Showing stats for %s (%s)." % (user['name'], user['username'])
-        flask.flash(msg, 'success')
     except NoSuchUserException:
         flask.flash("Found no user with username '%s'." % username, 'error')
-    return flask.redirect(flask.url_for("index"))
+    return flask.redirect(flask.url_for("friend_list"))
 
 @app.route('/test')
 def test():
@@ -43,3 +44,9 @@ def visual(visual_id):
 @auth.requires_auth
 def about():
     return flask.render_template('about.html')
+
+@app.route('/friend-list')
+@auth.requires_auth
+def friend_list():
+    friends = user_service.friend_list_for('valle')
+    return flask.render_template('friend-list.html', friends=friends)

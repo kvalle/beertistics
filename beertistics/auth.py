@@ -7,7 +7,7 @@ def authorize(code):
 
     if not token:
         return False
-    
+
     flask.session['untappd_token'] = token
     user = user_service.user_info_for_logged_in_user()
     flask.session['logged_in_user'] = user
