@@ -48,5 +48,6 @@ def about():
 @app.route('/friend-list')
 @auth.requires_auth
 def friend_list():
+    username = flask.session["logged_in_user"]["username"]
     friends = user_service.friend_list_for('valle')
     return flask.render_template('friend-list.html', friends=friends)
