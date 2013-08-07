@@ -7,7 +7,7 @@ import os.path
 
 def from_file(filename, username):
     if not username:
-        username = 'valle'
+        username = app.config['UNTAPPD_STUB_USER']
     if not os.path.exists('stub/' + username):
         raise NoSuchUserException("There is no user with that username.")
     app.logger.info("Fetching %s for '%s' (stub)" % (filename, username))
