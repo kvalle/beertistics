@@ -145,6 +145,26 @@ h1 {
     }
 }
 
+/*------------------ visuals */
+
+.next-visual{
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    &:hover{
+        color: black;
+    }
+}
+
+.previous-visual {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    &:hover{
+        color: black;
+    }
+}
+
 /*------------------ stats */
 
 #basic-stats-message img {
