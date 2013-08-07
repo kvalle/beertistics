@@ -49,5 +49,5 @@ def about():
 @auth.requires_auth
 def friend_list():
     username = flask.session["logged_in_user"]["username"]
-    friends = user_service.friend_list_for('valle')
+    friends = user_service.friend_list_for(username)
     return flask.render_template('friend-list.html', friends=friends)
