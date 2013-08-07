@@ -6,7 +6,9 @@
         {% block visual_content %}{% endblock %}
       </div>
     </div>
-    <!--<i class="previous-visual gray icon-chevron-left icon-3x"></i>
-    <i class="next-visual gray icon-chevron-right icon-3x"></i> -->
+    <a href="{{url_for('visual', visual_id=adjacent[0]['visual_id'])}}" title="{{adjacent[0]['name']}}">
+    <i class="previous-visual gray icon-chevron-left icon-3x"></i></a>
+    <a href="{{url_for('visual', visual_id=adjacent[1]['visual_id'])}}" title="{{adjacent[1]['name']}}">
+    <i class="next-visual gray icon-chevron-right icon-3x"></i></a>
 {% endblock %}
 

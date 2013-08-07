@@ -66,5 +66,7 @@ visuals = [
 def get_visual(visual_id):
     return filter(lambda v: v['visual_id'] == visual_id, visuals)[0]
 
-def get_next_url_for(visual_id):
-    return "hei, jeg er en test"
+def get_adjacent(visual_id):
+    for i in range(len(visuals)):
+        if visuals[i]['visual_id'] == visual_id:
+            return (visuals[(i-1)%len(visuals)], visuals[(i+1)%len(visuals)])

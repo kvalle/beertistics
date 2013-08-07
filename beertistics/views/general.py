@@ -38,7 +38,10 @@ def test():
 def visual(visual_id):
     visual = visuals.get_visual(visual_id)
     template = os.path.join('visuals', visual['template_name'])
-    return flask.render_template(template, next_url=visuals.get_next_url_for(visual_id))
+    adjacent = visuals.get_adjacent(visual_id)
+    print template
+    print adjacent
+    return flask.render_template(template, adjacent=adjacent)
 
 @app.route('/about')
 @auth.requires_auth
