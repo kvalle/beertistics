@@ -17,7 +17,7 @@
     function makeInfoHtml(pos) {   
         var info = '<div class="info-marker">';
         info += '<img src="'+pos.label+'"/>';
-        info += '<div class="text">'
+        info += '<div class="text">';
         info += '<strong>'+pos.name+'</strong><br/>';
         if (pos.url) {
             info += '<a href="'+pos.url+'">'+pos.url+'</a><br/>';
@@ -29,7 +29,7 @@
             }
             info += '</ul>';
         }
-        info += '</div></div>'
+        info += '</div></div>';
         return info
     }
 
