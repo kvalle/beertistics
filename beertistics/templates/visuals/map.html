@@ -11,24 +11,23 @@
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript">
 
-    (function (ns, undefined) {
+    (function () {
         "use strict";
 
-
-        var map;
-        var infowindow = null;
+        var map,
+            infowindow = null;
 
         function makeInfoHtml(pos) {
             var info = '<div class="info-marker">';
-            info += '<img src="'+pos.label+'"/>';
+            info += '<img src="' + pos.label + '"/>';
             info += '<div class="text">';
-            info += '<strong>'+pos.name+'</strong><br/>';
+            info += '<strong>' + pos.name + '</strong><br/>';
             if (pos.url) {
-                info += '<a href="'+pos.url+'">'+pos.url+'</a><br/>';
+                info += '<a href="' + pos.url + '">' + pos.url + '</a><br/>';
             }
             if (pos.beers) {
-                info += '<br/><em>'+pos.beers_desc+'</em><ul/>';
-                for (var i=0; i<pos.beers.length; i++) {
+                info += '<br/><em>' + pos.beers_desc + '</em><ul/>';
+                for (var i=0; i < pos.beers.length; i++) {
                     info += '<li>' + pos.beers[i] + '</li>';
                 }
                 info += '</ul>';
@@ -38,7 +37,7 @@
         }
 
         function addMarkers(data, color) {
-            $.each(data, function(i, pos) {
+            $.each(data, function (i, pos) {
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(pos.lat, pos.lng),
                     map: map,
@@ -64,17 +63,17 @@
                 center: new google.maps.LatLng(0, 0),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            map = new google.maps.Map(document.getElementById("map_container"),mapOptions);
+            map = new google.maps.Map(document.getElementById("map_container"), mapOptions);
         }
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             initializeMap();
      
-            $.getJSON("/api/map/checkins", function(data) {
+            $.getJSON("/api/map/checkins", function (data) {
                 addMarkers(data, "red");
             });
 
-            $.getJSON("/api/map/breweries", function(data) {
+            $.getJSON("/api/map/breweries", function (data) {
                 addMarkers(data, "yellow")
             });
 

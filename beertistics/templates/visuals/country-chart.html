@@ -24,7 +24,6 @@
                     "/api/beers-by-country-as-list",
                     $("#country-chart-container"),
                     function (data) {
-
                         var map_data = google.visualization.arrayToDataTable(data);
                         var options = {};
                         var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));

@@ -10,7 +10,7 @@
 {% block script %}
 <script type="text/template" class="photo-list-template">
     <ul class="clearfix">
-        <% _.each(rc, function( item ){ %>
+        <% _.each(rc, function (item){ %>
         <li><a rel="lightbox[beers]" href="<%- item.photo_original %>" title="<%- item.beer %> by <%- item.brewery %>">
             <div class="photo-description">
                 <%- item.beer %><br/>
@@ -32,10 +32,10 @@
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         var template = _.template($("script.photo-list-template").html());
 
-        $.getJSON("/api/photos", function(data) {
+        $.getJSON("/api/photos", function (data) {
             $("#beer-photos").append(template(data));
         });
     });
