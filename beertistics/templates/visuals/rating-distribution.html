@@ -12,10 +12,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        startLoading($("#ratings"));
+        beertistics.startLoading($("#ratings"));
         $.getJSON("/api/rating-distribution")
                 .done(function(data) {
-                    stopLoading($("#ratings"));
+                    beertistics.stopLoading($("#ratings"));
                     var chart;
                     nv.addGraph(function() {
                         chart = nv.models.multiBarChart()
@@ -42,7 +42,7 @@
                     });
                 })
                 .fail(function(error) {
-                    stopLoadingWithError($("#ratings"), error.responseText);
+                    beertistics.stopLoadingWithError($("#ratings"), error.responseText);
                 });
     });
 </script>

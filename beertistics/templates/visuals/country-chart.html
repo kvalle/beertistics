@@ -17,16 +17,16 @@
     google.setOnLoadCallback(drawMap);
       
     function drawMap() {
-        startLoading($("#country-chart-container"));
+        beertistics.startLoading($("#country-chart-container"));
         $.getJSON("/api/beers-by-country-as-list")
                 .done(function(data) {
-                    stopLoading($("#country-chart-container"));
+                    beertistics.stopLoading($("#country-chart-container"));
                     var map_data = google.visualization.arrayToDataTable(data);
                     var options = {};
                     var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));
                     chart.draw(map_data, options);
                 }).fail(function(error) {
-                    stopLoadingWithError($("#country-chart-container"), error.responseText);
+                    beertistics.stopLoadingWithError($("#country-chart-container"), error.responseText);
                 });
     }
 </script>

@@ -12,10 +12,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        startLoading($("#punchcard"));
+        beertistics.startLoading($("#punchcard"));
         $.getJSON("/api/time-of-day")
                 .done(function(data) {
-                    stopLoading($("#punchcard"));
+                    beertistics.stopLoading($("#punchcard"));
                     var chart;
                     nv.addGraph(function() {
                         chart = nv.models.scatterChart()
@@ -51,7 +51,7 @@
                     });
                 })
                 .fail(function(error) {
-                    stopLoadingWithError($("#punchcard"), error.responseText);
+                    beertistics.stopLoadingWithError($("#punchcard"), error.responseText);
                 });
     });
 </script>

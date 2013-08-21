@@ -12,10 +12,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        startLoading($("#influenced-ratings"));
+        beertistics.startLoading($("#influenced-ratings"));
         $.getJSON("/api/influenced-ratings")
                 .done(function(data) {
-                    stopLoading($("#influenced-ratings"));
+                    beertistics.stopLoading($("#influenced-ratings"));
                     var chart;
                     nv.addGraph(function() {
                         chart = nv.models.scatterChart()
@@ -47,7 +47,7 @@
                     });
                 })
                 .fail(function(error) {
-                    stopLoadingWithError($("#influenced-ratings"), error.responseText);
+                    beertistics.stopLoadingWithError($("#influenced-ratings"), error.responseText);
                 });
     });
 </script>

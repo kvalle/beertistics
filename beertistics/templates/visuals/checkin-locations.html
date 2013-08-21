@@ -12,10 +12,10 @@
   <script type="text/javascript">
       $(document).ready(function() {
 
-          startLoading($("#checkin-locations"));
+          beertistics.startLoading($("#checkin-locations"));
           $.getJSON("/api/checkin-locations")
                   .done(function(data) {
-                      stopLoading($("#checkin-locations"));
+                      beertistics.stopLoading($("#checkin-locations"));
                       console.log("length is...... ", data[0].values.length);
                       var chartHeight = data[0].values.length * 35;
                       $("#checkin-locations svg").css("height", chartHeight);
@@ -46,7 +46,7 @@
                       });
                   })
                   .fail(function(error) {
-                      stopLoadingWithError($("#checkin-locations"), error.responseText);
+                      beertistics.stopLoadingWithError($("#checkin-locations"), error.responseText);
                   });
 
       });

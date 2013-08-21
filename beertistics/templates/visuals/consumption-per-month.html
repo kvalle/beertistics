@@ -12,10 +12,10 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        startLoading($("#consumption-per-month"));
+        beertistics.startLoading($("#consumption-per-month"));
         $.getJSON("/api/per-month")
                 .done(function(data) {
-                    stopLoading($("#consumption-per-month"));
+                    beertistics.stopLoading($("#consumption-per-month"));
                     var chart;
                     nv.addGraph(function() {
                         chart = nv.models.multiBarChart()
@@ -38,7 +38,7 @@
                     });
                 })
                 .fail(function(error) {
-                    stopLoadingWithError($("#consumption-per-month"), error.responseText);
+                    beertistics.stopLoadingWithError($("#consumption-per-month"), error.responseText);
                 });
     });
 </script>
