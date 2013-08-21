@@ -28,11 +28,11 @@
                           .showLegend(false)
                           .color(d3.scale.category10().range());
 
-            chart.xAxis.axisLabel('Number of beers checked in last 6 hours')
-            chart.yAxis.axisLabel('Rating')
+            chart.xAxis.axisLabel('Number of beers checked in last 6 hours');
+            chart.yAxis.axisLabel('Rating');
 
-            chart.xAxis.tickFormat(d3.format('d'))
-            chart.yAxis.tickFormat(d3.format('.01f'))
+            chart.xAxis.tickFormat(d3.format('d'));
+            chart.yAxis.tickFormat(d3.format('.01f'));
 
             d3.select('#influenced-ratings svg')
                 .datum(data)

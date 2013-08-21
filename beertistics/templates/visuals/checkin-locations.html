@@ -16,7 +16,7 @@
         $.getJSON("/api/checkin-locations")
         .done(function(data) {
             stopLoading($("#checkin-locations"));
-            console.log("length is...... ", data[0].values.length)
+            console.log("length is...... ", data[0].values.length);
             var chartHeight = data[0].values.length * 35;
             $("#checkin-locations svg").css("height", chartHeight);
             var chart;
@@ -30,7 +30,7 @@
                   .showControls(false)
                   .showLegend(false);
 
-              chart.yAxis.axisLabel('Number of checkins')
+              chart.yAxis.axisLabel('Number of checkins');
               chart.yAxis.tickFormat(d3.format(',.0f'));
 
               d3.select('#checkin-locations svg')
