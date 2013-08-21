@@ -8,30 +8,30 @@
 {% endblock %}
 
 {% block script %}
-    <script type="text/template" class="photo-list-template">
-        <ul class="clearfix">
+<script type="text/template" class="photo-list-template">
+    <ul class="clearfix">
         <% _.each(rc, function( item ){ %>
-            <li><a rel="lightbox[beers]" href="<%- item.photo_original %>" title="<%- item.beer %> by <%- item.brewery %>">
-                <div class="photo-description">
-                    <%- item.beer %><br/>
-                    <%- item.brewery %><br/>
-                    <% for (var i=item.rating; i>0; i--){ %>
-                        <% if ( i > 0.9 ){ %>
-                            <i class="icon-star"></i>
-                        <% } else { %>
-                            <i class="icon-star-half"></i>
-                        <% } %>
-                    <% } %>
-                    <br/><br/>
-                    <%- item.comment %>
-                </div>
-                <img class="photo" src="<%- item.photo %>" alt="<%- item.beer %> by <%- item.brewery %>"/>
-            </a></li>
+        <li><a rel="lightbox[beers]" href="<%- item.photo_original %>" title="<%- item.beer %> by <%- item.brewery %>">
+            <div class="photo-description">
+                <%- item.beer %><br/>
+                <%- item.brewery %><br/>
+                <% for (var i=item.rating; i>0; i--){ %>
+                <% if ( i > 0.9 ){ %>
+                <i class="icon-star"></i>
+                <% } else { %>
+                <i class="icon-star-half"></i>
+                <% } %>
+                <% } %>
+                <br/><br/>
+                <%- item.comment %>
+            </div>
+            <img class="photo" src="<%- item.photo %>" alt="<%- item.beer %> by <%- item.brewery %>"/>
+        </a></li>
         <% }); %>
-        </ul>
-    </script>
+    </ul>
+</script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
         var template = _.template($("script.photo-list-template").html());
 
@@ -39,5 +39,5 @@
             $("#beer-photos").append(template(data));
         });
     });
-  </script>
+</script>
 {% endblock %}

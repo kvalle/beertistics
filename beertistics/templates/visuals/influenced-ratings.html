@@ -9,48 +9,46 @@
 {% endblock %}
 
 {% block script %}
-  <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
 
         startLoading($("#influenced-ratings"));
         $.getJSON("/api/influenced-ratings")
-        .done(function(data) {
-          stopLoading($("#influenced-ratings"));
-          var chart;
-          nv.addGraph(function() {
-            chart = nv.models.scatterChart()
-                          .showDistX(true)
-                          .showDistY(true)
-                          //.height(500)
-                          .x(function(d) { return d.beers })
-                          .y(function(d) { return d.rating })
-                          .useVoronoi(true)
-                          .showLegend(false)
-                          .color(d3.scale.category10().range());
+                .done(function(data) {
+                    stopLoading($("#influenced-ratings"));
+                    var chart;
+                    nv.addGraph(function() {
+                        chart = nv.models.scatterChart()
+                                .showDistX(true)
+                                .showDistY(true)
+                            //.height(500)
+                                .x(function(d) { return d.beers })
+                                .y(function(d) { return d.rating })
+                                .useVoronoi(true)
+                                .showLegend(false)
+                                .color(d3.scale.category10().range());
 
-            chart.xAxis.axisLabel('Number of beers checked in last 6 hours');
-            chart.yAxis.axisLabel('Rating');
+                        chart.xAxis.axisLabel('Number of beers checked in last 6 hours');
+                        chart.yAxis.axisLabel('Rating');
 
-            chart.xAxis.tickFormat(d3.format('d'));
-            chart.yAxis.tickFormat(d3.format('.01f'));
+                        chart.xAxis.tickFormat(d3.format('d'));
+                        chart.yAxis.tickFormat(d3.format('.01f'));
 
-            d3.select('#influenced-ratings svg')
-                .datum(data)
-              .transition().duration(500)
-                .call(chart);
+                        d3.select('#influenced-ratings svg')
+                                .datum(data)
+                                .transition().duration(500)
+                                .call(chart);
 
-            nv.utils.windowResize(chart.update);
+                        nv.utils.windowResize(chart.update);
 
-            chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                        chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-            return chart;
-          });
-        })
-        .fail(function(error) {
-            stopLoadingWithError($("#influenced-ratings"), error.responseText);
-        });
-
+                        return chart;
+                    });
+                })
+                .fail(function(error) {
+                    stopLoadingWithError($("#influenced-ratings"), error.responseText);
+                });
     });
-
-  </script>
+</script>
 {% endblock %}

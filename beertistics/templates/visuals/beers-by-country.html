@@ -9,46 +9,44 @@
 {% endblock %}
 
 {% block script %}
-  <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
 
         startLoading($("#beers-by-country"));
         $.getJSON("/api/beers-by-country")
-        .done(function(data) {
-            stopLoading($("#beers-by-country"));
-            var chartHeight = data[0].values.length * 25;
-            $("#beers-by-country svg").css("height", chartHeight);
-            var chart;
-            nv.addGraph(function() {
-              chart = nv.models.multiBarHorizontalChart()
-                  .x(function(d) { return d.label })
-                  .y(function(d) { return d.value })
-                  .height(chartHeight)
-                  .margin({top: 30, right: 20, bottom: 50, left: 175})
-                  .barColor(d3.scale.category20().range())
-                  .showControls(false)
-                  .showLegend(false);
+                .done(function(data) {
+                    stopLoading($("#beers-by-country"));
+                    var chartHeight = data[0].values.length * 25;
+                    $("#beers-by-country svg").css("height", chartHeight);
+                    var chart;
+                    nv.addGraph(function() {
+                        chart = nv.models.multiBarHorizontalChart()
+                                .x(function(d) { return d.label })
+                                .y(function(d) { return d.value })
+                                .height(chartHeight)
+                                .margin({top: 30, right: 20, bottom: 50, left: 175})
+                                .barColor(d3.scale.category20().range())
+                                .showControls(false)
+                                .showLegend(false);
 
-              chart.yAxis.axisLabel('Number of checkins');
-              chart.yAxis.tickFormat(d3.format(',.0f'));
+                        chart.yAxis.axisLabel('Number of checkins');
+                        chart.yAxis.tickFormat(d3.format(',.0f'));
 
-              d3.select('#beers-by-country svg')
-                  .datum(data)
-                .transition().duration(500)
-                  .call(chart);
+                        d3.select('#beers-by-country svg')
+                                .datum(data)
+                                .transition().duration(500)
+                                .call(chart);
 
-              nv.utils.windowResize(chart.update);
+                        nv.utils.windowResize(chart.update);
 
-              chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                        chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
 
-              return chart;
-            });
-        })
-        .fail(function(error) {
-            stopLoadingWithError($("#beers-by-country"), error.responseText);
-        });
-
+                        return chart;
+                    });
+                })
+                .fail(function(error) {
+                    stopLoadingWithError($("#beers-by-country"), error.responseText);
+                });
     });
-
-  </script>
+</script>
 {% endblock %}
