@@ -5,20 +5,32 @@ var beertistics = window.beertistics || {};
 
     _.templateSettings.variable = "rc";
 
-    ns.startLoading = function (el) {
+    function startLoading(el) {
         el.addClass('graph-container');
         el.append($("script.loading-template").html());
-    };
+    }
 
-    ns.stopLoading = function (el) {
+    function stopLoading(el) {
         el.find(".loading").remove();
         el.removeClass("graph-container");
-    };
+    }
 
-    ns.stopLoadingWithError = function (el, msg) {
-        ns.stopLoading(el);
+    function stopLoadingWithError(el, msg) {
+        stopLoading(el);
         var template = _.template($("script.loading-error-template").html());
         el.append(template({"message": msg}));
+    }
+
+    ns.loadData = function (url, element, success) {
+            startLoading(element);
+            $.getJSON(url)
+                .done(function(data) {
+                    stopLoading(element);
+                    success(data);
+                })
+                .fail(function(error) {
+                    stopLoadingWithError(element, error.responseText);
+                });
     };
 
 }(beertistics));

@@ -18,19 +18,19 @@
 
         google.load('visualization', '1', {'packages': ['geochart']});
         google.setOnLoadCallback(drawMap);
-      
+
         function drawMap() {
-            beertistics.startLoading($("#country-chart-container"));
-            $.getJSON("/api/beers-by-country-as-list")
-                    .done(function(data) {
-                        beertistics.stopLoading($("#country-chart-container"));
+            beertistics.loadData(
+                    "/api/beers-by-country-as-list",
+                    $("#country-chart-container"),
+                    function (data) {
+
                         var map_data = google.visualization.arrayToDataTable(data);
                         var options = {};
                         var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));
                         chart.draw(map_data, options);
-                    }).fail(function(error) {
-                        beertistics.stopLoadingWithError($("#country-chart-container"), error.responseText);
-                    });
+                    }
+            )
         }
 
     }());
