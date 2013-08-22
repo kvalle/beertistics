@@ -9,52 +9,47 @@
 {% endblock %}
 
 {% block script %}
-  <script>
-    $(document).ready(function() {
+<script type="text/javascript">
+    $(document).ready(function () {
+        beertistics.loadData(
+                "/api/time-of-day",
+                $("#punchcard"),
+                function (data) {
+                    var chart;
+                    nv.addGraph(function () {
+                        chart = nv.models.scatterChart()
+                                .showDistX(true)
+                                .showDistY(true)
+                                .x(function (d) { return d.hour; })
+                                .y(function (d) { return d.weekday; })
+                                .showLegend(false);
 
-        startLoading($("#punchcard"));
-        $.getJSON("/api/time-of-day")
-        .done(function(data) {
-            stopLoading($("#punchcard"));
-            var chart;
-            nv.addGraph(function() {
-              chart = nv.models.scatterChart()
-                            .showDistX(true)
-                            .showDistY(true)
-                            .x(function(d) { return d.hour })
-                            .y(function(d) { return d.weekday })
-                            .showLegend(false);
-
-              chart.xAxis
-                  .axisLabel('Time of day')
-                  .tickFormat(d3.format('02d'))
-                  .tickValues([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]);
-              chart.forceX([0,23]);
+                        chart.xAxis
+                                .axisLabel('Time of day')
+                                .tickFormat(d3.format('02d'))
+                                .tickValues([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]);
+                        chart.forceX([0,23]);
               
-              chart.yAxis
-                  .tickFormat(function(d) { 
-                      var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-                      return days[d]
-                  });
-              chart.forceY([0,6]);
+                        chart.yAxis
+                                .tickFormat(function (d) {
+                                    var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+                                    return days[d];
+                                });
+                        chart.forceY([0, 6]);
 
-              d3.select('#punchcard svg')
-                  .datum(data)
-                .transition().duration(500)
-                  .call(chart);
+                        d3.select('#punchcard svg')
+                                .datum(data)
+                                .transition().duration(500)
+                                .call(chart);
 
-              nv.utils.windowResize(chart.update);
+                        nv.utils.windowResize(chart.update);
 
-              chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                        chart.dispatch.on('stateChange', function (e) { nv.log('New State:', JSON.stringify(e)); });
 
-              return chart;
-          });
-        })
-        .fail(function(error) {
-            stopLoadingWithError($("#punchcard"), error.responseText);
-        });
-
+                        return chart;
+                    });
+                }
+        );
     });
-
-  </script>
+</script>
 {% endblock %}

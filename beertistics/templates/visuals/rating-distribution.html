@@ -9,43 +9,38 @@
 {% endblock %}
 
 {% block script %}
-  <script>
-    $(document).ready(function() {
-
-        startLoading($("#ratings"));
-        $.getJSON("/api/rating-distribution")
-        .done(function(data) {
-            stopLoading($("#ratings"));
-            var chart;
-            nv.addGraph(function() {
-                chart = nv.models.multiBarChart()
-                            .showControls(false)
-                            .barColor(d3.scale.category20().range());
-                chart.y(function(d) { return d.n });
-                chart.x(function(d) { return d.rating });
-                chart.xAxis.showMaxMin(false);
-                chart.yAxis.tickFormat(d3.format(',.0f'));
+<script type="text/javascript">
+    $(document).ready(function () {
+        beertistics.loadData(
+                "/api/rating-distribution",
+                $("#ratings"),
+                function (data) {
+                    var chart;
+                    nv.addGraph(function () {
+                        chart = nv.models.multiBarChart()
+                                .showControls(false)
+                                .barColor(d3.scale.category20().range());
+                        chart.y(function (d) { return d.n; });
+                        chart.x(function (d) { return d.rating; });
+                        chart.xAxis.showMaxMin(false);
+                        chart.yAxis.tickFormat(d3.format(',.0f'));
                 
-                chart.xAxis.axisLabel('Rating');
-                chart.yAxis.axisLabel('Beers');
+                        chart.xAxis.axisLabel('Rating');
+                        chart.yAxis.axisLabel('Beers');
 
-                chart.margin({bottom: 40, left: 80});
+                        chart.margin({bottom: 40, left: 80});
 
-                d3.select('#ratings svg')
-                          .datum(data)
-                    .transition().duration(500).call(chart);
+                        d3.select('#ratings svg')
+                                .datum(data)
+                                .transition().duration(500).call(chart);
 
-                nv.utils.windowResize(chart.update);
-                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+                        nv.utils.windowResize(chart.update);
+                        chart.dispatch.on('stateChange', function (e) { nv.log('New State:', JSON.stringify(e)); });
 
-              return chart;
-          });
-        })
-        .fail(function(error) {
-            stopLoadingWithError($("#ratings"), error.responseText);
-        });
-
+                        return chart;
+                    });
+                }
+        );
     });
-
-  </script>
+</script>
 {% endblock %}

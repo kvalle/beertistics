@@ -9,39 +9,34 @@
 {% endblock %}
 
 {% block script %}
-  <script>
-    $(document).ready(function() {
+<script type="text/javascript">
+    $(document).ready(function () {
+        beertistics.loadData(
+                "/api/per-month",
+                $("#consumption-per-month"),
+                function (data) {
+                    var chart;
+                    nv.addGraph(function () {
+                        chart = nv.models.multiBarChart()
+                                .barColor(d3.scale.category20().range());
+                        chart.y(function (d) { return d.beers; });
+                        chart.x(function (d) { return d.month; });
+                        chart.xAxis.showMaxMin(false);
+                        chart.yAxis.tickFormat(d3.format(',.0f'));
 
-        startLoading($("#consumption-per-month"));
-        $.getJSON("/api/per-month")
-        .done(function(data) {
-            stopLoading($("#consumption-per-month"));
-            var chart;
-            nv.addGraph(function() {
-                chart = nv.models.multiBarChart()
-                            .barColor(d3.scale.category20().range());
-                chart.y(function(d) { return d.beers });
-                chart.x(function(d) { return d.month });
-                chart.xAxis.showMaxMin(false);
-                chart.yAxis.tickFormat(d3.format(',.0f'));
+                        chart.stacked(true);
 
-                chart.stacked(true);
+                        d3.select('#consumption-per-month svg')
+                                .datum(data)
+                                .transition().duration(500).call(chart);
 
-                d3.select('#consumption-per-month svg')
-                          .datum(data)
-                    .transition().duration(500).call(chart);
+                        nv.utils.windowResize(chart.update);
+                        chart.dispatch.on('stateChange', function (e) { nv.log('New State:', JSON.stringify(e)); });
 
-                nv.utils.windowResize(chart.update);
-                chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
-
-              return chart;
-          });
-        })
-        .fail(function(error) {
-            stopLoadingWithError($("#consumption-per-month"), error.responseText);
-        });
-
+                        return chart;
+                    });
+                }
+        );
     });
-
-  </script>
+</script>
 {% endblock %}

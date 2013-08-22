@@ -11,23 +11,27 @@
 {% endblock %}
 
 {% block script %}
-  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
-  <script type='text/javascript'>
-      google.load('visualization', '1', {'packages': ['geochart']});
-      google.setOnLoadCallback(drawMap);
-      
-      function drawMap() {
-        startLoading($("#country-chart-container"));
-        $.getJSON("/api/beers-by-country-as-list")
-        .done(function(data) {
-          stopLoading($("#country-chart-container"));
-          var map_data = google.visualization.arrayToDataTable(data);
-          var options = {};
-          var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));
-          chart.draw(map_data, options);
-        }).fail(function(error) {
-            stopLoadingWithError($("#country-chart-container"), error.responseText);
-        });
-      };
-  </script>
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>
+    (function (ns, undefined) {
+        "use strict";
+
+        google.load('visualization', '1', {'packages': ['geochart']});
+        google.setOnLoadCallback(drawMap);
+
+        function drawMap() {
+            beertistics.loadData(
+                    "/api/beers-by-country-as-list",
+                    $("#country-chart-container"),
+                    function (data) {
+                        var map_data = google.visualization.arrayToDataTable(data);
+                        var options = {};
+                        var chart = new google.visualization.GeoChart(document.getElementById('country-chart'));
+                        chart.draw(map_data, options);
+                    }
+            )
+        }
+
+    }());
+</script>
 {% endblock %}
