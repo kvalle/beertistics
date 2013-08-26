@@ -1,5 +1,6 @@
 Flask==0.9
 Flask-Cache==0.11
+Flask-Script==0.6.2
 Jinja2==2.6
 Werkzeug==0.8.3
 argparse==1.2.1

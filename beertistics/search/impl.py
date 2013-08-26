@@ -5,7 +5,6 @@ from beertistics import app
 
 DATE_FORMAT = "%a, %d %b %Y %H:%M:%S +0000"
 
-
 def update_last_indexed(username, datatype):
     data = get("cache", username)
     if data:
@@ -16,7 +15,6 @@ def update_last_indexed(username, datatype):
     url = "http://localhost:9200/beertistics/cache/%s" % username
     resp, content = Http().request(url, "POST", json.dumps(data))
 
-
 def get_last_indexed(username, datatype):
     url = "http://localhost:9200/beertistics/cache/%s" % username
     resp, content = Http().request(url, "GET")
@@ -25,7 +23,6 @@ def get_last_indexed(username, datatype):
         return datetime.datetime.strptime(t, DATE_FORMAT)
     except:
         return None
-
 
 def is_current(username, datatype):
     ttl = datetime.timedelta(0, app.config["CACHE_TTL"])
@@ -37,6 +34,15 @@ def is_current(username, datatype):
     delta = datetime.datetime.now() - last_indexed
     return delta < ttl
 
+def clear_index():
+    url = 'http://localhost:9200/beertistics/'
+    _, content = Http().request(url, "DELETE")
+    return json.loads(content)
+
+def status():
+    url = 'http://localhost:9200/beertistics/_status'
+    _, content = Http().request(url, "GET")
+    return json.loads(content)
 
 def index(datatype, items):
     url = "http://localhost:9200/beertistics/%s" % datatype
