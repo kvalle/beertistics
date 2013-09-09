@@ -12,6 +12,9 @@ function info {
     echo -e "\n\033[32m$1\033[0m"
 }
 
+info "UPDATING SCRIPTS"
+rsync -avz --delete -e ssh scripts/ ${server}":"${target}/scripts/
+
 info "STAGING"
 ssh ${server} "mkdir ${target}/${version_name}"
 scp -r beertistics/* ${server}":"${target}"/"${version_name}"/"
@@ -22,7 +25,7 @@ ssh ${server} "workon beertistics && cd ${target} && pip install -q -r requireme
 
 info "RESTARTING"
 scp -r beertistics.wsgi ${server}":"${target}/
-ssh ${server} "cd ${target} && unlink beertistics && ln -s ${version_name} beertistics"
+ssh ${server} "cd ${target} && unlink beertistics; ln -s ${version_name} beertistics"
 ssh -t ${server} "sudo service apache2 reload"
 
 info "FINISHED"
