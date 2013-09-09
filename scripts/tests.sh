@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script for running the test suite once, and then re-run once every 
+# time a file is changed within the `beertistics` folder.
+
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
 function run_tests() {
