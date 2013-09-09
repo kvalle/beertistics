@@ -4,3 +4,4 @@ beertistics/config/default.py
 *.pyc
 elasticsearch*/data
 elasticsearch*/logs
+es.pid
