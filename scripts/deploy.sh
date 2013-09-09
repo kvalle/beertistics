@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e 
 
+# Make sure we're in the right directory
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
 version_name=$(date +%F.%H.%M.%S)
